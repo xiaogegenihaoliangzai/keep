@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+
 import HelloWorld from '@/components/HelloWorld'
 import listAll from '../pages/listAll'
 import login from '../pages/login'
-
+import community from '../pages/community';
+import first from '../pages/first';
 Vue.use(Router)
 
 export default new Router({
@@ -16,10 +18,24 @@ export default new Router({
       path: '/listall',
       name: 'listAll',
       component: listAll
+
+    },
+    {
+      path: '/community',
+      name: 'community',
+      component: community
+
     },{
       path: '/login',
       name: 'login',
       component: login
+
+    },
+    {
+      path: '/first',
+      name: 'first',
+      component: first
+
     }
 		
   ]
