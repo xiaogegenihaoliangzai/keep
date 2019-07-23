@@ -19,30 +19,30 @@
 						<li>同城</li>
 					</ul>
 				</nav>
-				<section class="sec">
-<!--					<div class="sec_sec" id="sec_sec_one">
+<				<section class="sec">
+					<div class="sec_sec" id="sec_sec_one">
 						<div class="box">
 							<a href="keep-community-index-detay.html">
-								<img src="img/1.jpg">
+								<img src="../assets/images/37.jpg">
 								<p>肥仔真的要开sdfsdfsd始减sdfsdfsdfsdsdfssdfsdd fsd 脂肪了</p>
 								<ul>
-									<li><img src="img/icon_comment_like.png"></li>
+									<li><img src="../assets/images/icon_comment_like.png"></li>
 									<li>xiaoming</li>
-									<li><img src="img/icon_comment_like.png"></li>
+									<li><img src="../assets/images/icon_comment_like.png"></li>
 									<li>684</li>
 								</ul>
 							</a>
 						</div>
-					</div>-->
+					</div>
 					<div class="sec_sec" id="sec_sec_two">
 						<div class="box">
 							<a href="keep-community-index-detay.html">
-								<img src="img/7.jpg">
+								<img src="../assets/images/37.jpg">
 								<p>乘风好去，长空万里，直下看山河。斫去桂婆娑，人道是、清光更多</p>
 								<ul>
-									<li><img src="img/icon_comment_like.png"></li>
+									<li><img src="../assets/images/icon_comment_like.png"></li>
 									<li >xiaoming</li>
-									<li><img src="img/icon_comment_like.png"></li>
+									<li><img src="../assets/images/icon_comment_like.png"></li>
 									<li>684</li>
 								</ul>
 							</a>
@@ -139,7 +139,7 @@ body {
   color: gray;
 }
 .header .header_sec span:first-of-type {
-  background: url(../img/icon_search_lined_dark.png) no-repeat;
+  background: url(../assets/images/icon_search_lined_dark.png) no-repeat;
   background-size: contain;
   width: 0.4rem;
   height: 0.4rem;
@@ -148,7 +148,7 @@ body {
   margin-left: -0.7rem;
 }
 .header .header_sec span:last-of-type {
-  background: url(../img/icon_user_add_filled_dark.png) no-repeat;
+  background: url(../assets/images/icon_user_add_filled_dark.png) no-repeat;
   background-size: contain;
   width: 0.6rem;
   height: 0.6rem;

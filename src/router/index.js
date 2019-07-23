@@ -21,7 +21,7 @@ export default new Router({
 
     },
     {
-      path: 'community',
+      path: '/community',
       name: 'community',
       component: community
 
