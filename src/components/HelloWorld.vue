@@ -2,6 +2,7 @@
   <div class="hello">
     <button @click="ysy">跳尹石雨</button>
     <button @click="zs">跳周顺</button>
+    <button @click="fns">跳唐芳芳</button>
   </div>
 </template>
 
@@ -17,6 +18,10 @@ export default {
 		},
 		zs(){
 			this.$router.push("login")
+
+		},
+		fns(){
+			this.$router.push("yundong")
 
 		}
 	}

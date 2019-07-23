@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import listAll from '../pages/listAll'
 import login from '../pages/login'
-
+import yundong from '../pages/yundong'
 Vue.use(Router)
 
 export default new Router({
@@ -20,6 +20,11 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: login
+    },
+    {
+      path: '/yundong',
+      name: 'yundong',
+      component: yundong
     }
 		
   ]
