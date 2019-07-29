@@ -1,5 +1,8 @@
 <template>
-	<div class="comm_warp">
+	
+	<div>222</div>
+	
+	<!--<div class="comm_warp">
 		<div class="header">
 			<div class="header_sec">
 				<span></span>
@@ -13,7 +16,7 @@
 				<div class="content">
 					<div class="content_sec">
 						<ul class="star">
-							<li><img src="../../../assets/community/icon_comment_like.png"></li>
+							<li><img src="../../assets/community/icon_comment_like.png"></li>
 							<li>
 								<p>逃跑的越狱的安娜</p>
 							</li>
@@ -26,13 +29,13 @@
 							<p>好像隐约能看到一点点的马甲线<span>...全部</span></p>
 						</div>
 						<div class="saveimg">
-							<img src="../../../assets/community/icon_comment_like.png" />
-							<img src="../../../assets/community/icon_comment_like.png" />
-							<img src="../../../assets/community/icon_comment_like.png" />
-							<img src="../../../assets/community/icon_comment_like.png" />
-							<img src="../../../assets/community/icon_comment_like.png" />
-							<img src="../../../assets/community/icon_comment_like.png" />
-							<img src="../../../assets/community/icon_comment_like.png" />
+							<img src="../../assets/community/icon_comment_like.png" />
+							<img src="../../assets/community/icon_comment_like.png" />
+							<img src="../../assets/community/icon_comment_like.png" />
+							<img src="../../assets/community/icon_comment_like.png" />
+							<img src="../../assets/community/icon_comment_like.png" />
+							<img src="../../assets/community/icon_comment_like.png" />
+							<img src="../../assets/community/icon_comment_like.png" />
 						</div>
 						<div class="mark_a">
 							<a>
@@ -57,7 +60,7 @@
 					</div>
 					<div class="talk_b">
 						<ul class="talk_b_sec">
-							<li><img src="../../../assets/community/icon_comment_like.png" /></li>
+							<li><img src="../../assets/community/icon_comment_like.png" /></li>
 							<li>
 								<span></span>
 								<input type="text" placeholder="写下你第一条评论吧" />
@@ -69,7 +72,7 @@
 						<div class="talk_c_a">
 							<ul>
 								<li>
-									<img src="img/1.jpg" />
+									<img src="" />
 									<div>
 										<p>瓜瓜甜</p>
 										</br>
@@ -77,8 +80,8 @@
 									</div>
 								</li>
 								<li>
-									<img src="../../../assets/community/icon_comment_like.png" />
-									<img src="../../../assets/community/icon_comment_like.png" /><span>1</span>
+									<img src="../../assets/community/icon_comment_like.png" />
+									<img src="../../assets/community/icon_comment_like.png" /><span>1</span>
 								</li>
 							</ul>
 							<div class="talk_area">
@@ -91,7 +94,7 @@
 						<div class="talk_c_a">
 							<ul>
 								<li>
-									<img src="../../../assets/community/icon_comment_like.png" />
+									<img src="../../assets/community/icon_comment_like.png" />
 									<div>
 										<p>瓜瓜甜</p>
 										</br>
@@ -99,8 +102,8 @@
 									</div>
 								</li>
 								<li>
-									<img src="../../../assets/community/icon_comment_like.png" />
-									<img src="../../../assets/community/icon_comment_like.png" /><span>1</span>
+									<img src="../../assets/community/icon_comment_like.png" />
+									<img src="../../assets/community/icon_comment_like.png" /><span>1</span>
 								</li>
 							</ul>
 							<div class="talk_area">
@@ -114,7 +117,7 @@
 						<div class="talk_c_a">
 							<ul>
 								<li>
-									<img src="img/3.jpg" />
+									<img src="" />
 									<div>
 										<p>瓜瓜甜</p>
 										</br>
@@ -122,8 +125,8 @@
 									</div>
 								</li>
 								<li>
-									<img src="../../../assets/community/icon_comment_like.png" />
-									<img src="../../../assets/community/icon_comment_like.png" /><span>1</span>
+									<img src="../../assets/community/icon_comment_like.png" />
+									<img src="../../assets/community/icon_comment_like.png" /><span>1</span>
 								</li>
 							</ul>
 							<div class="talk_area">
@@ -143,7 +146,7 @@
 					<div class="sec_sec" id="sec_sec_one">
 						<div class="box">
 							<a>
-								<img src="img/1.jpg">
+								<img src="">
 								<p>肥仔真的要开sdfsdfsd始减sdfsdfsdfsdsdfssdfsdd fsd 脂肪了</p>
 								<ul>
 									<li><img src="img/icon_comment_like.png"></li>
@@ -160,9 +163,9 @@
 								<img src="../../../assets/16.png">
 								<p>乘风好去，长空万里，直下看山河。斫去桂婆娑，人道是、清光更多</p>
 								<ul>
-									<li><img src="../../../assets/community/icon_comment_like.png"></li>
+									<li><img src="../../assets/community/icon_comment_like.png"></li>
 									<li>xiaoming</li>
-									<li><img src="../../../assets/community/icon_comment_like.png"></li>
+									<li><img src="../../assets/community/icon_comment_like.png"></li>
 									<li>684</li>
 								</ul>
 							</a>
@@ -170,24 +173,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div id="footer" class="footer">
-			<a href="#" class="community ">
-				<span></span>
-				<p>331</p>
-			</a>
-
-			<a href="#" class="search">
-				<span></span>
-				<p>75</p>
-			</a>
-
-			<a href="#" class="sports">
-				<span></span>
-				<p>43</p>
-			</a>
-
-		</div>
+		</div>-->
 
 	</div>
 </template>
@@ -226,13 +212,13 @@
   padding: 0 0.3rem;
 }
 .header .header_sec span:first-of-type {
-  background: url(../img/mo_store_title_back.png) no-repeat;
-  background-size: contain;
+ /* background: url(../img/mo_store_title_back.png) no-repeat;
+  background-size: contain;*/
   width: 0.4rem;
   height: 0.4rem;
 }
 .header .header_sec span:last-of-type {
-  background: url(../img/icon_user_add_filled_dark.png) no-repeat;
+ /* background: url(../img/icon_user_add_filled_dark.png) no-repeat;*/
   background-size: contain;
   width: 0.6rem;
   height: 0.6rem;

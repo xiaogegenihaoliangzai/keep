@@ -79,12 +79,11 @@
 		display: flex;
 		overflow: hidden;
 		align-content: space-between;
+		
 	}
 	
 	.sec .sec_sec {
-		padding: 0rem 0.1rem;
-		margin-left: 0.1rem;
-		margin-top: 0.1rem;
+		padding: 0rem 0.1rem;				
 		background: #FFFFFF;
 		border-radius: 0.1rem;
 		width: 49%;

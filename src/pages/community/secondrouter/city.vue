@@ -1,6 +1,6 @@
 <template>
 	<div >
-hot
+city
 	</div>
 
 </template>

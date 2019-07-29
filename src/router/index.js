@@ -6,6 +6,7 @@ import search from '../pages/search'
 import mine from '../pages/mine'
 import plan from '../pages/plan'
 import community from '../pages/community/community'
+import comdeday from '../pages/community/communitydeday.vue'
 import sports from '../pages/sports'
 import login from '../pages/login'
 
@@ -46,6 +47,11 @@ export default new Router({
 		  {path:"city",component: city},
 		  ]
     },{
+      path: '/comdeday',
+      name: 'comdeday',
+      component: comdeday
+    },
+    {
       path: '/sports',
       name: 'sports',
       component: sports

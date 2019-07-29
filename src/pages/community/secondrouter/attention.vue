@@ -1,6 +1,6 @@
 <template>
 	<div >
-hot
+attention
 	</div>
 
 </template>
