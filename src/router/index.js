@@ -7,9 +7,6 @@ import mine from '../pages/mine'
 import plan from '../pages/plan'
 import community from '../pages/community'
 import sports from '../pages/sports'
-
-
-
 Vue.use(Router)
 
 export default new Router({
