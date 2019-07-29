@@ -1,5 +1,10 @@
 <template>
   <div class="search">
+  	<div class="divHeader">
+  		<headersList title="探索">
+  			<img src="../assets/scarch/icon_search_lined_dark.png" alt="" slot="leftImg" class="right" />
+  		</headersList>
+  	</div>
   	<Tabbar slot="bar">
   		<div slot="list1">
   			<yd-tab-panel name="" label="课程与挑战">
@@ -56,10 +61,6 @@
 	        </yd-tab-panel>
   		</div>
 
-
-			
-
-
   	</Tabbar>
 
   </div>
@@ -67,11 +68,13 @@
 
 <script>
 import Swiper from 'swiper';
+import headersList from '../components/header.vue'
 import Tabbar from '../components/Tabbar.vue'
 export default {
   props:['label'],
   components:{
   	Tabbar,
+  	headersList
   },
   mounted(){
     new Swiper ('.swiper-container', {
@@ -93,12 +96,24 @@ export default {
   overflow: hidden;
   height: 120/50rem;
 }
+.right{
+	width: 25/50rem!important;
+	right: 10/50rem!important;
+	top:12/50rem!important;
+}
+.tab[data-v-7b7e5f8e]{
+	height: auto!important;
+}
 .swiper-slide{
 	img{
 		width: 100%;
 		height: 100/50rem;
  	 	border-radius: 5/50rem;
 	}
+}
+.divHeader{
+	overflow: hidden;
+	width: 100%;
 }
 .listf{
 	width: 95%;
@@ -172,5 +187,8 @@ export default {
 	background-color:#fff;
 	overflow: hidden;
 	padding-bottom: 15/50rem;
+}
+.search{
+	background-color: #fff;
 }
 </style>
