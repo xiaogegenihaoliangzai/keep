@@ -24,7 +24,7 @@ export default {
 img{
     border:0;
 }
-ol, ul ,li{list-style: none;} 
+ol, ul ,li{list-style: none;}
 #app {
   font-family: '微软雅黑', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
