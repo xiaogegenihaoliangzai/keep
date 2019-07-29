@@ -26,7 +26,7 @@
 .aiplan{
 	width: 100%;
 	position: fixed;
-	bottom: 50/50rem;
+	bottom: 100/50rem;
 	text-align: center;
 	line-height: 51/50rem;
 	font-size: 16/50rem;

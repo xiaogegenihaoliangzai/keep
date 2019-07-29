@@ -1,5 +1,8 @@
 <template>
 	<div class="comm_warp">
+<!--		<headersList title="探索">
+			<img src="../../assets/community/icon_search_lined_dark.png" alt="" slot="leftImg" class="right" />
+		</headersList>-->
 		<div class="nav">
 			<span :class="{active:currIndex==0}" @click="currIndex=0">
     		<router-link to="/community/hot">热门</router-link>
@@ -24,11 +27,16 @@
 </template>
 
 <script>
+	import headersList from '../../components/header.vue'
 	export default {
-	data: function() {
+		data: function() {
 			return {
 				currIndex: 0
 			}
+		},
+		components: {
+
+			headersList
 		}
 	}
 </script>

@@ -1,12 +1,17 @@
 <template>
   <div id="app">
     <router-view/>
+		<tabbar></tabbar>
   </div>
 </template>
 
 <script>
+import tabbar from './components/tabbar-di.vue'
 export default {
-  name: 'App'
+  name: 'App',
+	components:{
+		tabbar
+	}
 }
 </script>
 
@@ -29,8 +34,8 @@ ol, ul ,li{list-style: none;}
   font-size: 16px;
 }
 .yd-tab-nav .yd-tab-active:before{
-  width: 25%;
-  margin-left: -15%;
+  width: 18%;
+  margin-left: -11%;
 }
 ::-webkit-scrollbar {
   display: none!important;

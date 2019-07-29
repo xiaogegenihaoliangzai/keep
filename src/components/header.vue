@@ -22,17 +22,13 @@
 	 float: left;
 	 margin-left: 20/50rem;
 	}
-	.headerWrap img:nth-of-type(1){
+	.headerWrap img{
 		width: 30px;
 		position: absolute;
 		top:10/50rem;
 		right: 60/50rem;
 	}
-	.headerWrap img:nth-of-type(2){
-		width: 30px;
-		position: absolute;
-		top:10/50rem;
+	.headerWrap img:nth-of-type(2) .right{
 		right: 20/50rem;
 	}
-	
 </style>
