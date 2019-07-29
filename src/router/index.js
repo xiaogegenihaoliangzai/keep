@@ -2,13 +2,13 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import HelloWorld from '@/components/HelloWorld'
-import listAll from '../pages/listAll'
-import login from '../pages/login'
+import search from '../pages/search'
+import mine from '../pages/mine'
+import plan from '../pages/plan'
+import community from '../pages/community'
+import sports from '../pages/sports'
 
-import community from '../pages/community';
-import first from '../pages/first';
 
-import yundong from '../pages/yundong'
 
 Vue.use(Router)
 
@@ -19,36 +19,25 @@ export default new Router({
       name: 'HelloWorld',
       component: HelloWorld
     },{
-      path: '/listall',
-      name: 'listAll',
-      component: listAll
-
-    },
-    {
+      path: '/search',
+      name: 'search',
+      component: search
+    },{
+      path: '/mine',
+      name: 'mine',
+      component: mine
+    },{
+      path: '/plan',
+      name: 'plan',
+      component: plan
+    },{
       path: '/community',
       name: 'community',
       component: community
-
     },{
-      path: '/login',
-      name: 'login',
-      component: login
-
-
-    },
-    {
-      path: '/first',
-      name: 'first',
-      component: first
-
-
-    },
-    {
-      path: '/yundong',
-      name: 'yundong',
-      component: yundong
-
+      path: '/sports',
+      name: 'sports',
+      component: sports
     }
-		
   ]
 })
