@@ -3,19 +3,18 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import YDUI from 'vue-ydui'; /* 相当于import YDUI from 'vue-ydui/ydui.rem.js' */
+import 'vue-ydui/dist/ydui.rem.css';
 
 Vue.config.productionTip = false
 
+/* 使用px：import 'vue-ydui/dist/ydui.px.css'; */
+
+Vue.use(YDUI);
 
 
 
-window.onresize = setHtmlFontSize;
-function setHtmlFontSize(){
-    const htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
-    const htmlDom = document.getElementsByTagName('html')[0];
-    htmlDom.style.fontSize = htmlWidth / 10 + 'px';
-};
-setHtmlFontSize();
+
 
 
 /* eslint-disable no-new */
