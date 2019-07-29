@@ -10,7 +10,7 @@
 
 export default {
 		components: {
-			commu
+			commu,
 		}
 	}
 </script>

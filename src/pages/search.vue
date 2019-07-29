@@ -61,10 +61,7 @@
 
 
   	</Tabbar>
-		
 
-
-		
   </div>
 </template>
 
@@ -74,7 +71,7 @@ import Tabbar from '../components/Tabbar.vue'
 export default {
   props:['label'],
   components:{
-  	Tabbar
+  	Tabbar,
   },
   mounted(){
     new Swiper ('.swiper-container', {
