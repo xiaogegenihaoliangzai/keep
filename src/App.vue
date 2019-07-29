@@ -35,4 +35,7 @@ ol, ul ,li{list-style: none;}
 ::-webkit-scrollbar {
   display: none!important;
 }
+.swiper-pagination-bullet-active{
+  background: #fff!important;
+}
 </style>
