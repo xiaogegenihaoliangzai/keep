@@ -1,6 +1,6 @@
 <template>
-	<div class="commu_warp">
-
+	<div >
+hot
 	</div>
 
 </template>
