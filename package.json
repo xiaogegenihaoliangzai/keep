@@ -14,11 +14,12 @@
     "fontawesome": "^5.6.3",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
+    "mint-ui": "^2.2.13",
     "swipe": "^1.7.7",
     "swiper": "^4.5.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
-    "mint-ui": "^2.2.13",
+    "vue-ydui": "^1.2.6"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

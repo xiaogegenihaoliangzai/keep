@@ -1,19 +1,17 @@
 <template>
   <div class="hello">
-	  aaaaa
+	 <p>aaaaa</p> 
   </div>
 </template>
 
 <script>
-export default {
-  data () {
-    return {
-    }
-  },
-	methods:{
-	}
-}
+
 </script>
 <style scoped>
 
+
+
+p{
+	font-size: 20/75rem;
+}
 </style>
