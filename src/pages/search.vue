@@ -83,6 +83,7 @@ export default {
     pagination: {
       el: '.swiper-pagination',
     },
+    autoplay:true,
   })  
 }
 }
@@ -103,8 +104,7 @@ export default {
 	}
 }
 .listf{
-	float: left;
-	width: 100%;
+	width: 95%;
 	padding-bottom: 20/50rem;
 	img{
 		height: 35/50rem;
@@ -119,7 +119,7 @@ export default {
 	float: left;
 	overflow: hidden;
 	.wid{
-		width: 93%;
+		width: 92%;
 		height: 30/50rem;
 		position: relative;
 		margin-top: 15/50rem;
