@@ -10,6 +10,13 @@ Vue.component(SliderItem.name, SliderItem);
 import 'vue-ydui/dist/ydui.base.css';
 import {FlexBox, FlexBoxItem} from 'vue-ydui/dist/lib.rem/flexbox';/* 使用px：import {FlexBox, FlexBoxItem} from 'vue-ydui/dist/lib.px/flexbox'; */
 Vue.component(FlexBox.name, FlexBox);
+
+import Axios from "axios"
+Vue.prototype.$axios=Axios;
+
+import MintUI from 'mint-ui'
+import 'mint-ui/lib/style.css'
+
 Vue.component(FlexBoxItem.name, FlexBoxItem);
 Vue.config.productionTip = false
 
@@ -17,7 +24,7 @@ Vue.config.productionTip = false
 import 'vue-ydui/dist/ydui.rem.css';
 import YDUI from 'vue-ydui'; /* 相当于import YDUI from 'vue-ydui/ydui.rem.js' */
 Vue.use(YDUI);
-
+Vue.use(MintUI)
 
 
 
