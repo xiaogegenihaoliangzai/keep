@@ -20,7 +20,7 @@ export default {
 .tab{
   height: 45/16rem;
   font-size: .1rem;
-  box-shadow: 0 0 10px rgba(190,190,190,0.2);
+  box-shadow: 0 0 10px rgba(190,190,190,0.1);
   .yd-tab{
     height: 45/16rem;
   }

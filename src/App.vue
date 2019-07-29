@@ -38,4 +38,7 @@ ol, ul ,li{list-style: none;}
 .swiper-pagination-bullet-active{
   background: #fff!important;
 }
+body{
+  background-color: #FAFAFA!important;
+}
 </style>

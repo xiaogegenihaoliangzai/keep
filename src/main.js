@@ -3,17 +3,20 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import YDUI from 'vue-ydui'; /* 相当于import YDUI from 'vue-ydui/ydui.rem.js' */
-import 'vue-ydui/dist/ydui.rem.css';
 import 'swiper/dist/css/swiper.css';
 import {Slider, SliderItem} from 'vue-ydui/dist/lib.rem/slider';/* 使用px：import {Slider, SliderItem} from 'vue-ydui/dist/lib.px/slider'; */
 Vue.component(Slider.name, Slider);
 Vue.component(SliderItem.name, SliderItem);
-Vue.use(YDUI);
+import 'vue-ydui/dist/ydui.base.css';
+import {FlexBox, FlexBoxItem} from 'vue-ydui/dist/lib.rem/flexbox';/* 使用px：import {FlexBox, FlexBoxItem} from 'vue-ydui/dist/lib.px/flexbox'; */
+Vue.component(FlexBox.name, FlexBox);
+Vue.component(FlexBoxItem.name, FlexBoxItem);
 Vue.config.productionTip = false
 
 /* 使用px：import 'vue-ydui/dist/ydui.px.css'; */
-
+import 'vue-ydui/dist/ydui.rem.css';
+import YDUI from 'vue-ydui'; /* 相当于import YDUI from 'vue-ydui/ydui.rem.js' */
+Vue.use(YDUI);
 
 
 
