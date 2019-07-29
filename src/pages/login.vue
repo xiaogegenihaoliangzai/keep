@@ -28,7 +28,7 @@
 <script>
 </script>
 
-<style>
+<style sc>
 	* {
 	  margin: 0;
 	  padding: 0;
