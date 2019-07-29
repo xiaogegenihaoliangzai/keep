@@ -6,6 +6,18 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+
+
+
+window.onresize = setHtmlFontSize;
+function setHtmlFontSize(){
+    const htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+    const htmlDom = document.getElementsByTagName('html')[0];
+    htmlDom.style.fontSize = htmlWidth / 10 + 'px';
+};
+setHtmlFontSize();
+
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
