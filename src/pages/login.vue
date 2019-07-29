@@ -16,7 +16,7 @@
 			<div class="footbar">
 				<p>其他登录方式</p>
 				<div class="otherlogin">
-					<span><a href="community.html"><i class="fa fa-weixin"></i></a></span>
+					<span @click="community"><i class="fa fa-weixin"></i></span>
 					<span><i class="fa fa-qq"></i></span>
 					<span><i class="fa fa-weibo"></i></span>
 					<span><i>...</i></span>
@@ -30,7 +30,11 @@
 <script>
 import 'font-awesome/css/font-awesome.css'
 export default{
-	
+	methods:{
+		community(){
+			this.$router.push('community')
+		}
+	}
 }
 </script>
 
@@ -117,7 +121,8 @@ export default{
 		transform: translateX(-50%);
 		font-size: 16/50rem;
 		p{
-			font-size: 16/50rem
+			font-size: 16/50rem;
+			margin-bottom: 10/50rem;
 		}
 		h6{
 			font-size: 14/50rem;
@@ -125,7 +130,28 @@ export default{
 				text-decoration: underline;
 				letter-spacing: 3px
 			}
-
+		}
+		.otherlogin{
+			display: flex;
+			margin: 0 auto;
+			span{
+				&:first-of-type{
+					margin-left: 60/50rem
+				}
+				margin: 0 20/50rem;
+				display: block;
+				background-color: rgba(0, 0, 0, 0.4);
+				width: 35/50rem;
+				height: 35/50rem;
+				border-radius: 50%;
+				line-height: 35/50rem;
+				margin-bottom: 15/50rem;
+				i{
+					color: white;
+					display: inline-block;
+					font-size: 18/50rem
+				}
+			}
 		}
 	}
 	

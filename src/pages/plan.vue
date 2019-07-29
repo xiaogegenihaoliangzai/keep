@@ -12,31 +12,31 @@
 <script>
 </script>
 
-<style scoped="scoped">
-	* {
-	  margin: 0;
-	  padding: 0;
-	}
-	.bg {
-	  margin-bottom: 1.1rem;
-	}
-	.bg img {
-	  width: 100%;
-	}
-	.aiplan {
-	  width: 100%;
-	  position: fixed;
-	  bottom: 1.86666667rem;
-	  text-align: center;
-	  line-height: 1.36rem;
-	  font-size: 0.42666667rem;
-	  color: #ffffff;
-	}
-	.aiplan p {
-	  width: 7.57333333rem;
-	  background-color: #60c48e;
-	  border-radius: 0.4rem;
-	  height: 1.36rem;
-	  margin: 0 auto;
-	}
+<style scoped="scoped" lang="less">
+*{
+	margin: 0;
+	padding:0
+}
+.bg{
+	margin-bottom: 1.1rem;
+}
+.bg img{
+	width: 100%
+}
+.aiplan{
+	width: 100%;
+	position: fixed;
+	bottom: 50/50rem;
+	text-align: center;
+	line-height: 51/50rem;
+	font-size: 16/50rem;
+	color: white
+}
+.aiplan p{
+	width: 284/50rem;
+	background-color: #60c48e;
+	border-radius: 30/50rem;
+	height: 51/50rem;
+	margin: 0 auto;
+}
 </style>
