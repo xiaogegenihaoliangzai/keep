@@ -7,6 +7,7 @@ import mine from '../pages/mine'
 import plan from '../pages/plan'
 import community from '../pages/community'
 import sports from '../pages/sports'
+import login from '../pages/login'
 Vue.use(Router)
 
 export default new Router({
@@ -35,6 +36,11 @@ export default new Router({
       path: '/sports',
       name: 'sports',
       component: sports
+    },
+    ,{
+      path: '/login',
+      name: 'login',
+      component: login
     }
   ]
 })

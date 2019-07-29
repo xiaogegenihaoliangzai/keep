@@ -10,14 +10,23 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
     "axios": "^0.19.0",
+    "font-awesome": "^4.7.0",
     "fontawesome": "^5.6.3",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
+    "mint-ui": "^2.2.13",
     "swipe": "^1.7.7",
     "swiper": "^4.5.0",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+
+    "vue-router": "^3.0.1",
+    "vue-router": "^3.0.1",
+    "vue-ydui": "^1.2.6"
+
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -36,6 +45,8 @@
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",
     "html-webpack-plugin": "^2.30.1",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
     "node-notifier": "^5.1.2",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.2.0",

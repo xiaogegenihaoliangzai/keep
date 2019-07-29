@@ -5,38 +5,35 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const packageConfig = require('../package.json')
 
 exports.assetsPath = function (_path) {
-  const assetsSubDirectory = process.env.NODE_ENV === 'production'
+const assetsSubDirectory = process.env.NODE_ENV === 'production'
     ? config.build.assetsSubDirectory
     : config.dev.assetsSubDirectory
 
-  return path.posix.join(assetsSubDirectory, _path)
+return path.posix.join(assetsSubDirectory, _path)
 }
 
 exports.cssLoaders = function (options) {
-  options = options || {}
+options = options || {}
 
-  const cssLoader = {
+const cssLoader = {
     loader: 'css-loader',
     options: {
       sourceMap: options.sourceMap
     }
-  }
+}
 
-  const postcssLoader = {
+const postcssLoader = {
     loader: 'postcss-loader',
     options: {
       sourceMap: options.sourceMap
     }
-  }
-const px2remLoader = {
-  loader: 'px2rem-loader',
-  options: {
-    remUnit: 75     // (这里是指设计稿的宽度为 750 / 10)
-  }
 }
-  // generate loader string to be used with extract text plugin
-  function generateLoaders (loader, loaderOptions) {
-    const loaders = options.usePostCSS ? [cssLoader, postcssLoader,px2remLoader] : [cssLoader]
+
+// generate loader string to be used with extract text plugin
+function generateLoaders (loader, loaderOptions) {
+	
+	//
+    const loaders = options.usePostCSS ? [cssLoader, postcssLoader] : [cssLoader]
 
     if (loader) {
       loaders.push({
@@ -57,10 +54,10 @@ const px2remLoader = {
     } else {
       return ['vue-style-loader'].concat(loaders)
     }
-  }
+}
 
-  // https://vue-loader.vuejs.org/en/configurations/extract-css.html
-  return {
+// https://vue-loader.vuejs.org/en/configurations/extract-css.html
+return {
     css: generateLoaders(),
     postcss: generateLoaders(),
     less: generateLoaders('less'),
@@ -68,29 +65,29 @@ const px2remLoader = {
     scss: generateLoaders('sass'),
     stylus: generateLoaders('stylus'),
     styl: generateLoaders('stylus')
-  }
+}
 }
 
 // Generate loaders for standalone style files (outside of .vue)
 exports.styleLoaders = function (options) {
-  const output = []
-  const loaders = exports.cssLoaders(options)
+const output = []
+const loaders = exports.cssLoaders(options)
 
-  for (const extension in loaders) {
+for (const extension in loaders) {
     const loader = loaders[extension]
     output.push({
       test: new RegExp('\\.' + extension + '$'),
       use: loader
     })
-  }
+}
 
-  return output
+return output
 }
 
 exports.createNotifierCallback = () => {
-  const notifier = require('node-notifier')
+const notifier = require('node-notifier')
 
-  return (severity, errors) => {
+return (severity, errors) => {
     if (severity !== 'error') return
 
     const error = errors[0]
@@ -102,5 +99,5 @@ exports.createNotifierCallback = () => {
       subtitle: filename || '',
       icon: path.join(__dirname, 'logo.png')
     })
-  }
+}
 }

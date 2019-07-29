@@ -1,5 +1,6 @@
 <template>
 	<div>
+
 	<!--头部开始-->
 		<div id="header">
 			<ul>
@@ -171,6 +172,9 @@
 		<!--底部结束-->
 		
 </div>
+
+	</div>
+
 </template>
 
 
