@@ -10,7 +10,11 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
     "axios": "^0.19.0",
+    "font-awesome": "^4.7.0",
     "fontawesome": "^5.6.3",
     "mint-ui": "^2.2.13",
     "swipe": "^1.7.7",

@@ -4,17 +4,19 @@
 			<video src="../video/intro.mp4" autoplay="autoplay" height="100%" width="100%" loop="loop" ></video>
 			<div class="bgvideo"></div>
 			<p class="passlogin">密码登录</p>
-			<form action="" class="loginform">
-				<p><h4>手机号登录</h4></p>
-				<p><h5>快速找到好友，一站式记录你的运动</h5></p>
-				<p class="phone"><span>+86</span><input type="text" placeholder="请输入手机号码"/></p>
-				<p><span class="yzm">获取验证码</span></p>
-				<p class="check">未注册手机验证后自动登录</p>
-			</form>
+			<div class="content">
+				<form action="" class="loginform">
+					<p><h4>手机号登录</h4></p>
+					<p><h5>快速找到好友，一站式记录你的运动</h5></p>
+					<p class="phone"><span>+86</span><input type="text" placeholder="请输入手机号码"/></p>
+					<p class="yzm">获取验证码</p>
+					<p class="check">未注册手机验证后自动登录</p>
+				</form>
+			</div>
 			<div class="footbar">
 				<p>其他登录方式</p>
 				<div class="otherlogin">
-					<span><a href="keep-community-index.html"><i class="fa fa-weixin"></i></a></span>
+					<span @click="community"><i class="fa fa-weixin"></i></span>
 					<span><i class="fa fa-qq"></i></span>
 					<span><i class="fa fa-weibo"></i></span>
 					<span><i>...</i></span>
@@ -26,131 +28,131 @@
 </template>
 
 <script>
-/* import 'font-awesome/css/font-awesome.min.css' */
+import 'font-awesome/css/font-awesome.css'
+export default{
+	methods:{
+		community(){
+			this.$router.push('community')
+		}
+	}
+}
 </script>
 
-<style>
+<style lang="less" scoped="scoped">
 	* {
 	  margin: 0;
 	  padding: 0;
 	}
-@media screen and (min-width:375px) and (max-width:800px){
-  #box {
-      height: 100%;
-      width: 100%;
-      margin: 0 auto;
-  }
-}
-
-	#box {
-	  position: fixed;
-	  font-size: 0.42666667rem;
+	#box{
+		position: relative;
+		color: white
+	} 
+	.passlogin{
+		position: fixed;
+		right: 20/50rem;
+		top: 20/50rem
 	}
-	a{
-		text-decoration: none;
+	.bgvideo{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.4)
+	}
+	.content{
+		width: 80%;
+		z-index: 3;
+		position: fixed;
+		top: 100/50rem;
+		left: 50%;
+		transform: translateX(-50%);
 		color: white;
+		.loginform {
+			text-align: left;
+				h4{
+					text-align: left;
+					font-size: 20/50rem;
+					font-weight: 500;
+			}
+			h5{
+				font-size: 15/50rem;
+				font-weight: 400;
+				margin: 10/50rem 0
+			}
+		}
+		.phone{
+			position: relative;
+			background-color: rgba(255, 255, 255, 0.3);
+			border-radius: 15px;
+			height: 40/50rem;
+			line-height: 40/50rem;
+			span{
+				margin-left: 15/50rem
+			}
+			input{
+				border: none;
+				margin-left: 10/50rem;
+				color:white;
+			}
+		}
+		.yzm{
+			margin-top: 10/50rem;
+			width: 100%;
+			height: 40/50rem;
+			line-height: 40/50rem;
+			background-color: seagreen;
+			border-radius: 15px;
+			text-align: center;
+		}
+		.check{
+			text-align: center;
+			font-weight: 200;
+			margin-top: 20/50rem;
+			font-size: 13/50rem;
+			letter-spacing:3px;
+			color: lightgray
+		}
 	}
-  	.bgvideo {
-      position: absolute;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.4);
-    }
-	.passlogin {
-	  position: absolute;
-	  right: 0.53333333rem;
-	  top: 0.53333333rem;
-	  color: white;
-	  font-size: 0.21333333rem;
+	.footbar{
+		width: 100%;
+		position: fixed;
+		bottom: 50/50rem;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 16/50rem;
+		p{
+			font-size: 16/50rem;
+			margin-bottom: 10/50rem;
+		}
+		h6{
+			font-size: 14/50rem;
+			span{
+				text-decoration: underline;
+				letter-spacing: 3px
+			}
+		}
+		.otherlogin{
+			display: flex;
+			margin: 0 auto;
+			span{
+				&:first-of-type{
+					margin-left: 60/50rem
+				}
+				margin: 0 20/50rem;
+				display: block;
+				background-color: rgba(0, 0, 0, 0.4);
+				width: 35/50rem;
+				height: 35/50rem;
+				border-radius: 50%;
+				line-height: 35/50rem;
+				margin-bottom: 15/50rem;
+				i{
+					color: white;
+					display: inline-block;
+					font-size: 18/50rem
+				}
+			}
+		}
 	}
-	.loginform {
-	  position: absolute;
-	  right: 1.6rem;
-	  top: 2.66666667rem;
-	  color: white;
-	}
-	.loginform p {
-	  margin: 10px 0;
-	}
-	.loginform h4 {
-	  font-size: 0.53333333rem;
-	  letter-spacing: 3px;
-	  font-weight: 550;
-	}
-	.loginform h5 {
-	  font-size: 0.4rem;
-	  font-weight: 300;
-	}
-	.loginform .phone {
-	  position: relative;
-	}
-	.loginform .phone span {
-	  position: absolute;
-	  color: lightgray;
-	  top: 5px;
-	  font-weight: 500;
-	}
-	.loginform .phone input {
-	  text-indent: 3em;
-	  width: 6.66666667rem;
-	  height: 0.93333333rem;
-	  border: none;
-	  border-radius: 10px;
-	  outline: none;
-	  background-color: rgba(255, 255, 255, 0.35);
-	  color: #ffffff;
-	}
-	.loginform .yzm {
-	  display: block;
-	  width: 6.66666667rem;
-	  height: 0.93333333rem;
-	  border-radius: 10px;
-	  background-color: green;
-	  text-align: center;
-	  line-height: 0.93333333rem;
-	}
-	.loginform .check {
-	  margin-top: 1.2rem;
-	  font-size: 0.06666667rem;
-	  text-align: center;
-	  color: #a9a9a9;
-	}
-	.footbar {
-	  position: absolute;
-	  bottom: 2.4rem;
-	  width: 100%;
-	  text-align: center;
-	  color: white;
-	}
-	.footbar p {
-	  font-size: 0.42666667rem;
-	}
-	.footbar .otherlogin {
-	  display: flex;
-	  margin-left: 0.98666667rem;
-	}
-	.footbar .otherlogin span {
-	  display: block;
-	  width: 35px;
-	  height: 35px;
-	  background-color: rgba(0, 0, 0, 0.4);
-	  border-radius: 50%;
-	  margin: 0.53333333rem 0.53333333rem;
-	}
-	.footbar .otherlogin span i {
-	  text-align: center;
-	  line-height: 35px;
-	}
-	.footbar h6 {
-	  text-align: center;
-	  font-size: 10px;
-	  font-weight: 400;
-	  letter-spacing: 3px;
-	  color: lightgray;
-	}
-	.footbar h6 span {
-	  text-decoration: underline;
-	}
-
+	
 </style>
