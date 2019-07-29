@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div id="box">
-			<video src="video/intro.mp4" autoplay="autoplay" height="100%" width="100%" loop="loop" ></video>
+			<video src="../video/intro.mp4" autoplay="autoplay" height="100%" width="100%" loop="loop" ></video>
 			<div class="bgvideo"></div>
 			<p class="passlogin">密码登录</p>
 			<form action="" class="loginform">
@@ -26,32 +26,37 @@
 </template>
 
 <script>
+/* import 'font-awesome/css/font-awesome.min.css' */
 </script>
 
-<style sc>
+<style>
 	* {
 	  margin: 0;
 	  padding: 0;
 	}
+@media screen and (min-width:375px) and (max-width:800px){
+  #box {
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
+  }
+}
+
 	#box {
 	  position: fixed;
 	  font-size: 0.42666667rem;
-	}
-	img,
-	object {
-	  max-width: 100%;
 	}
 	a{
 		text-decoration: none;
 		color: white;
 	}
-	.bgvideo {
-	  position: absolute;
-	  top: 0;
-	  height: 100%;
-	  width: 100%;
-	  background-color: rgba(0, 0, 0, 0.4);
-	}
+  	.bgvideo {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
 	.passlogin {
 	  position: absolute;
 	  right: 0.53333333rem;
@@ -147,5 +152,5 @@
 	.footbar h6 span {
 	  text-decoration: underline;
 	}
-	
+
 </style>
