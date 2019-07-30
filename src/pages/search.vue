@@ -14,7 +14,8 @@
 						    <div class="swiper-wrapper">
 						        <div class="swiper-slide"><img src="../assets/scarch/banner01.png" alt="" /></div>
 						        <div class="swiper-slide"><img src="../assets/scarch/banner02.png" alt="" /></div>
-						        <div class="swiper-slide"><img src="../assets/scarch/banner1.png" alt="" /></div>
+						        <div class="swiper-slide"><img src="../assets/scarch/banner03.png" alt="" /></div>
+						        <div class="swiper-slide"><img src="../assets/scarch/banner04.png" alt="" /></div>
 						    </div>
 						    <div class="swiper-pagination"></div>
 					   </div>
@@ -58,11 +59,63 @@
 							<li><a href="">为你推荐</a></li>
 						</div>
 				</section>
+
+				<section class="piall list_as">
+					<div class="wid">
+						<yd-flexbox>
+				            <div class="lefts"><yd-flexbox-item>全站热门活动</yd-flexbox-item></div>
+				            <div><img src="../assets/scarch/kt_kibra_setting_right_arrow.png" alt="" /></div>
+				        </yd-flexbox>
+			        </div>
+
+					<div class="itemImg">
+						<yd-list theme="2">
+					        <yd-list-item v-for="(item,index) in list" :key="index">
+					            <img slot="img" :src="item.img">
+					            <span slot="title">{{item.title}}</span>
+					            <yd-list-other slot="other">
+					                <div class="plist">
+					                    <p>{{item.count}} 人已参加</p>
+					                </div>
+					            </yd-list-other>
+					        </yd-list-item>
+					    </yd-list>
+					</div>
+				</section>
+
+				<section class="infocontent list_as">
+					<div class="wid">
+						<yd-flexbox>
+				            <div class="lefts"><yd-flexbox-item>趣味探索</yd-flexbox-item></div>
+				        </yd-flexbox>
+			        </div>
+
+			        <div class="content">
+			        	<div class="wid_all">
+			        		<yd-flexbox>
+					            <yd-flexbox-item class="iconbg">
+					            	<p>K星物语</p>
+					            	<span>探索神奇的秘密</span>
+					            </yd-flexbox-item>
+					            <yd-flexbox-item class="iconbg">
+					            	<p>每日一答</p>
+					            	<span>运动知识大挑战</span>
+					            </yd-flexbox-item>
+					            <yd-flexbox-item class="iconbg">
+					            	<p>燃脂真人跳</p>
+					            	<span>跳出好身材</span>
+					            </yd-flexbox-item>
+					        </yd-flexbox>
+			        	</div>
+			        </div>
+
+				</section>
+				<div style="height: 800px;border: 1px solid #000;float: left;width: 100%;"></div>
 	        </yd-tab-panel>
   		</div>
 
   	</Tabbar>
-
+<button @click="btns">12</button>
   </div>
 </template>
 
@@ -71,30 +124,113 @@ import Swiper from 'swiper';
 import headersList from '../components/header.vue'
 import Tabbar from '../components/Tabbar.vue'
 export default {
-  props:['label'],
-  components:{
-  	Tabbar,
-  	headersList
-  },
-  mounted(){
-    new Swiper ('.swiper-container', {
-    loop: true,
-    // 如果需要分页器
-    pagination: {
-      el: '.swiper-pagination',
-    },
-    autoplay:true,
-  })  
-}
+	data(){
+		return {
+			list:[
+				{img:'https://static1.keepcdn.com/2019/07/26/1564127153372_750x340.jpg',title:'会员假日狂欢季',count:31373},
+				{img:'https://static1.keepcdn.com/2019/07/26/1564131241465_750x340.jpg',title:'暑假打怪|征服 10 个波比',count:40080},
+				{img:'https://static1.keepcdn.com/2019/07/29/1564397476355_750x340.jpg',title:'暑假带着Keep去旅行',count:24353},
+				{img:'https://static1.keepcdn.com/2019/07/23/1563872988035_750x340.jpg',title:'KEEP甜蜜养成',count:52800},
+			]
+		}
+	},
+	props:['label'],
+	components:{
+	  	Tabbar,
+	  	headersList
+	},
+  	mounted(){
+	    new Swiper ('.swiper-container', {
+	    loop: true,
+	    // 如果需要分页器
+	    pagination: {
+	      el: '.swiper-pagination',
+	    },
+	    autoplay:true,
+	  })
+	},
+	methods:{
+		btns(){
+			this.$axios.get("../../static/data/新建文本文档.json").then(res=>{
+				console.log(res.data)
+			})
+		}
+	}
 }
 </script>
+stle
 <style scoped lang="less">
 .banner{
   width: 90%;
   margin-top:10/50rem;
   border-radius: 5/50rem;
   overflow: hidden;
-  height: 120/50rem;
+  height: 130/50rem;
+}
+.plist{
+	text-align: left!important;
+	display: inline-block;
+	width: 100%;
+	padding:2/50rem;
+}
+.iconbg{
+	line-height: 40/50rem;
+	position: relative;
+	height: 90/50rem;
+	width: 100%;
+	display: block;
+	border-radius: 5/50rem;
+	margin: 3/50rem;
+	overflow: hidden;
+	background:url(../assets/scarch/01.png)no-repeat right bottom;
+	background-size: auto 40%;
+	background-color: #F1EFFA;
+	&:nth-of-type(2){
+		background:url(../assets/scarch/02.png)no-repeat right bottom;
+		background-size: auto 40%;
+		background-color: #F0F3FC;
+	}
+	&:nth-of-type(3){
+		background:url(../assets/scarch/03.png)no-repeat right bottom;
+		background-size: auto 40%;
+		background-color: #F7FBFA;
+	}
+	p{
+		position: absolute;
+		top: 0;
+		left:10/50rem;
+		font-size: 14/50rem;
+		font-weight: 600;
+	}
+	span{
+		line-height: 76/50rem;
+		font-size: 12/50rem;
+		color:#676767;
+		text-indent: 10/50rem;
+		display: inline-block;
+		width: 100%;
+		float: left;
+		text-align: left;
+	}
+}
+.wid_all{
+	width: 95%;
+	height: 100/50rem;
+}
+.yd-list-title{
+	width: 100%!important;
+	span{
+		font-size: 14px!important;
+		color:#000!important;
+	}
+}
+
+.itemImg{
+	width: 95%;
+	img{
+		border-radius: 5/50rem;
+		padding: 3/50rem;
+	}
 }
 .right{
 	width: 25/50rem!important;
@@ -107,7 +243,8 @@ export default {
 .swiper-slide{
 	img{
 		width: 100%;
-		height: 100/50rem;
+
+		height: 110/50rem;
  	 	border-radius: 5/50rem;
 	}
 }
@@ -123,7 +260,7 @@ export default {
 	}
 	p{
 		font-size: 12/50rem;
-		padding-top: 4/50rem;
+		padding-top: 7/50rem;
 	}
 }
 .list_as{

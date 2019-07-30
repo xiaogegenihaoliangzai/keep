@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <div id="app">
     <div class="header">
     	<ul>
@@ -174,24 +173,12 @@
 
 <script>
 
-=======
-	<div>
-		<theheader title='运动'>
-				<img src="../assets/sport/tc_icon_kstar.png" slot='leftImg'>
-				<img src="../assets/sport/icon_search_lined_dark.png" slot='rightImg'>
-		</theheader>
-		<Tabbar></Tabbar>
-	</div>
-</template>
-
-<script>
 	import theheader from '../components/header.vue'
 	export default {
 		components: {
 			theheader,
 		}
 	}
->>>>>>> 76ea0a1f58867f3527a84873172c47096c2777a6
 </script>
 
 <style scoped lang="less">

@@ -10,7 +10,13 @@ Vue.component(SliderItem.name, SliderItem);
 import 'vue-ydui/dist/ydui.base.css';
 import {FlexBox, FlexBoxItem} from 'vue-ydui/dist/lib.rem/flexbox';/* 使用px：import {FlexBox, FlexBoxItem} from 'vue-ydui/dist/lib.px/flexbox'; */
 Vue.component(FlexBox.name, FlexBox);
-
+import {ListTheme, ListItem, ListOther} from 'vue-ydui/dist/lib.rem/list';/* 使用px：import {ListTheme, ListItem, ListOther} from 'vue-ydui/dist/lib.px/list'; */
+Vue.component(ListTheme.name, ListTheme);
+Vue.component(ListItem.name, ListItem);
+import 'vue-ydui/dist/ydui.base.css';
+Vue.component(ListOther.name, ListOther);
+import {Layout} from 'vue-ydui/dist/lib.rem/layout';/* 使用px：import {Layout} from 'vue-ydui/dist/lib.px/layout'; */
+Vue.component(Layout.name, Layout);
 import Axios from "axios"
 Vue.prototype.$axios=Axios;
 
