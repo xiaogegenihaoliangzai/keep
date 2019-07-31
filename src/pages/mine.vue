@@ -17,7 +17,6 @@
 
 		<!--内容区域开始-->
 		<div id="wrapper">
-			<a href="person.html">
 			<div class="top">
 				<ul class="top-1">
 					<li class="tu"><!--<img src="../static/wo-img/travel-show_02.jpg">--></li>
@@ -51,7 +50,6 @@
 					</li>
 				</ul>
 			</div>
-</a>
 			<div class="active1">
 				<ul>
 					<li>
@@ -95,81 +93,6 @@
 
 			</div>
 
-			<div class="bottom">
-				<p>
-					<!--<img src="../static/wo-img/ic_collect_preview.png">--><strong>我的收藏</strong>
-					<span><!--<img src="../static/wo-img/ic_music_more.png">--></span>
-				</p>
-				<p>
-					<!--<img src="../static/wo-img/Snipaste_2019-07-04_17-18-05.png">--><strong>草稿箱</strong>
-					<span><!--<img src="../static/wo-img/ic_music_more.png">--></span>
-				</p>
-				<p>
-					<!--<img src="../static/wo-img/Snipaste_2019-07-04_17-15-45.png">--><strong>身体测试</strong>
-					<span><!--<img src="../static/wo-img/ic_music_more.png">--></span>
-				</p>
-				<p>
-					<!--<img src="../static/wo-img/Snipaste_2019-07-04_17-16-53.png">--><strong>我的Keepland</strong>
-					<span><!--<img src="../static/wo-img/ic_music_more.png">--></span>
-				</p>
-				<p>
-					<!--<img src="../static/wo-img/mo_red_package_icon_record.png">--><strong>我的钱包</strong>
-					<span><!--<img src="../static/wo-img/ic_music_more.png">--></span>
-				</p>
-				<p>
-					<!--<img src="../static/wo-img/su_image_entry_post_issue.png">--><strong>我的订单</strong>
-					<span><!--<img src="../static/wo-img/ic_music_more.png">--></span>
-				</p>
-				<p>
-					<!--<img src="../static/wo-img/mo_ic_shop_cart.png">--><strong>我的购物车</strong>
-					<span><!--<img src="../static/wo-img/ic_music_more.png">--></span>
-				</p>
-				<p>
-					<!--<img src="../static/wo-img/Snipaste_2019-07-04_17-17-32.png">--><strong>我的卡路里工厂</strong>
-					<span><!--<img src="../static/wo-img/ic_music_more.png">--></span>
-				</p>
-				<p>
-					<!--<img src="../static/wo-img/mo_ic_shop_cart.png">--><strong>组队送3000元大礼...</strong>
-					<span><!--<img src="../static/wo-img/ic_music_more.png">--></span>
-				</p>
-				<p>
-					<!--<img src="../static/wo-img/Snipaste_2019-07-04_17-17-32.png">--><strong>帮助中心</strong>
-					<span><!--<img src="../static/wo-img/ic_music_more.png">--></span>
-				</p>
-
-			</div>
-
-		</div>
-
-		<!--底部开始-->
-		<!--<div id="footer">
-			<a href="#" class="community ">
-				<span></span>
-				<p>社区</p>
-			</a>
-
-			<a href="#" class="search">
-				<span></span>
-				<p>搜索</p>
-			</a>
-
-			<a href="#" class="sports">
-				<span></span>
-				<p>运动</p>
-			</a>
-
-			<a href="#" class="plan">
-				<span></span>
-				<p>计划</p>
-			</a>
-
-			<a href="#" class="my">
-				<span></span>
-				<p>我</p>
-			</a>
-
-		</div>-->
-		<!--底部结束-->
 		
 </div>
 
@@ -188,7 +111,7 @@
 </script>
 
 
-<style scoped lang=less>
+<style scoped="scoped" lang="less">
 * {
 	margin: 0;
 	padding: 0;
@@ -352,7 +275,6 @@ body {
 .active2 {
 	position: absolute;
 	top:360/50rem;
-/*	border: 1/50rem solid #000;*/
 	width: 100%;
 	height: 130/50rem;
 	background: white;
@@ -398,7 +320,6 @@ body {
 .active3 {
 	position: absolute;
 	top:500/50rem;
-	/*border: 1/50rem solid #000;*/
 	width: 100%;
 	height: 130/50rem;
 	background: white;	
@@ -435,105 +356,4 @@ body {
 	padding-left: 5/50rem;
 	color: darkgray;
 }
-.bottom {
-	position: absolute;
-	top:630/50rem;
-/*	border: 1/50rem solid #000;*/
-	width: 100%;
-	height: 700/50rem;	
-}
-.bottom p{
-/*	border: 1/50rem solid #000;*/
-	width: 100%;
-	height: 50/50rem;
-	background: white;
-	margin-top: 10/50rem;
-	
-}
-.bottom p strong{
-	padding-left: 10/50rem;
-	color: black;
-	font-size: 17/50rem;
-}
-.bottom p img{
-	width: 25/50rem;
-	height: 25/50rem;
-	margin-top: 10/50rem;
-}
-.bottom  span img{
-	width: 20/50rem;
-	height: 20/50rem;
-	float: right;
-	padding-right: 10/50rem;
-	margin-top: 20/50rem;
-}
-
-
-
-/*底部开始*/
-/*#footer {
-	width: 100%;
-	height: 1.30667rem;
-	border-top: 1/50rem solid darkgray;
-	left: 0;
-	position: fixed;
-	bottom: 0;
-	z-index: 2;
-	padding: 50;
-	display: flex;
-	padding-bottom: 10/50rem;
-	background: white;
-}
-
-#footer a {
-	flex: 1;
-	text-align: center;
-	box-sizing: border-box;
-	display: block;
-	color: darkgray;
-}
-
-#footer a span {
-	display: block;
-	background-position: 50% 50%;
-	background-size: contain;
-	background-repeat: no-repeat;
-	margin: 0.1333rem auto 0.04rem;
-}
-
-#footer p {
-	font-size: 0.35667rem;
-}
-
-#footer a.community span {
-	width: 0.72rem;
-	height: 0.64rem;
-	background-image: url(../static/wo-img/icon_community_filled_dark_gray.png);
-}
-
-#footer a.search span {
-	width: 0.72rem;
-	height: 0.64rem;
-	background-image: url(../static/wo-img/icon_follow_filled_normal.png);
-}
-
-#footer a.sports span {
-	width: 0.72rem;
-	height: 0.64rem;
-	background-image: url(../static/wo-img/icon_sports_filled_focus.png);
-}
-
-#footer a.plan span {
-	width: 0.72rem;
-	height: 0.64rem;
-	background-image: url(../static/wo-img/icon_suit_tab_filled_gray.png);
-}
-
-#footer a.my span {
-	width: 0.72rem;
-	height: 0.64rem;
-	background-image: url(../static/wo-img/icon_user_filled_normal.png);
-}*/
-/*底部结束*/
-
 </style>

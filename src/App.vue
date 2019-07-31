@@ -1,8 +1,9 @@
 <template>
-  <div id="app">
-    <router-view/>
-		<tabbar></tabbar>
-  </div>
+    <yd-layout id="app">
+      <router-view/>
+        <tabbar  slot="tabbar"></tabbar>
+    </yd-layout>
+
 </template>
 
 <script>
@@ -20,6 +21,9 @@ export default {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+}
+.van-dropdown-item--down, .van-dropdown-item{
+  top:63px;
 }
 .yd-list-img{
   margin: 0;
@@ -72,4 +76,8 @@ ol, ul ,li{list-style: none;}
 body{
   background-color: #FAFAFA!important;
 }
+
+
+.yd-scrollview:after{
+display:none;}
 </style>

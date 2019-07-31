@@ -1,6 +1,6 @@
 <template>
-		<div id="footer">
-			<item title='社区' mark='community' :curr='curr' @change='getVal'>
+    <yd-tabbar slot="tabbar">
+        <item title='社区' mark='community' :curr='curr' @change='getVal'>
 				<img src="../assets/public/icon_community_filled_dark_gray.png" slot='normal'>
 				<img src="../assets/public/icon_community_filled_focus.png" slot='active'>
 			</item>
@@ -20,7 +20,7 @@
 				<img src="../assets/public/icon_user_filled_normal.png" slot='normal'>
 				<img src="../assets/public/icon_user_filled_focus.png" slot='active'>
 			</item>
-		</div>
+    </yd-tabbar>
 </template>
 
 <script>
@@ -43,7 +43,7 @@
 	}
 </script>
 
-<style scoped="scoped">
+<style scoped="scoped" lang="less">
 	#footer{
 		display: flex;
 		position: fixed;
@@ -55,5 +55,10 @@
 		flex: 1;
 		text-align: center;
 	} 
+	img{
+
+		width: 30/50rem;
+		display: inline-flex;
+	}
 
 </style>
