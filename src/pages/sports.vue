@@ -166,14 +166,12 @@
 
 
 
-
-
-  </div>
 </template>
 
 <script>
 
   import Tabbar from '../components/Tabbar.vue'
+
 
 
 	import theheader from '../components/header.vue'
@@ -186,6 +184,7 @@
 </script>
 
 <style scoped lang="less">
+
 
   body {
   	font-size: 12px;
