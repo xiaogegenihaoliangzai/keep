@@ -5,9 +5,10 @@ import search from '../pages/search'
 import mine from '../pages/mine'
 import plan from '../pages/plan'
 import community from '../pages/community/community'
-import comdeday from '../pages/community/communitydeday.vue'
+import deday from '../pages/community/communitydeday'
 import sports from '../pages/sports'
 import login from '../pages/login'
+//import person from '../pages/person'
 
 import hot from '@/pages/community/secondrouter/hot'
 import attention from '@/pages/community/secondrouter/attention'
@@ -51,8 +52,7 @@ export default new Router({
       path: '/community',
       name: 'community',
       component: community,
-      children:[
-		  {path:"/",component: hot},
+      children:[		 
 		  {path:"hot",component: hot},
 		  {path:"attention",component: attention},
 		  {path:"topic",component: topic},
@@ -60,9 +60,9 @@ export default new Router({
 		  {path:"city",component: city},
 		  ]
     },{
-      path: '/comdeday',
-      name: 'comdeday',
-      component: comdeday
+      path: '/deday',
+      name: 'deday',
+      component: deday
     },
     {
       path: '/sports',

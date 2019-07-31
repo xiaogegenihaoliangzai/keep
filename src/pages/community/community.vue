@@ -70,5 +70,7 @@
 	
 	.comm_warp .header .right {
 		right: 15/50rem;
+		height: 25/50rem;
+		width: 25/50rem;
 	}
 </style>
