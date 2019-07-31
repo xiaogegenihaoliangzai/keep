@@ -20,11 +20,21 @@
 				<img src="../assets/public/icon_user_filled_normal.png" slot='normal'>
 				<img src="../assets/public/icon_user_filled_focus.png" slot='active'>
 			</item>
+			
+			<item title='999' mark='mine' :curr='curr' @change='getVal'>
+				<img src="../assets/public/icon_user_filled_normal.png" slot='normal'>
+				<img src="../assets/public/icon_user_filled_focus.png" slot='active'>
+			</item>
+			
+			
+			
 		</div>
 </template>
 
 <script>
 	import item from './item'
+	
+	
 		export default{
 		data(){
 			return {

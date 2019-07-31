@@ -1,6 +1,7 @@
 <template>
 	<div class="item" @click="clickitem" :class="{colorgreen:flag}">
-		<span v-if="flag"><slot name='active'></slot></span>
+		<span v-if="flag">
+			<slot name='active'></slot></span>
 		<span v-if="!flag"><slot name='normal'></slot></span>
 		<br>
 		<span>{{title}}</span>
