@@ -1,15 +1,9 @@
 <template>
-<<<<<<< HEAD
     <yd-layout id="app">
       <router-view/>
         <tabbar  slot="tabbar"></tabbar>
     </yd-layout>
-=======
-  <div id="app">
-    <router-view/>
-		<tabbar v-if="$route.path!='/'"></tabbar>
-  </div>
->>>>>>> d4e08c41bb358f6ff43713257e42c7e57243a8a1
+
 </template>
 
 <script>
