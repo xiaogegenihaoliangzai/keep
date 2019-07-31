@@ -19,13 +19,10 @@
 			<item title='我' mark='mine' :curr='curr' @change='getVal'>
 				<img src="../assets/public/icon_user_filled_normal.png" slot='normal'>
 				<img src="../assets/public/icon_user_filled_focus.png" slot='active'>
-<<<<<<< HEAD
 			</item>						
 		</div>
-=======
 			</item>
     </yd-tabbar>
->>>>>>> cf623cc6e89f8a81e12810e8f12a380ff5161f2e
 </template>
 
 <script>

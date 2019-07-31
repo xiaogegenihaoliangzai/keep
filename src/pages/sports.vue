@@ -1,27 +1,15 @@
 <template>
-  <div id="app">
-
-    <div class="header">
+  <div>
       <theheader title="运动">
         <img src="../assets/sports/su_icon_search.png" alt="" slot="rightImg" class="right" />
         <img src="../assets/sports/tc_icon_kstar.png" alt="" slot="leftImg" class="left" />
       </theheader>
-
-    </div>
-
-    <div class="daohang">
        <Tabbar>
             <div slot="list1">
               <yd-tab-panel name="" label="跑步">
-
              </yd-tab-panel>
             </div>
        </Tabbar>
-
-    </div>
-    <!--跑步头部结束-->
-    <!--******************************************************************************************************************-->
-    <!--跑步内容开始-->
      <div id="wrapper">
       	<div id="scroller">
       		<div class="box1">
@@ -64,11 +52,6 @@
       					<p class="shang">如何能够坚持跑步?</p>
       					<p class="xiang">7月先定一个小目标</p>
       				</li>
-      				<!-- <li>
-      					<img class="gl5" src="../assets/sports/201907021532504.jpg" alt="" />
-      					<p class="shang">让暑假不无聊</p>
-      					<p class="xiang">游戏刷刷的过</p>
-      				</li> -->
       			</ul>
       		</div>
 
@@ -163,16 +146,11 @@
 
       	</div>
       </div>
-
-
-
+</div>
 </template>
 
 <script>
-
   import Tabbar from '../components/Tabbar.vue'
-
-
 
 	import theheader from '../components/header.vue'
 	export default {
@@ -184,7 +162,6 @@
 </script>
 
 <style scoped lang="less">
-
 
   body {
   	font-size: 12px;

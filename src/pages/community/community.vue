@@ -49,7 +49,6 @@
 		height: 35/50rem;
 		border-bottom: 1/50rem solid gainsboro;
 	}
-	
 	.nav a {
 		text-decoration: none;
 		display: block;
@@ -58,16 +57,13 @@
 		height: 35/50rem;
 		line-height: 35/50rem;
 	}
-	
 	.nav .active a {
 		background-color: white;
 		color: gray;
 	}
-	
 	.comm_warp .header {
 		overflow: hidden;
 	}
-	
 	.comm_warp .header .right {
 		right: 15/50rem;
 		height: 25/50rem;
