@@ -9,6 +9,7 @@ import community from '../pages/community/community'
 import comdeday from '../pages/community/communitydeday.vue'
 import sports from '../pages/sports'
 import login from '../pages/login'
+//import person from '../pages/person'
 
 import hot from '@/pages/community/secondrouter/hot'
 import attention from '@/pages/community/secondrouter/attention'

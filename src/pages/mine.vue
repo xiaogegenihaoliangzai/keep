@@ -1,34 +1,34 @@
 <template>
 	<div>
-		头部开始
+		<!--头部开始-->
 		<div id="header">
 			<ul>
 				<li class="left">
 					<a>我</a>
 				</li>
 				<li class="right">
-					<a><img src=""></a>
-					<a><img src=""></a>
-					<a><img src=""></a>
+					<a><img src="../../static/wo-img/icon_setting_lined_dark.png"></a>
+					<a><img src="../../static/wo-img/icon_scan_lined_dark.png"></a>
+					<a><img src="../../static/wo-img/fd_ic_login_dialog_email.png"></a>
 				</li>
 			</ul>
 		</div>
 
-		内容区域开始
+		<!--内容区域开始-->
 		<div id="wrapper">
-			<a href="person.html">
+			<a href="person.vue">
 				<div class="top">
 					<ul class="top-1">
-						<li class="tu"><img src=""></li>
+						<li class="tu"><img src="../../static/wo-img/travel-show_02.jpg"></li>
 						<li class="zi">
 							<p>知识渊博的图样图森破</p><br>
 							<p>
-								<span><img src=""></span>
+								<span><img src="../../static/wo-img/fd_icon_grade.9.png"></span>
 								<span>0徽章</span>
 							</p>
 							<strong>KG.0</strong>
 						</li>
-						<li class="logo"><img src=""></li>
+					<li class="logo"><img src="../../static/wo-img/ic_portrait_training_right_on.png"></li>
 					</ul>
 
 					<ul class="top-2">
@@ -54,23 +54,23 @@
 			<div class="active1">
 				<ul>
 					<li>
-						<img src=""> 我的课程
+						<img src="../../static/wo-img/webwxgetmsgimg.jpg""> 我的课程
 					</li>
 					<li>
-						<img src="g"> 我的活动
+						<img src="../../static/wo-img/Snipaste_2019-07-04_16-48-06.png"> 我的活动
 					</li>
 					<li>
-						<img src=""> 我的硬件
+						<img src="../../static/wo-img/webwxgetmsgimg2.jpg"> 我的硬件
 					</li>
 				</ul>
 
-				<p><img src=""></p>
+				<p><img src="../../static/wo-img/253582193.jpg"></p>
 			</div>
-
-<!--			<div class="active2">
+			
+		<div class="active2">
 				<p>
 					<span>我的运动数据</span>
-					<img src="">
+					<img src="../../static/wo-img/ic_music_more.png">
 				</p>
 				<p>
 					<span>总运动</span><strong>(分钟)</strong>
@@ -84,59 +84,90 @@
 
 			<div class="active3">
 				<p>
-					<span class="ww">我的身体数据<img src=""></span>
-					<span class="tt"><img src=""></span>
+					<span class="ww">我的身体数据<img src="../../static/wo-img/fd_icon_eye_lined.png"></span>
+					<span class="tt"><img src="../../static/wo-img/ic_music_more.png"></span>
 				</p>
 				<p>
 					<span>160.0<strong>身高cm</strong></span>
 					<span>49.0<strong>体重kg</strong></span>
 				</p>
 			</div>
--->
-<mines title="我的收藏">
-	
-	
-	 <img src="../../static/wo-img/ic_portrait_training_right_on.png" slot="right"/>
-</mines>
-
-<mines title="草稿箱">
-	
-	
-	 <img src="../../static/wo-img/ic_portrait_training_right_on.png" slot="right"/>
-</mines>
-
-<mines title="身体测试">
-	
-	
-	 <img src="../../static/wo-img/ic_portrait_training_right_on.png" slot="right"/>
-</mines>
-
-<mines title="我的Keepland">
-	
-	
-	 <img src="../../static/wo-img/ic_portrait_training_right_on.png" slot="right"/>
-</mines>
 
 
-
-
-
-
-
-	
+     <div class="list">
+			<mines >
+				
+				<i class="fa fa-star-o" aria-hidden="true"slot="left" ></i>
+               <!-- <img src="../../static/wo-img/ic_collect_preview.png" slot="left"/>   -->
+				<p slot="center">我的收藏</p>
+			    <img src="../../static/wo-img/ic_portrait_training_right_on.png" slot="right" />
+			</mines>
+			<mines >
+				<i class="fa fa-file-text-o" aria-hidden="true"slot="left" ></i>
+                <p slot="center">草稿箱</p>
+				<img src="../../static/wo-img/ic_portrait_training_right_on.png" slot="right" />
+			</mines>
+			<mines >
+               <i class="fa fa-female" aria-hidden="true"slot="left" ></i>
+               <p slot="center">身体测试</p>
+				<img src="../../static/wo-img/ic_portrait_training_right_on.png" slot="right" />
+			</mines>
+			<mines >
+                <i class="fa fa-user-circle" aria-hidden="true"slot="left" ></i>
+                 <p slot="center">我的Keepland</p>
+				<img src="../../static/wo-img/ic_portrait_training_right_on.png" slot="right" />
+			</mines>
+			<mines >
+                <i class="fa fa-suitcase" aria-hidden="true"slot="left" ></i>  
+                <p slot="center">我的钱包</p>
+				<img src="../../static/wo-img/ic_portrait_training_right_on.png" slot="right" />
+			</mines>
+			<mines title="草稿箱">
+                <i class="fa fa-file-text-o" aria-hidden="true"slot="left" ></i>
+                <p slot="center">我的订单</p>
+				<img src="../../static/wo-img/ic_portrait_training_right_on.png" slot="right" />
+			</mines>
+			<mines title="身体测试">
+               <i class="fa fa-cart-arrow-down" aria-hidden="true"slot="left" ></i>
+               <p slot="center">我的购物车</p>
+				<img src="../../static/wo-img/ic_portrait_training_right_on.png" slot="right" />
+			</mines>
+			<mines title="我的Keepland">
+                 <i class="fa fa-superpowers" aria-hidden="true"slot="left" ></i>
+                <p slot="center">我的卡路里工厂</p>
+				<img src="../../static/wo-img/ic_portrait_training_right_on.png" slot="right" />
+			</mines>
+			<mines title="身体测试">
+              <i class="fa fa-heart-o" aria-hidden="true"slot="left" ></i>
+               <p slot="center">领取七夕大礼包</p>
+				<img src="../../static/wo-img/ic_portrait_training_right_on.png" slot="right" />
+			</mines>
+			<mines title="我的Keepland">
+               <i class="fa fa-share-alt" aria-hidden="true"slot="left" ></i>
+                <p slot="center">帮助中心</p>
+				<img src="../../static/wo-img/ic_portrait_training_right_on.png" slot="right" />
+			</mines>
+	</div>
+		
+			
+ </div>
+</div>
 </template>
-
 
 <script>
 	import mines from '../components/mines.vue'
+	
+	import 'font-awesome/css/font-awesome.min.css'
 	export default {
+		
+		props:['title'],
 		data() {
-				return {}
-			},
-			methods: {},
-			components: {
-				mines
-			}
+			return {}
+		},
+		methods: {},
+		components: {
+			mines
+		}
 
 	}
 </script>
@@ -223,8 +254,8 @@
 	
 	.zi p:nth-child(2) {
 		position: relative;
+		
 	}
-	
 	.zi strong {
 		display: block;
 		/*border: 1/50rem solid #000;*/
@@ -235,7 +266,7 @@
 		text-align: center;
 		color: white;
 		position: absolute;
-		top: 50/50rem;
+		top: 44/50rem;
 		left: 170/50rem;
 		line-height: 20/50rem;
 	}
@@ -243,14 +274,17 @@
 	.zi img {
 		width: 80/50rem;
 		height: 30/50rem;
+		margin-left: -65/50rem;
+		margin-top: -30/50rem;
 	}
 	
 	.zi span:nth-child(2) {
 		display: block;
 		position: absolute;
-		top: 52/50rem;
-		left: 110/50rem;
+		top: 45/50rem;
+		left: 116/50rem;
 		color: white;
+		font-size: 13/50rem;
 	}
 	
 	.logo img {
@@ -337,7 +371,8 @@
 	
 	.active2 p:nth-child(1) span {
 		font-size: 17/50rem;
-		padding-left: 10/50rem;
+		padding-right: 220/50rem;
+		
 	}
 	
 	.active2 p:nth-child(1) img {
@@ -351,7 +386,7 @@
 	
 	.active2 p:nth-child(2) {
 		margin-top: 20/50rem;
-		margin-left: -30/50rem;
+		margin-left: -145/50rem;
 		font-size: 13/50rem;
 	}
 	
@@ -367,11 +402,11 @@
 	.active2 p:nth-child(3) {
 		margin-top: 20/50rem;
 		font-size: 25/50rem;
-		margin-left: -80/50rem;
+		margin-left: -280/50rem;
 	}
 	
 	.active2 p:nth-child(3) span {
-		padding-left: 90/50rem;
+		padding-left: 110/50rem;
 	}
 	
 	.active3 {
@@ -389,8 +424,8 @@
 		padding-top: 10/50rem;
 	}
 	
-	.active3 p:nth-child(1) {
-		margin-left: 10/50rem;
+	.ww {
+		margin-right: 220/50rem;
 		font-size: 17/50rem;
 		color: black;
 	}
@@ -405,7 +440,7 @@
 	
 	.active3 p:nth-child(2) {
 		padding-top: 30/50rem;
-		margin-left: -30/50rem;
+		margin-left: -145/50rem;
 	}
 	
 	.active3 p:nth-child(2) span {
@@ -420,105 +455,27 @@
 		padding-left: 5/50rem;
 		color: darkgray;
 	}
-	
-	.bottom {
+	.list{
+	/*	border: 1/50rem solid #000;*/
+		width: 100%;
+		height: 780/50rem;
 		position: absolute;
-		top: 630/50rem;
-		/*	border: 1/50rem solid #000;*/
-		width: 100%;
-		height: 700/50rem;
+		top:635/50rem;
+		
 	}
 	
-	.bottom p {
-		/*	border: 1/50rem solid #000;*/
-		width: 100%;
-		height: 50/50rem;
-		background: white;
-		margin-top: 10/50rem;
-	}
+.list img{
+	width: 30/50rem;
+	height: 30/50rem;
+}
 	
-	.bottom p strong {
-		padding-left: 10/50rem;
-		color: black;
-		font-size: 17/50rem;
-	}
+.list p{
+	position: absolute;
+	left: 48/50rem;
+}
 	
-	.bottom p img {
-		width: 25/50rem;
-		height: 25/50rem;
-		margin-top: 10/50rem;
-	}
+.list i {
+	font-size: 26px;
+}	
 	
-	.bottom span img {
-		width: 20/50rem;
-		height: 20/50rem;
-		float: right;
-		padding-right: 10/50rem;
-		margin-top: 20/50rem;
-	}
-	/*底部开始*/
-	/*#footer {
-	width: 100%;
-	height: 1.30667rem;
-	border-top: 1/50rem solid darkgray;
-	left: 0;
-	position: fixed;
-	bottom: 0;
-	z-index: 2;
-	padding: 50;
-	display: flex;
-	padding-bottom: 10/50rem;
-	background: white;
-}
-
-#footer a {
-	flex: 1;
-	text-align: center;
-	box-sizing: border-box;
-	display: block;
-	color: darkgray;
-}
-
-#footer a span {
-	display: block;
-	background-position: 50% 50%;
-	background-size: contain;
-	background-repeat: no-repeat;
-	margin: 0.1333rem auto 0.04rem;
-}
-
-#footer p {
-	font-size: 0.35667rem;
-}
-
-#footer a.community span {
-	width: 0.72rem;
-	height: 0.64rem;
-	background-image: url(../static/wo-img/icon_community_filled_dark_gray.png);
-}
-
-#footer a.search span {
-	width: 0.72rem;
-	height: 0.64rem;
-	background-image: url(../static/wo-img/icon_follow_filled_normal.png);
-}
-
-#footer a.sports span {
-	width: 0.72rem;
-	height: 0.64rem;
-	background-image: url(../static/wo-img/icon_sports_filled_focus.png);
-}
-
-#footer a.plan span {
-	width: 0.72rem;
-	height: 0.64rem;
-	background-image: url(../static/wo-img/icon_suit_tab_filled_gray.png);
-}
-
-#footer a.my span {
-	width: 0.72rem;
-	height: 0.64rem;
-	background-image: url(../static/wo-img/icon_user_filled_normal.png);
-}*/
-	/*底部结束*/
 </style>
