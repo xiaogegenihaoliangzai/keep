@@ -18,6 +18,10 @@ Vue.component(ListOther.name, ListOther);
 import {Layout} from 'vue-ydui/dist/lib.rem/layout';/* 使用px：import {Layout} from 'vue-ydui/dist/lib.px/layout'; */
 Vue.component(Layout.name, Layout);
 import Axios from "axios"
+import { Tabbar, TabItem } from 'mint-ui';
+
+Vue.component(Tabbar.name, Tabbar);
+Vue.component(TabItem.name, TabItem);
 Vue.prototype.$axios=Axios;
 
 import MintUI from 'mint-ui'
