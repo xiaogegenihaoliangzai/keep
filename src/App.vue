@@ -1,8 +1,8 @@
 <template>
-  <div id="app">
-    <router-view/>
-		<tabbar></tabbar>
-  </div>
+    <yd-layout id="app">
+      <router-view/>
+        <tabbar  slot="tabbar"></tabbar>
+    </yd-layout>
 </template>
 
 <script>

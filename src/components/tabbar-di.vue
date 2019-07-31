@@ -1,26 +1,16 @@
 <template>
-		<div id="footer">
-			<item title='社区' mark='community' :curr='curr' @change='getVal'>
-				<img src="../assets/public/icon_community_filled_dark_gray.png" slot='normal'>
-				<img src="../assets/public/icon_community_filled_focus.png" slot='active'>
-			</item>
-			<item title='搜索' mark='search' :curr='curr' @change='getVal'>
-				<img src="../assets/public/icon_follow_filled_normal.png" slot='normal'>
-				<img src="../assets/public/icon_follow_filled_focus.png" slot='active'>
-			</item>
-			<item title='运动' mark='sports' :curr='curr' @change='getVal'>
-				<img src="../assets/public/icon_sports_filled_dark_gray.png" slot='normal'>
-				<img src="../assets/public/icon_sports_filled_focus.png" slot='active'>
-			</item>
-			<item title='计划' mark='plan' :curr='curr' @change='getVal'>
-				<img src="../assets/public/icon_suit_tab_filled_gray.png" slot='normal'>
-				<img src="../assets/public/icon_suit_tab_filled_focus.png" slot='active'>
-			</item>
-			<item title='我' mark='mine' :curr='curr' @change='getVal'>
-				<img src="../assets/public/icon_user_filled_normal.png" slot='normal'>
-				<img src="../assets/public/icon_user_filled_focus.png" slot='active'>
-			</item>
-		</div>
+        <yd-tabbar slot="tabbar">
+            <yd-tabbar-item title="首页" link="#" active>
+                <yd-icon name="home" slot="icon"></yd-icon>
+            </yd-tabbar-item>
+            <yd-tabbar-item title="购物车" link="#">
+                <yd-icon name="shopcart-outline" slot="icon"></yd-icon>
+            </yd-tabbar-item>
+            <yd-tabbar-item title="个人中心" link="#">
+                <yd-icon name="ucenter-outline" slot="icon"></yd-icon>
+            </yd-tabbar-item>
+        </yd-tabbar>
+
 </template>
 
 <script>
