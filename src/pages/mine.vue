@@ -16,6 +16,7 @@
 
 		<!--内容区域开始-->
 		<div id="wrapper">
+<<<<<<< HEAD
 			<a href="person.vue">
 				<div class="top">
 					<ul class="top-1">
@@ -51,6 +52,41 @@
 					</ul>
 				</div>
 			</a>
+=======
+			<div class="top">
+				<ul class="top-1">
+					<li class="tu"><!--<img src="../static/wo-img/travel-show_02.jpg">--></li>
+					<li class="zi">
+						<p>知识渊博的图样图森破</p><br>
+						<p>
+							<span><!--<img src="../static/wo-img/fd_icon_grade.9.png">--></span>
+							<span>0徽章</span>
+						</p>
+						<strong>KG.0</strong>
+					</li>
+					<li class="logo"><!--<img src="../static/wo-img/ic_portrait_training_right_on.png">--></li>
+				</ul>
+
+				<ul class="top-2">
+					<li>
+						<span>0</span><br>
+						<strong> 关注</strong>
+					</li>
+					<li>
+						<span>0</span><br>
+						<strong>  粉丝</strong>
+					</li>
+					<li>
+						<span>0</span><br>
+						<strong> 动态</strong>
+					</li>
+					<li>
+						<span>0</span><br>
+						<strong> 卡路里币</strong>
+					</li>
+				</ul>
+			</div>
+>>>>>>> cf623cc6e89f8a81e12810e8f12a380ff5161f2e
 			<div class="active1">
 				<ul>
 					<li>
@@ -93,6 +129,7 @@
 				</p>
 			</div>
 
+<<<<<<< HEAD
 
      <div class="list">
 			<mines >
@@ -148,6 +185,8 @@
 				<img src="../../static/wo-img/ic_portrait_training_right_on.png" slot="right" />
 			</mines>
 	</div>
+=======
+>>>>>>> cf623cc6e89f8a81e12810e8f12a380ff5161f2e
 		
 			
  </div>
@@ -172,11 +211,62 @@
 	}
 </script>
 
+<<<<<<< HEAD
 <style scoped lang="less">
 	* {
 		margin: 0;
 		padding: 0;
 	}
+=======
+
+<style scoped="scoped" lang="less">
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 12/50rem;
+	font-family: helvetica;
+}
+.sizing {
+	box-sizing: border-box;
+}
+
+
+/*头部样式*/
+#header{
+	position: fixed;
+	width: 100%;
+	height: 50/50rem;
+	background: white;
+	line-height: 50/50rem;
+	z-index: 99;
+}
+.left{
+	float: left;
+	font-size: 20/50rem;
+	color: black;
+	margin-left: 10/50rem;
+}
+.right {
+	float: right;
+	margin-right: 10/50rem;
+	margin-top: 10/50rem;
+}
+.right img{
+	width: 30/50rem;
+	height: 30/50rem;
+	padding-left: 10/50rem;
+}
+
+
+/*内容开始*/
+#wrapper{
+	width: 100%;
+	height: 1300/50rem;
+	background: gainsboro;
+	position: relative;
+>>>>>>> cf623cc6e89f8a81e12810e8f12a380ff5161f2e
 	
 	body {
 		font-size: 12/50rem;
@@ -204,6 +294,7 @@
 		margin-left: 10/50rem;
 	}
 	
+<<<<<<< HEAD
 	.right {
 		float: right;
 		margin-right: 10/50rem;
@@ -465,9 +556,73 @@
 	}
 	
 .list img{
+=======
+}
+.active1 p img{
+	position: absolute;
+	left: 20/50rem;
+	top:90/50rem;
+	width: 340/50rem;
+	height: 50/50rem;
+}
+.active2 {
+	position: absolute;
+	top:360/50rem;
+	width: 100%;
+	height: 130/50rem;
+	background: white;
+	color: black;
+}
+.active2 img{
+	width: 20/50rem;
+	height: 25/50rem;
+}
+.active2 p:nth-child(1) span{
+	font-size:17/50rem;
+	padding-left: 10/50rem;
+}
+.active2 p:nth-child(1)  img{
+	float: right;
+	padding-right: 10/50rem;
+}
+.active2 p:nth-child(1){
+	margin-top: 10/50rem;
+}
+
+.active2 p:nth-child(2){
+	margin-top: 20/50rem;
+	margin-left: -30/50rem;
+	font-size: 13/50rem;
+}
+.active2 p:nth-child(2) span{
+	padding-left: 40/50rem;
+}
+.active2 p:nth-child(2) strong{
+	color: darkgray;
+	padding-left: 10/50rem;
+}
+.active2 p:nth-child(3){
+	margin-top: 20/50rem;
+	font-size: 25/50rem;
+	margin-left: -80/50rem;
+}
+.active2 p:nth-child(3) span{
+	padding-left: 90/50rem;
+}
+
+.active3 {
+	position: absolute;
+	top:500/50rem;
+	width: 100%;
+	height: 130/50rem;
+	background: white;	
+}
+.ww img{
+>>>>>>> cf623cc6e89f8a81e12810e8f12a380ff5161f2e
 	width: 30/50rem;
 	height: 30/50rem;
 }
+<<<<<<< HEAD
 	
 .list p{
 	position: absolute;
@@ -478,4 +633,6 @@
 	font-size: 26px;
 }	
 	
+=======
+>>>>>>> cf623cc6e89f8a81e12810e8f12a380ff5161f2e
 </style>
