@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-<<<<<<< HEAD
+
     <div class="header">
       <theheader title="运动">
         <img src="../assets/sports/su_icon_search.png" alt="" slot="rightImg" class="right" />
@@ -165,17 +165,14 @@
       </div>
 
 
-=======
-		待补
->>>>>>> a9a8bc43a8d52ae5e175ed0fa841ffb7be7c71d6
+
   </div>
 </template>
 
 <script>
-<<<<<<< HEAD
+
   import Tabbar from '../components/Tabbar.vue'
-=======
->>>>>>> a9a8bc43a8d52ae5e175ed0fa841ffb7be7c71d6
+
 	import theheader from '../components/header.vue'
 	export default {
 		components: {
@@ -187,7 +184,7 @@
 
 <style scoped lang="less">
 
-<<<<<<< HEAD
+
   body {
   	font-size: 12px;
   	font-family: helvetica;
@@ -652,8 +649,6 @@ yd-tab-panel{
   }
 
 
-=======
-  
->>>>>>> a9a8bc43a8d52ae5e175ed0fa841ffb7be7c71d6
+
 
 </style>
