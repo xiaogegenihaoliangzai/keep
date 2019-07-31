@@ -1,116 +1,143 @@
 <template>
-<div>
-	头部开始
-	<div id="header">
-		<ul>
-			<li class="left">
-				<a>我</a>
-			</li>
-			<li class="right">
-				<a><img src=""></a>
-				<a><img src=""></a>
-				<a><img src=""></a>
-			</li>
-		</ul>
-	</div>
-
-	内容区域开始
-	<div id="wrapper">
-		<a href="person.html">
-			<div class="top">
-				<ul class="top-1">
-					<li class="tu"><img src=""></li>
-					<li class="zi">
-						<p>知识渊博的图样图森破</p><br>
-						<p>
-							<span><img src=""></span>
-							<span>0徽章</span>
-						</p>
-						<strong>KG.0</strong>
-					</li>
-					<li class="logo"><img src=""></li>
-				</ul>
-
-				<ul class="top-2">
-					<li>
-						<span>0</span><br>
-						<strong> 关注</strong>
-					</li>
-					<li>
-						<span>0</span><br>
-						<strong>  粉丝</strong>
-					</li>
-					<li>
-						<span>0</span><br>
-						<strong> 动态</strong>
-					</li>
-					<li>
-						<span>0</span><br>
-						<strong> 卡路里币</strong>
-					</li>
-				</ul>
-			</div>
-		</a>
-		<div class="active1">
+	<div>
+		头部开始
+		<div id="header">
 			<ul>
-				<li>
-					<img src=""> 我的课程
+				<li class="left">
+					<a>我</a>
 				</li>
-				<li>
-					<img src="g"> 我的活动
-				</li>
-				<li>
-					<img src=""> 我的硬件
+				<li class="right">
+					<a><img src=""></a>
+					<a><img src=""></a>
+					<a><img src=""></a>
 				</li>
 			</ul>
-
-			<p><img src=""></p>
 		</div>
 
-		<div class="active2">
-			<p>
-				<span>我的运动数据</span>
-				<img src="">
-			</p>
-			<p>
-				<span>总运动</span><strong>(分钟)</strong>
-				<span>本周消耗</span><strong>(千卡)</strong>
-			</p>
-			<p>
-				<span>0</span>
-				<span>0</span>
-			</p>
-		</div>
+		内容区域开始
+		<div id="wrapper">
+			<a href="person.html">
+				<div class="top">
+					<ul class="top-1">
+						<li class="tu"><img src=""></li>
+						<li class="zi">
+							<p>知识渊博的图样图森破</p><br>
+							<p>
+								<span><img src=""></span>
+								<span>0徽章</span>
+							</p>
+							<strong>KG.0</strong>
+						</li>
+						<li class="logo"><img src=""></li>
+					</ul>
 
-		<div class="active3">
-			<p>
-				<span class="ww">我的身体数据<img src=""></span>
-				<span class="tt"><img src=""></span>
-			</p>
-			<p>
-				<span>160.0<strong>身高cm</strong></span>
-				<span>49.0<strong>体重kg</strong></span>
-			</p>
+					<ul class="top-2">
+						<li>
+							<span>0</span><br>
+							<strong> 关注</strong>
+						</li>
+						<li>
+							<span>0</span><br>
+							<strong>  粉丝</strong>
+						</li>
+						<li>
+							<span>0</span><br>
+							<strong> 动态</strong>
+						</li>
+						<li>
+							<span>0</span><br>
+							<strong> 卡路里币</strong>
+						</li>
+					</ul>
+				</div>
+			</a>
+			<div class="active1">
+				<ul>
+					<li>
+						<img src=""> 我的课程
+					</li>
+					<li>
+						<img src="g"> 我的活动
+					</li>
+					<li>
+						<img src=""> 我的硬件
+					</li>
+				</ul>
 
-		</div>
+				<p><img src=""></p>
+			</div>
+
+<!--			<div class="active2">
+				<p>
+					<span>我的运动数据</span>
+					<img src="">
+				</p>
+				<p>
+					<span>总运动</span><strong>(分钟)</strong>
+					<span>本周消耗</span><strong>(千卡)</strong>
+				</p>
+				<p>
+					<span>0</span>
+					<span>0</span>
+				</p>
+			</div>
+
+			<div class="active3">
+				<p>
+					<span class="ww">我的身体数据<img src=""></span>
+					<span class="tt"><img src=""></span>
+				</p>
+				<p>
+					<span>160.0<strong>身高cm</strong></span>
+					<span>49.0<strong>体重kg</strong></span>
+				</p>
+			</div>
+-->
+<mines title="我的收藏">
+	
+	
+	 <img src="../../static/wo-img/ic_portrait_training_right_on.png" slot="right"/>
+</mines>
+
+<mines title="草稿箱">
+	
+	
+	 <img src="../../static/wo-img/ic_portrait_training_right_on.png" slot="right"/>
+</mines>
+
+<mines title="身体测试">
+	
+	
+	 <img src="../../static/wo-img/ic_portrait_training_right_on.png" slot="right"/>
+</mines>
+
+<mines title="我的Keepland">
+	
+	
+	 <img src="../../static/wo-img/ic_portrait_training_right_on.png" slot="right"/>
+</mines>
 
 
 
-	</div>
 
-	</div>
 
-	</div>
-</div>
+
+
+	
 </template>
 
+
 <script>
-import mines from '../components/mines.vue'
+	import mines from '../components/mines.vue'
 	export default {
 		data() {
 				return {}
 			},
-			methods: {}
+			methods: {},
+			components: {
+				mines
+			}
+
 	}
 </script>
 
