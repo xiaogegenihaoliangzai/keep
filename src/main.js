@@ -19,11 +19,14 @@ import {Layout} from 'vue-ydui/dist/lib.rem/layout';/* 使用px：import {Layout
 Vue.component(Layout.name, Layout);
 import Axios from "axios"
 import { Tabbar, TabItem } from 'mint-ui';
-
+import { DropdownMenu, DropdownItem } from 'vant';
+Vue.use(DropdownMenu).use(DropdownItem);
 Vue.component(Tabbar.name, Tabbar);
 Vue.component(TabItem.name, TabItem);
 Vue.prototype.$axios=Axios;
-
+import Vant from 'vant';
+import 'vant/lib/index.css';
+Vue.use(Vant);
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 

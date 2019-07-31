@@ -14,6 +14,11 @@ import attention from '@/pages/community/secondrouter/attention'
 import topic from '@/pages/community/secondrouter/topic'
 import diary from '@/pages/community/secondrouter/diary'
 import city from '@/pages/community/secondrouter/city'
+
+
+
+import comban from '@/pages/comban'
+import searchall from '@/pages/searchall'
 Vue.use(Router)
 
 export default new Router({
@@ -25,7 +30,15 @@ export default new Router({
     },{
       path: '/search',
       name: 'search',
-      component: search
+      component: search,
+    },{
+      path: '/comban',
+      name: 'comban',
+      component: comban,
+    },{
+      path: '/searchall',
+      name: 'searchall',
+      component: searchall,
     },{
       path: '/mine',
       name: 'mine',

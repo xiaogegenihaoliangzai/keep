@@ -1,6 +1,42 @@
 <template>
 	<div >
 		<section class="sec">
+			
+			
+			<div class="sec_sec">
+				<div class="box" v-for="(item,index) in arr2">
+					<a href="#">
+						<img :src="item.imgsrc">
+						<p>{{item.title}}</p>
+						<ul>
+							<li><img :src="item.thumbsrc"></li>
+							<li>{{item.name}}</li>
+							<li><img src="../../../assets/community/icon_comment_like.png"></li>
+							<li>{{item.cont}}</li>
+						</ul>
+					</a>
+				</div>
+			</div>
+			<div class="sec_sec">
+				<div class="box" v-for="(item,index) in arr2">
+					<a href="#">
+						<img :src="item.imgsrc">
+						<p>{{item.title}}</p>
+						<ul>
+							<li><img :src="item.thumbsrc"></li>
+							<li>{{item.name}}</li>
+							<li><img src="../../../assets/community/icon_comment_like.png"></li>
+							<li>{{item.cont}}</li>
+						</ul>
+					</a>
+				</div>
+			</div>
+
+	
+
+			
+			
+		<!--	
 			<div class="sec_sec">
 				<div class="box" v-for="(item,index) in arr">
 					<a href="#" >
@@ -28,7 +64,7 @@
 						</ul>
 					</a>
 				</div>
-			</div>
+			</div>-->
 		</section>
 	</div>
 </template>
@@ -59,11 +95,13 @@
 
 			},
 				fn1() {
-				this.$axios.get("../../static/data/json2.json")
+				this.$axios.get("../../static/data/json6.json")
 					.then(res => {
-					console.log(res.data.data.entries)												
-						this.arr2 = res.data.data.entries
-						
+
+						console.log(res.data.data)
+						//console.log(res.data.data.entries)												
+						this.arr2 = res.data.data
+
 					})
 			},
 			run (){

@@ -22,6 +22,9 @@ export default {
     padding: 0;
     box-sizing: border-box;
 }
+.van-dropdown-item--down, .van-dropdown-item{
+  top:63px;
+}
 .yd-list-img{
   margin: 0;
   top: 0;
