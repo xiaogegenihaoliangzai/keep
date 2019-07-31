@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import HelloWorld from '@/components/HelloWorld'
 import search from '../pages/search'
 import mine from '../pages/mine'
 import plan from '../pages/plan'
@@ -21,8 +20,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'login',
+      component: login
     },{
       path: '/search',
       name: 'search',
@@ -40,6 +39,7 @@ export default new Router({
       name: 'community',
       component: community,
       children:[
+		  {path:"/",component: hot},
 		  {path:"hot",component: hot},
 		  {path:"attention",component: attention},
 		  {path:"topic",component: topic},
@@ -55,11 +55,6 @@ export default new Router({
       path: '/sports',
       name: 'sports',
       component: sports
-    },
-    ,{
-      path: '/login',
-      name: 'login',
-      component: login
     }
   ]
 })

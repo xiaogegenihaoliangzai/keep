@@ -53,11 +53,11 @@
 			fn() {
 				this.$axios.get("../../static/data/json1.json")
 					.then(res => {
-						//console.log(res.data.data.entries)
+						console.log(res.data.data.entries)
 							
 						this.arr = res.data.data.entries
 						
-					})
+				})
 
 			},
 				fn1() {
