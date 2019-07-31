@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view/>
-		<tabbar></tabbar>
+		<tabbar v-if="$route.path!='/'"></tabbar>
   </div>
 </template>
 
