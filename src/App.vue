@@ -3,6 +3,7 @@
       <router-view/>
         <tabbar  slot="tabbar"></tabbar>
     </yd-layout>
+
 </template>
 
 <script>
@@ -72,4 +73,8 @@ ol, ul ,li{list-style: none;}
 body{
   background-color: #FAFAFA!important;
 }
+
+
+.yd-scrollview:after{
+display:none;}
 </style>

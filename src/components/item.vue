@@ -26,12 +26,16 @@
 	}
 </script>
 
-<style scoped="scoped" lang="less">
- 	.item img{
-		width: 45/50rem;
-	}
+<style scoped lang="less">
+ 
 	 span{
-		 font-size: 15/50rem;
+		 font-size: 13/50rem;
+
+
+		 display: inline-block;
+		 text-align:center;
+		 height: 20/50rem;
+
 	 }
 	 .colorgreen{
 		 color: green;
