@@ -28,7 +28,7 @@
 		top:10/50rem;
 		right: 60/50rem;
 	}
-	.headerWrap img:nth-of-type(2) .right{
+	.headerWrap  .right{
 		right: 20/50rem;
 	}
 </style>

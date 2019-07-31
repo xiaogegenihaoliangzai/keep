@@ -1,181 +1,178 @@
 <template>
   <div id="app">
     <div class="header">
-    	<ul>
-    		<li><span class="yundong">运动</span></li>
+      <theheader title="运动">
+        <img src="../assets/sports/su_icon_search.png" alt="" slot="rightImg" class="right" />
+        <img src="../assets/sports/tc_icon_kstar.png" alt="" slot="leftImg" class="left" />
+      </theheader>
 
-    		<li><img src="../assets/sports/tc_icon_kstar.png" alt="" /></li>
-    		<li><img src="../assets/sports/su_icon_search.png" alt="" /></li>
-    	</ul>
     </div>
+
     <div class="daohang">
-    	<a href="curriculum.html" class="kc">
-    		<p>练课程</p>
-    	</a>
-    	<a href="movement.html" class="dz">
-    		<p>练动作</p>
-    	</a>
-    	<a href="run.html" class="pb">
-    		<p>跑步</p>
-    	</a>
-    	<a href="noopsyche.html" class="yj">
-    		<p>智能硬件</p>
-    	</a>
+       <Tabbar>
+            <div slot="list1">
+              <yd-tab-panel name="" label="跑步">
+
+             </yd-tab-panel>
+            </div>
+       </Tabbar>
+
     </div>
     <!--跑步头部结束-->
     <!--******************************************************************************************************************-->
     <!--跑步内容开始-->
-    <div id="wrapper">
-    	<div id="scroller">
-    		<div class="box1">
-    			<div class="tu3"><img src="../assets/sports/微信图片_20190702153250.png" alt="" /></div>
-    			<ul>
-    				<li>
-    					<a href="#" class="ren">燃脂跑</a>
-    				</li>
-    				<li>|</li>
-    				<li>
-    					<a href="#">户外跑</a>
-    				</li>
-    				<li>|</li>
-    				<li>
-    					<a href="#">跑步机</a>
-    				</li>
-    			</ul>
-    		</div>
-    		<div class="var">
-    			<div class="canjia">我的跑步课程</div>
-    			<div class="tianjia">添加课程后，可以在这里快速开始课程</div>
-    			<div class="faxiang">
-    				<a href="#">添加跑步课程</a>
-    			</div>
-    		</div>
-    		<div class="var3">
-    			<span class="ku">燃脂跑课程精选</span>
-    			<span class="tu2"><img src="../assets/sports/icon_more.png" alt="" /></span>
-    			<ul>
-    				<li><img class="gl3" src="../assets/sports/微信图片_201907021532503.jpg" alt="" /></li>
-    				<li><img class="gl5" src="../assets/sports/_201907021532501.jpg" alt="" /></li>
-    			</ul>
-    		</div>
-    		<div class="var5">
-    			<span class="ku">燃脂跑课程精选</span>
-    			<ul>
-    				<li>
-    					<img class="gl3" src="../assets/sports/微信图片_201907021532505.jpg" alt="" />
-    					<p class="shang">如何能够坚持跑步?</p>
-    					<p class="xiang">7月先定一个小目标</p>
-    				</li>
-    				<li>
-    					<img class="gl5" src="../assets/sports/201907021532504.jpg" alt="" />
-    					<p class="shang">让暑假不无聊</p>
-    					<p class="xiang">游戏刷刷的过</p>
-    				</li>
-    			</ul>
-    		</div>
+     <div id="wrapper">
+      	<div id="scroller">
+      		<div class="box1">
+      			<div class="tu3"><img src="../assets/sports/微信图片_20190702153250.png" alt="" /></div>
+      			<ul>
 
-    		<div class="var6">
-    			<span class="ku">燃脂跑课程精选</span>
-    			<div><img src="../assets/sports/微信图片_201907021532506.jpg" alt="" /></div>
-    		</div>
+      				<li>
+      					<a href="#" class="ren">燃脂跑</a>
+      				</li>
+      				<li>|</li>
+      				<li>
+      					<a href="#">户外跑</a>
+      				</li>
+      				<li>|</li>
+      				<li>
+      					<a href="#">跑步机</a>
+      				</li>
+      			</ul>
+      		</div>
+      		<div class="var">
+      			<div class="canjia">我的跑步课程</div>
+      			<div class="tianjia">添加课程后，可以在这里快速开始课程</div>
+      			<div class="faxiang">
+      				<a href="#">添加跑步课程</a>
+      			</div>
+      		</div>
+      		<div class="var3">
+      			<span class="ku">燃脂跑课程精选</span>
+      			<span class="tu2"><img src="../assets/sports/icon_more.png" alt="" /></span>
+      			<ul>
+      				<li><img class="gl3" src="../assets/sports/微信图片_201907021532503.jpg" alt="" /></li>
+      				<li><img class="gl5" src="../assets/sports/_201907021532501.jpg" alt="" /></li>
+      			</ul>
+      		</div>
+      		<div class="var5">
+      			<span class="ku">为你推荐</span>
+      			<ul>
+      				<li>
+      					<img class="gl3" src="../assets/sports/微信图片_201907021532505.jpg" alt="" />
+      					<p class="shang">如何能够坚持跑步?</p>
+      					<p class="xiang">7月先定一个小目标</p>
+      				</li>
+      				<!-- <li>
+      					<img class="gl5" src="../assets/sports/201907021532504.jpg" alt="" />
+      					<p class="shang">让暑假不无聊</p>
+      					<p class="xiang">游戏刷刷的过</p>
+      				</li> -->
+      			</ul>
+      		</div>
 
-    		<div class="var7">
-    			<span class="ku">周好友跑步排名</span>
-    			<div>
-    				<ul>
-    					<li class="gang">-</li>
-    					<li class="tu4"><img src="../assets/sports/1.jpg" alt="" /></li>
-    					<li>骑黑马的爱跳水的Ting</li>
-    					<li><span class="ling">8.22</span>公里</li>
-    				</ul>
-    			</div>
-    			<p class="ck">查看排行榜</p>
-    		</div>
+      		<div class="var6">
+      			<span class="ku">跑道辅助训练</span>
+      			<div><img src="../assets/sports/微信图片_201907021532506.jpg" alt="" /></div>
+      		</div>
 
-    		<div class="var8">
-    			<span class="ku">跑步打卡小分队</span>
-    			<ul class="xfd1">
-    				<li>
-    					<img src="../assets/sports/微信图片_20190704185651.png" alt="" />
-    				</li>
-    				<li>
-    					<p>10公里突破</p>
-    					<p class="ztys">里程进阶，5周打造超长耐力</p>
-    				</li>
-    			</ul>
-    			<ul class="xfd2">
-    				<li>
-    					<img src="../assets/sports/微信图片_20190704185646.png" alt="" />
-    				</li>
-    				<li>
-    					<p>半程马拉松集训</p>
-    					<p class="ztys">备赛专用8周突破21公里</p>
-    				</li>
-    			</ul>
-    			<ul class="xfd3">
-    				<li>
-    					<img src="../assets/sports/微信图片_20190704185625.png" alt="" />
-    				</li>
-    				<li>
-    					<p>全程马拉松集训</p>
-    					<p class="ztys">备赛专用8周突破42公里</p>
-    				</li>
-    			</ul>
-    		</div>
+      		<div class="var7">
+      			<span class="ku">周好友跑步排名</span>
+      			<div>
+      				<ul>
+      					<li class="gang"><span>-</span>
+      					<img src="../assets/sports/1.jpg" alt="" /> <span class="ling">骑黑马的爱跳水的Ting</span>8.22<span class="ling">公里</span></li>
+      				</ul>
+      			</div>
+      			<p class="ck">查看排行榜</p>
+      		</div>
 
-    		<div class="var9">
-    			<span class="ku">进阶跑步课程</span>
-    			<ul class="xfd1">
-    				<li>
-    					<img src="../assets/sports/微信图片_20190702153730.png" alt="" />
-    				</li>
-    				<li>
-    					<p>跑步秘籍.更快、更远、更安全</p>
-    					<p class="ztys">完美训练方案--提速、提距、不伤膝盖</p>
-    				</li>
-    			</ul>
-    			<ul class="xfd2">
-    				<li>
-    					<img src="../assets/sports/微信图片_20190702153729.png" alt="" />
-    				</li>
-    				<li>
-    					<p>爱上跑步，享受跑步</p>
-    					<p class="ztys">跑步大神吴栋带你跑！</p>
-    				</li>
-    			</ul>
-    			<ul class="xfd3">
-    				<li>
-    					<img src="../assets/sports/微信图片_201907021537281.png" alt="" />
-    				</li>
-    				<li>
-    					<p>跑步秘籍.怎样跑步不粗腿</p>
-    					<p class="ztys">姿势对，你也能跑出细腿翘臀！</p>
-    				</li>
-    			</ul>
-    			<ul class="xfd4">
-    				<li>
-    					<img src="img/微信图片_20190702153728.png" alt="" />
-    				</li>
-    				<li>
-    					<p>POSE TV跑步速度提升训练</p>
-    					<p class="ztys">奥运教练科学指导，跑速提升！</p>
-    				</li>
-    			</ul>
-    		</div>
+      		<div class="var8">
+      			<span class="ku">跑步打卡小分队</span>
+      			<ul class="xfd1">
+      				<li>
+      					<img src="../assets/sports/微信图片_20190704185651.png" alt="" />
+      				</li>
+      				<li>
+      					<p>10公里突破</p>
+      					<p class="ztys">里程进阶，5周打造超长耐力</p>
+      				</li>
+      			</ul>
+      			<ul class="xfd2">
+      				<li>
+      					<img src="../assets/sports/微信图片_20190704185646.png" alt="" />
+      				</li>
+      				<li>
+      					<p>半程马拉松集训</p>
+      					<p class="ztys">备赛专用8周突破21公里</p>
+      				</li>
+      			</ul>
+      			<ul class="xfd3">
+      				<li>
+      					<img src="../assets/sports/微信图片_20190704185625.png" alt="" />
+      				</li>
+      				<li>
+      					<p>全程马拉松集训</p>
+      					<p class="ztys">备赛专用8周突破42公里</p>
+      				</li>
+      			</ul>
+      		</div>
 
-    		<div class="dibu">-没有更多内容-</div>
+      		<div class="var9">
+      			<span class="ku">进阶跑步课程</span>
+      			<ul class="xfd1">
+      				<li>
+      					<img src="../assets/sports/微信图片_20190702153730.png" alt="" />
+      				</li>
+      				<li>
+      					<p>跑步秘籍.更快、更远、更安全</p>
+      					<p class="ztys">完美训练方案--提速、提距、不伤膝盖</p>
+      				</li>
+      			</ul>
+      			<ul class="xfd2">
+      				<li>
+      					<img src="../assets/sports/微信图片_20190702153729.png" alt="" />
+      				</li>
+      				<li>
+      					<p>爱上跑步，享受跑步</p>
+      					<p class="ztys">跑步大神吴栋带你跑！</p>
+      				</li>
+      			</ul>
+      			<ul class="xfd3">
+      				<li>
+      					<img src="../assets/sports/微信图片_201907021537281.png" alt="" />
+      				</li>
+      				<li>
+      					<p>跑步秘籍.怎样跑步不粗腿</p>
+      					<p class="ztys">姿势对，你也能跑出细腿翘臀！</p>
+      				</li>
+      			</ul>
+      			<ul class="xfd4">
+      				<li>
+      					<img src="../assets/sports/微信图片_20190702153728.png" alt="" />
+      				</li>
+      				<li>
+      					<p>POSE TV跑步速度提升训练</p>
+      					<p class="ztys">奥运教练科学指导，跑速提升！</p>
+      				</li>
+      			</ul>
+      		</div>
 
-    	</div>
-    </div>
+      		<div class="dibu">-没有更多内容-</div>
+
+      	</div>
+      </div>
+
 
   </div>
 </template>
 
 <script>
-
+  import Tabbar from '../components/Tabbar.vue'
 	import theheader from '../components/header.vue'
 	export default {
 		components: {
+      Tabbar,
 			theheader,
 		}
 	}
@@ -183,15 +180,10 @@
 
 <style scoped lang="less">
 
-  * {
-  	margin: 0;
-  	padding: 0;
-  }
-
   body {
   	font-size: 12px;
   	font-family: helvetica;
-    width: 100%;
+    width: 100% !important;
   }
 
   .sizing {
@@ -202,14 +194,15 @@
   /*跑步头部开始*/
 
   .header {
-  	width: 100%;
-  	height: 0.83666/50rem;
+  	width: 100% ;
+  	height: 0.63666/50rem ;
   	padding-top: 15px;
+
   }
 
-  .header li {
-  	float: left;
-  }
+yd-tab-panel{
+  height: auto;
+}
 
   .yundong {
   	font-size: 20px;
@@ -217,44 +210,11 @@
   	margin-right: 6.2/50rem;
   	margin-left: 0.7/50rem;
   }
-
-  .header li:nth-of-type(2) ,.header li:nth-of-type(3){
-
-    float: right;
-  }
-  .header li img{
-    width: 0.6rem;
-    height: 0.6rem;
-    padding-right: 15px;
-  }
-  .daohang {
-  	width: 100%;
-  	height: 0.8rem;
-  	border-bottom: 5px solid whitesmoke;
-  	display: flex;
-  }
-
-  .daohang a {
-  	flex: 1;
-  	text-align: center;
-  	box-sizing: border-box;
-  	display: block;
-  	color: darkgray;
-  	font-size: 18px;
-  	padding-top: 10px;
-  }
-
-  .daohang .pb {
-  	color: black;
-  }
-
-  .daohang p {
-  	font-size: 0.35667rem;
-  }
-
-
-  /*跑步头部结束*/
-
+.daohang{
+  width: 100%;
+  float: left;
+  overflow: hidden
+}
 
   /**************************************************/
 
@@ -262,7 +222,6 @@
   /*跑步内容开始*/
 
   #wrapper {
-  	width: 100%;
   	position: absolute;
   	left: 0;
   	right: 0;
@@ -272,6 +231,7 @@
   	overflow: auto;
   	margin: 0 auto;
   	background-color: whitesmoke;
+  	width: 100%;
   }
 
   #wrapper #scroller {
@@ -283,14 +243,17 @@
   .box1 {
   	width: 99%;
   	height: 4.6rem;
-  	border: 1px solid white;
   	background: white;
   	padding-top: 0.1rem;
   }
 
+.tu3{
+  width: 100%;
+}
   .box1 .tu3 img {
   	width: 100%;
   	height: 3rem;
+
   	margin: 0 auto;
   }
 
@@ -298,9 +261,9 @@
   	float: left;
   	position: relative;
   	top: 0.8rem;
-  	left: 1.2rem;
-  	margin-left: 0.5rem;
-  	margin-right: 0.3rem;
+  	left: 2/50rem;
+  	margin-left: 0.35rem;
+  	margin-right: 0.35rem;
   	font-size: 0.37533rem;
   	color: lightslategray;
   }
@@ -321,7 +284,8 @@
   .canjia {
   	color: black;
   	margin-top: 0.5rem;
-  	margin-left: 0.5rem;
+  	margin-left: 0.2rem;
+    text-align: left;
   }
 
   .tianjia {
@@ -332,13 +296,13 @@
 
   .faxiang {
   	width: 65%;
-  	height: 0.8rem;
+
+  	line-height: 0.8rem;
   	border-radius: 20px;
   	background-color: mediumseagreen;
   	text-align: center;
   	margin: 0 auto;
   	margin-top: 0.7rem;
-  	padding-top: 0.2rem;
   	font-size: 0.43333rem;
   }
 
@@ -357,22 +321,22 @@
     overflow: hidden;
   }
 
-  .var3>span::nth-of-type(2){
+  .var3>span:nth-of-type(2) img{
     float: right;
-
+    display: block;
+    width: .6rem;
+    height: .6rem;
   }
-   .var3>li{
+   .var3 li{
     float: left;
 
   }
-  .var3>li::nth-of-type(2){
-    float: right;
 
-  }
   .var3 .ku {
   	color: black;
   	padding-left: 0.5rem;
   	font-size: 13px;
+    float: left;
   }
 
   .var3 .tu2 {
@@ -385,21 +349,21 @@
   }
 
   .var3 li {
-  	float: left;
+  overflow: hidden;
   }
 
   .var3 .gl3 {
-  	width: 5.6333rem;
+    	float: left;
   	height: 3rem;
   	margin-top: 0.3rem;
-  	margin-left: 0.5rem;
+  	margin-left: 0.3rem;
   }
 
   .var3 .gl5 {
-  	width: 3.5833rem;
+
   	height: 3rem;
   	margin-top: 0.3rem;
-  	margin-left: 0.2rem;
+  	margin-left: 0.1rem;
   }
 
   .var5 {
@@ -410,11 +374,12 @@
   	font-size: 0.33333rem;
   	padding-top: 0.333rem;
   	margin-top: 0.2rem;
-
+    overflow: hidden;
   }
 
 
   .var5 .ku {
+    float: left;
   	color: black;
   	padding-left: 0.5rem;
   	font-size: 13px;
@@ -428,20 +393,28 @@
   	position: relative;
   	top: -0.2rem;
   }
+.var5 ul{
+  width: 100%;
 
-  .var5 li {
+}
+ .var5 li  {
+    width: 90%;
+  	float: left;
+  }
+  .var5 li img {
+    width: 90%;
   	float: left;
   }
 
   .var5 .gl3 {
-  	width: 56%;
+
   	height: 3rem;
   	margin-top: 0.3rem;
   	margin-left: 0.5rem;
   }
 
   .var5 .gl5 {
-  	width: 35%;
+
   	height: 3rem;
   	margin-top: 0.3rem;
   	margin-left: 0.2rem;
@@ -463,18 +436,20 @@
 
   .var6 {
   	width: 98%;
-  	height: 11.7333rem;
+  	height: 9rem;
   	border: 1px solid white;
   	background-color: white;
   	font-size: 0.33333rem;
   	padding-top: 0.333rem;
   	margin-top: 0.2rem;
+    overflow: hidden;
   }
 
   .var6 .ku {
   	color: black;
   	padding-left: 0.5rem;
   	font-size: 13px;
+    float: left;
   }
 
   .var6 img {
@@ -484,17 +459,20 @@
   }
 
   .var7 {
-  	width: 9.95587rem;
+  	width: 99%;
   	height: 4rem;
   	border: 1px solid white;
   	background-color: white;
   	font-size: 0.33333rem;
   	padding-top: 0.333rem;
   	margin-top: 0.2rem;
+    overflow: hidden;
   }
 
   .var7 .ku {
+    float: left;
   	color: black;
+
   	padding-left: 0.5rem;
   	font-size: 13px;
   }
@@ -505,13 +483,13 @@
   	border: 1px solid lightgray;
   	border-left: none;
   	border-right: none;
-  	margin-top: 0.4rem;
+  	margin-top: .7rem;
   }
 
   .var7 li {
   	float: left;
   	margin-top: 0.45333rem;
-  	margin-left: 0.5rem;
+    padding-left: .1rem;
   	margin-right: 0.3rem;
   }
 
@@ -527,7 +505,13 @@
   	border-radius: 50px;
   }*/
 
+.var7 span{
+  display: inline-block;
+
+  margin-right: .2rem;
+}
   .var7 img {
+    margin-right: .2rem;
   	width: 0.86666rem;
   	height: 0.86666rem;
   	border: 2px solid mediumseagreen;
@@ -537,7 +521,7 @@
   }
 
   .var7 .ling {
-  	color: mediumseagreen;
+  	color: black;
   	margin-right: 0.23333rem;
   }
 
@@ -554,30 +538,32 @@
   	font-size: 0.33333rem;
   	padding-top: 0.333rem;
   	margin-top: 0.2rem;
+    overflow: hidden;
   }
 
   .var8 .ku {
+    float: left;
   	color: black;
   	padding-left: 0.5rem;
   	font-size: 13px;
   }
 
-  .var8 .xfd1 {
-  	width: 9.95587rem;
-  	height: 3.5333rem;
-  	border-bottom: 1px solid lightgray;
-  }
-
-  .var8 .xfd2 {
+  .var8 ul {
   	width: 99%;
   	height: 3.5333rem;
   	border-bottom: 1px solid lightgray;
+    overflow: hidden;
   }
 
-  .var8 li {
+
+
+  .var8 ul li {
   	float: left;
   	margin-top: 0.5rem;
   	margin-left: 0.4rem;
+  }
+  .var8 ul li:nth-of-type(2) {
+  width:3rem;
   }
 
   .var8 img {
@@ -589,6 +575,9 @@
   	margin-bottom: 0.2rem;
   	position: relative;
   	top: 0.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .var8 .ztys {
@@ -604,43 +593,33 @@
   	padding-top: 0.333rem;
   	margin-top: 0.2rem;
   	margin-bottom: 0.5rem;
+    overflow: hidden;
   }
 
   .var9 .ku {
+    float: left;
   	color: black;
   	padding-left: 0.5rem;
   	font-size: 13px;
   }
 
-  .var9 .xfd1 {
-  	width: 9.95587rem;
+  .var9 ul {
+  	width: 100%;
   	height: 3.5333rem;
   	border-bottom: 1px solid lightgray;
+    overflow: hidden;
   }
 
-  .var9 .xfd2 {
-  	width: 9.95587rem;
-  	height: 3.5333rem;
-  	border-bottom: 1px solid lightgray;
-  }
 
-  .var9 .xfd3 {
-  	width: 9.95587rem;
-  	height: 3.5333rem;
-  	border-bottom: 1px solid lightgray;
-  }
-
-  .var9 .xfd4 {
-  	width: 9.95587rem;
-  	height: 3.5333rem;
-  }
 
   .var9 li {
   	float: left;
   	margin-top: 0.5rem;
   	margin-left: 0.4rem;
   }
-
+ .var9 ul li:nth-of-type(2) {
+  width:3rem;
+ }
   .var9 img {
   	width: 2.5rem;
   	height: 2.5rem;
@@ -648,7 +627,9 @@
 
   .var9 p {
   	margin-bottom: 0.2rem;
-  	position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   	top: 0.6rem;
   }
 
