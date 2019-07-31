@@ -1,7 +1,7 @@
 <template>
-	<div class="headerWrap">
-		<p class="title">{{title}}</p>
+	<div class="headerWrap">			
 		<slot name='leftImg' class='left'></slot>
+		<p class="title"> {{title}} </p>		
 		<slot name='rightImg' class='right'></slot>
 	</div>
 </template>
@@ -17,18 +17,20 @@
 		position: relative;
 	}
 	.headerWrap .title{
+		
 	 line-height: 50/50rem;
 	 font-weight: 700;
-	 float: left;
-	 margin-left: 20/50rem;
+	 margin-right: 6rem;	 
 	}
+
 	.headerWrap img{
 		width: 30px;
 		position: absolute;
 		top:10/50rem;
-		right: 60/50rem;
+		right: 10/50rem;
 	}
 	.headerWrap img:nth-of-type(2) .right{
-		right: 20/50rem;
+		left: 80/50rem;
 	}
+	
 </style>

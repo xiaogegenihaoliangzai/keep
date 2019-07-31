@@ -7,7 +7,7 @@
 						<img :src="item.photo">
 						<p>{{item.content}}</p>
 						<ul>
-							<li><img src="../../../assets/community/icon_comment_like.png"></li>
+							<li><img src="../../../assets/community/icon_comment_like.png" @click="run"></li>
 							<li>{{item.author.username}}</li>
 							<li><img src="../../../assets/community/icon_comment_like.png"></li>
 							<li>{{item.comments}}</li>
@@ -31,7 +31,6 @@
 			</div>
 		</section>
 	</div>
-
 </template>
 
 <script>
@@ -53,8 +52,7 @@
 			fn() {
 				this.$axios.get("../../static/data/json1.json")
 					.then(res => {
-						console.log(res.data.data.entries)
-							
+						console.log(res.data.data.entries)							
 						this.arr = res.data.data.entries
 						
 				})
@@ -67,8 +65,13 @@
 						this.arr2 = res.data.data.entries
 						
 					})
+			},
+			run (){
+				console.log(111)
+				this.$router.push('communitydeday')
 			}
 		}
+		
 	}
 </script>
 <style scoped lang="less">
