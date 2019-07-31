@@ -31,14 +31,12 @@
  
 	 span{
 		 font-size: 13/50rem;
-
-
 		 display: inline-block;
 		 text-align:center;
 		 height: 20/50rem;
 
 	 }
 	 .colorgreen{
-		 color: green;
+		 color:darkgreen;
 	 } 
 </style>

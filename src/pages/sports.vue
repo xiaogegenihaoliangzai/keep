@@ -166,12 +166,13 @@
 
 
 
-  </div>
 </template>
 
 <script>
 
   import Tabbar from '../components/Tabbar.vue'
+
+
 
 	import theheader from '../components/header.vue'
 	export default {
@@ -647,8 +648,6 @@ yd-tab-panel{
   	color: lightgray;
   	margin-bottom: 0.5rem;
   }
-
-
 
 
 </style>
