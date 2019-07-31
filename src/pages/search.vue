@@ -7,7 +7,7 @@
   	</div>
   	<Tabbar slot="bar">
   		<div slot="list1">
-  			<yd-tab-panel name="" label="课程与挑战">
+  			<yd-tab-panel name="" slot="list1" label="课程与挑战">
   			<div class="bgc">
   					<div class="banner">
 		              <div class="swiper-container">
@@ -23,8 +23,10 @@
 		        <div class="listf">
 					<yd-flexbox>
 			            <yd-flexbox-item>
-			            	<img src="../assets/scarch/su_training_entrance_all.png" alt="" />
-			            	<p>找课程</p>
+			            	<router-link to="/searchall">
+			            		<img src="../assets/scarch/su_training_entrance_all.png" alt="" />
+			            		<p>找课程</p>
+			            	</router-link>
 			            </yd-flexbox-item>
 			            <yd-flexbox-item>
 			            	<img src="../assets/scarch/tc_icon_food_library.png" alt="" />
@@ -108,10 +110,32 @@
 					        </yd-flexbox>
 			        	</div>
 			        </div>
-
 				</section>
-				<div style="height: 800px;border: 1px solid #000;float: left;width: 100%;"></div>
+
+				<aside class="asideImg list_as">
+					<div class="wid">
+						<yd-flexbox>
+				            <div class="lefts"><yd-flexbox-item>课程专题</yd-flexbox-item></div>
+				        </yd-flexbox>
+			        </div>
+			        <div class="proline">
+						<img src="../assets/scarch/img.png" alt="" />
+						<img src="../assets/scarch/img2.png" alt="" />
+			        </div>
+				</aside>
 	        </yd-tab-panel>
+  		</div>
+  		<div slot="list1">
+  			<yd-tab-panel label="运动商城"></yd-tab-panel>
+  		</div>
+  		<div slot="list1">
+  			<yd-tab-panel label="健康轻食"></yd-tab-panel>
+  		</div>
+  		<div slot="list1">
+  			<yd-tab-panel label="硬件商店"></yd-tab-panel>
+  		</div>
+  		<div slot="list1">
+  			<yd-tab-panel label="Keepland"></yd-tab-panel>
   		</div>
 
   	</Tabbar>
@@ -158,7 +182,6 @@ export default {
 	}
 }
 </script>
-stle
 <style scoped lang="less">
 .banner{
   width: 90%;
@@ -166,6 +189,15 @@ stle
   border-radius: 5/50rem;
   overflow: hidden;
   height: 130/50rem;
+}
+.proline{
+	width: 95%;
+	margin:0 auto;
+	display: table;
+	text-align: left;
+	img{
+		width: 100%;
+	}
 }
 .plist{
 	text-align: left!important;
@@ -280,6 +312,7 @@ stle
 		}
 	}
 	.lefts{
+		overflow: hidden;
 		div{
 			position: absolute;
 			left: 0;
