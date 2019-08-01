@@ -1,7 +1,7 @@
 <template>
-	<div class="headerWrap">			
+	<div class="headerWrap">
 		<slot name='leftImg' class='left'></slot>
-		<p class="title"> {{title}} </p>		
+		<p class="title"> {{title}} </p>
 		<slot name='rightImg' class='right'></slot>
 	</div>
 </template>
@@ -20,7 +20,7 @@
 	 line-height: 50/50rem;
 	 font-weight: 700;
 	 margin-right: 6rem;
-	 width: 1.4rem;	 
+	 width: 1.4rem;
 	 font-weight: 600;
 	 float: left;
 	 margin-left: 5/50rem;
@@ -36,7 +36,7 @@
 		left: 80/50rem;
 		}
 	.headerWrap  .right{
-		right: 20/50rem;
+		right: 50/50rem;
 	}
-	
+
 </style>
