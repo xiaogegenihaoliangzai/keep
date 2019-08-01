@@ -200,7 +200,7 @@
 
 			},
 			fn1() {
-				this.$axios.get("../../static/data/json6.json")
+				this.$axios.get("../../static/data/json8.json")
 					.then(res => {
 
 						console.log(res.data.data)
@@ -215,17 +215,17 @@
 
 <style scoped lang="less">
 
-	.comm_warp .header.left {
-		margin-left: -20/50rem;
+	.comm_warp .header .left {
+		margin-left: 5/50rem;
 	}
 	
 	.comm_warp .header .right {
-		margin-right: 325/50rem;
+		margin-right: 320/50rem;
 	}
 	
-	.comm_warp .header .title {
-		position: absolute;
-		margin-right: 10rem !important;
+	.comm_warp .header p{
+		margin-left: 80px;
+		
 	}
 	/*content开始*/
 	

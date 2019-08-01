@@ -28,6 +28,7 @@
 			            		<p>找课程</p>
 			            	</router-link>
 			            </yd-flexbox-item>
+			            
 			            <yd-flexbox-item>
 			            	<img src="../assets/scarch/tc_icon_food_library.png" alt="" />
 			            	<p>动作库</p>
@@ -40,8 +41,13 @@
 			            	<img src="../assets/scarch/su_training_entrance_mine.png" alt="" />
 			            	<p>私家课</p>
 			            </yd-flexbox-item>
+			          
 			        </yd-flexbox>
 				</div>
+				
+					<div class="videocontent">
+			<router-view></router-view>
+		</div>
   			</div>
 
 				<section class="list_as">

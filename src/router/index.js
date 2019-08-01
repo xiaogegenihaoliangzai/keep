@@ -18,8 +18,8 @@ import city from '@/pages/community/secondrouter/city'
 
 
 
-import comban from '@/pages/comban'
-import searchall from '@/pages/searchall'
+import comban from '@/pages/searchAll/comban'
+import searchall from '@/pages/searchAll/searchall'
 Vue.use(Router)
 
 export default new Router({
