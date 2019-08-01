@@ -28,6 +28,11 @@ import Vant from 'vant';
 import 'vant/lib/index.css';
 Vue.use(Vant);
 
+
+//回到顶部
+import {BackTop} from 'vue-ydui/dist/lib.rem/backtop';
+Vue.component(BackTop.name, BackTop);
+//下拉刷新
 import {InfiniteScroll} from 'vue-ydui/dist/lib.rem/infinitescroll';
 Vue.component(InfiniteScroll.name, InfiniteScroll);
 
