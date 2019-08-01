@@ -27,6 +27,10 @@ Vue.prototype.$axios=Axios;
 import Vant from 'vant';
 import 'vant/lib/index.css';
 Vue.use(Vant);
+
+import {InfiniteScroll} from 'vue-ydui/dist/lib.rem/infinitescroll';
+Vue.component(InfiniteScroll.name, InfiniteScroll);
+
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 

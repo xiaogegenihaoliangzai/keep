@@ -1,22 +1,22 @@
 <template>
 
 	<div class="comm_warp">
+		
+		<!--头部组件-->
 		<div class="header">
-			<headersList title="动态详情">				
+			<headersList title="动态详情">
 				<img src="../../assets/community/icon_search_lined_dark.png" slot='leftImg' class='left' />
-				
 				<img src="../../assets/community/mo_store_title_back.png" slot="rightImg" class="right" />
 			</headersList>
-		</div>
-
+		</div>		
+		<!--个人详情-->
+     <commu name="小明">
+     	<img class="imgsrc" src="../../assets/community/016.jpg" slot="imgsrc"/>  	
+     </commu>
+     <!--个人信息宣言-->
+     <deday_con></deday_con>
 		<div class="content">
-			<div class="content_sec">
-				<div class="detay">
-					<p>跟着keep做五次马甲线的练习之后</p>
-					<p>腹部确实紧了一些</p>
-					<p>昨天去拍摄</p>
-					<p>好像隐约能看到一点点的马甲线<span>...全部</span></p>
-				</div>
+			<div class="content_sec">	
 				<div class="saveimg">
 					<img src="../../assets/community/016.jpg" />
 					<img src="../../assets/community/016.jpg" />
@@ -170,17 +170,19 @@
 
 <script>
 	import headersList from '../../components/header.vue'
+	import commu from '../../components/commu.vue'
+	import deday_con from '../../components/deday_con.vue'
 	export default {
 
 		components: {
-			headersList
+			headersList,
+			commu,
+			deday_con
 		},
 		data: function() {
 			return {
 				arr: [],
 				arr2: [],
-				currIndex: 0
-
 			}
 		},
 		mounted() {
@@ -204,7 +206,7 @@
 					.then(res => {
 
 						console.log(res.data.data)
-						//console.log(res.data.data.entries)												
+							//console.log(res.data.data.entries)												
 						this.arr2 = res.data.data
 
 					})
@@ -215,6 +217,16 @@
 
 <style scoped lang="less">
 
+.imgsrc{
+	border-radius:50% ;	
+	width: 0.7rem;
+	height: 0.7rem;	
+	text-align: center;
+	margin-top: 0.2rem;
+}
+
+
+
 	.comm_warp .header .left {
 		margin-left: 5/50rem;
 	}
@@ -223,9 +235,8 @@
 		margin-right: 320/50rem;
 	}
 	
-	.comm_warp .header p{
+	.comm_warp .header p {
 		margin-left: 80px;
-		
 	}
 	/*content开始*/
 	
@@ -233,53 +244,7 @@
 		width: 100%;
 		background: white;
 	}
-	
-	.content .content_sec .star {
-		height: 1rem;
-		line-height: 1rem;
-		overflow: hidden;
-	}
-	
-	.content .content_sec .star li {
-		float: left;
-		line-height: 0.7rem;
-		padding: 0 0.2rem;
-	}
-	
-	.content .content_sec .star li img {
-		width: 0.7rem;
-		border-radius: 50%;
-	}
-	
-	.content .content_sec .star li:nth-of-type(1) {
-		width: 7%;
-	}
-	
-	.content .content_sec .star li:nth-of-type(2) {
-		width: 65%;
-	}
-	
-	.content .content_sec .star li:nth-of-type(3) {
-		background: yellowgreen;
-		border-radius: 0.35rem;
-		width: 10%;
-		text-align: center;
-		color: white;
-	}
-	
-	.content .content_sec .detay {
-		padding: 0 0.2rem;
-	}
-	
-	.content .content_sec .detay p {
-		text-align: left;
-		line-height: 0.4rem;
-	}
-	
-	.content .content_sec .detay p span {
-		color: greenyellow;
-	}
-	
+
 	.content .content_sec .saveimg {
 		margin: 0.2rem 0.2rem;
 		overflow: hidden;
