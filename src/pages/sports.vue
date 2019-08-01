@@ -18,7 +18,94 @@
 
             </yd-tab-panel>
              <yd-tab-panel slot="list2" label="练动作">
+              <div class="temp3">
+              	<span class="ku">动作库</span>
+              	<span class="tu2"><img src="../assets/sports/icon_more.png" alt="" /></span>
+              	<ul>
+              		<li>
+              			<img class="dongzhuo" src="../assets/sports/微信图片_201907032134561.png" alt="" />
+              			<p>胸部</p>
+              		</li>
+              		<li>
+              			<img class="dongzhuo" src="../assets/sports/微信图片_20190703213516.png" alt="" />
+              			<p>背部</p>
+              		</li>
+              		<li>
+              			<img class="dongzhuo" src="../assets/sports/微信图片_20190703213456.png" alt="" />
+              			<p>手臂</p>
+              		</li>
+              		<li>
+              			<img class="dongzhuo" src="../assets/sports/微信图片_20190703220649.png" alt="" />
+              			<p>颈部</p>
+              		</li>
+              		<li>
 
+              			<img class="dongzhuo" src="../assets/sports/微信图片_20190703220655.png" alt="" />
+              			<p>腹部</p>
+              		</li>
+              	</ul>
+              </div>
+
+              <div class="var4">
+              	<ul>
+              		<li>
+              			<a href="#"><img src="../assets/sports/1.png" alt="" /></a>
+              		</li>
+              		<li>
+              			<a href="#"><img src="../assets/sports/2.png" alt="" /></a>
+              		</li>
+              	</ul>
+              	<ul>
+              		<li>
+              			<a href="#"><img src="../assets/sports/3.png" alt="" /></a>
+              		</li>
+              		<li>
+              			<a href="#"><img src="../assets/sports/4.png" alt="" /></a>
+              		</li>
+              	</ul>
+              	<ul>
+              		<li>
+              			<a href="#"><img src="../assets/sports/5.png" alt="" /></a>
+              		</li>
+              		<li>
+              			<a href="#"><img src="../assets/sports/6.png" alt="" /></a>
+              		</li>
+              	</ul>
+              	<ul>
+              		<li>
+              			<a href="#"><img src="../assets/sports/7.png" alt="" /></a>
+              		</li>
+              		<li>
+              			<a href="#"><img src="../assets/sports/8.png" alt="" /></a>
+              		</li>
+              	</ul>
+              	<ul>
+              		<li>
+              			<a href="#"><img src="../assets/sports/9.png" alt="" /></a>
+              		</li>
+              		<li>
+              			<a href="#"><img src="../assets/sports/10.png" alt="" /></a>
+              		</li>
+              	</ul>
+              	<ul>
+              		<li>
+              			<a href="#"><img src="../assets/sports/11.png" alt="" /></a>
+              		</li>
+              		<li>
+              			<a href="#"><img src="../assets/sports/12.png" alt="" /></a>
+              		</li>
+              	</ul>
+              	<ul>
+              		<li>
+              			<a href="#"><img src="../assets/sports/13.png" alt="" /></a>
+              		</li>
+              		<li>
+              			<a href="#"><img src="../assets/sports/14.png" alt="" /></a>
+              		</li>
+              	</ul>
+
+              </div>
+              <div class="dibu">-没有更多内容-</div>
             </yd-tab-panel>
             <yd-tab-panel slot="list3" label="跑步">
                   <div id="wrapper">
@@ -273,6 +360,65 @@
     }
   }
 }
+.temp3{
+  overflow: hidden;
+  background-color: white;
+  border-top: 3px solid gainsboro;
+  margin-top: 5/50rem;
+  .ku{
+    display: block;
+    padding: 12/50rem 12/50rem;
+  }
+  .tu2{
+    display: block;
+    float: right;
+    margin-top: 5/50rem;
+    img{
+      width: 30/50rem;
+      height: 30/50rem;
+    }
+  }
+  ul{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 90/50rem;
+    margin-top: 55/50rem;
+    li{
+      flex: 1;
+        width: 100%;
+        float: left;
+        margin-left: 10/50rem;
+        p{
+          line-height: 22/50rem;
+        }
+      img{
+        width: 75%;
+        height: 50%;
+      }
+    }
+  }
+}
+.var4{
+  width: 100%;
+  background-color: gainsboro;
+
+ ul{
+    overflow: hidden;
+   li{
+     float: left;
+     width: 46%;
+     list-style: none;
+     margin: 8/50rem 4/50rem 4/50rem 8/50rem;
+     a{
+
+       img{
+         width:100%;
+         height: 100%;
+       }
+     }
+   }
+ }
+}
 .conp{
   width: 100%;
   height: 50/50rem;
@@ -340,6 +486,7 @@
 }
 .ku{
   margin-left: 10/50rem;
+  float: left;
 }
 
  .yd-list-other{
