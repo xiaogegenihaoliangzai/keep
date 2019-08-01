@@ -1,10 +1,10 @@
 <template>
 	<div class="comban">
 		<div class="fonimg">
-	    	<img src="../assets/scarch/icon_arrow_left_lined.png" alt="" />
+	    	<img src="../../assets/scarch/icon_arrow_left_lined.png" alt="" />
 	  	</div>
 		<headersList class="inproimg">
-		  	<img src="../assets/scarch/icon_share_android_filled.png" class="right" slot="rightImg" alt="" />
+		  	<img src="../../assets/scarch/icon_share_android_filled.png" class="right" slot="rightImg" alt="" />
 		</headersList>
 		<div class="fing">
 			<div class="imgBanner">
@@ -51,9 +51,9 @@
 				<li>
 					<p>
 						<span>智能设备</span>
-						未连接<img src="../assets/scarch/kt_kibra_setting_right_arrow.png" alt="" />
+						未连接<img src="../../assets/scarch/kt_kibra_setting_right_arrow.png" alt="" />
 						<span class="child">
-							<img src="../assets/scarch/illustration_band.png" alt="" />
+							<img src="../../assets/scarch/illustration_band.png" alt="" />
 							<span class="slide_fonti">推荐使用Keep手环，实时监测心率情况</span>
 						</span>
 					</p>
@@ -62,14 +62,14 @@
 					<p><strong>16</strong>人在训练</p>
 					<span class="slide_fonti">855648次已完成</span>
 					<div class="findIcon">
-						<img src="../assets/scarch/live_like_emoji_2.png" alt="" />
-						<img src="../assets/scarch/live_like_emoji_2.png" alt="" />
-						<img src="../assets/scarch/live_like_emoji_2.png" alt="" />
-						<img src="../assets/scarch/live_like_emoji_2.png" alt="" />
-						<img src="../assets/scarch/live_like_emoji_2.png" alt="" />
-						<img src="../assets/scarch/live_like_emoji_2.png" alt="" />
+						<img src="../../assets/scarch/live_like_emoji_2.png" alt="" />
+						<img src="../../assets/scarch/live_like_emoji_2.png" alt="" />
+						<img src="../../assets/scarch/live_like_emoji_2.png" alt="" />
+						<img src="../../assets/scarch/live_like_emoji_2.png" alt="" />
+						<img src="../../assets/scarch/live_like_emoji_2.png" alt="" />
+						<img src="../../assets/scarch/live_like_emoji_2.png" alt="" />
 						<a href="">
-							<img src="../assets/scarch/icon_follow_filled_normal.png" alt="" />
+							<img src="../../assets/scarch/icon_follow_filled_normal.png" alt="" />
 						</a>
 					</div>
 				</li>
@@ -85,7 +85,7 @@
 				<p>4个动作</p>
 				<span>放松-Relax</span>
 				<div class="cli_col">
-					<img src="../assets/scarch/img01.png" alt="" />
+					<img src="../../assets/scarch/img01.png" alt="" />
 					<p>四次点头</p>
 					<p><strong>8</strong>次</p>
 					<div class="bottom_col">
@@ -93,7 +93,7 @@
 					</div>
 				</div>
 				<div class="cli_col">
-					<img src="../assets/scarch/img02.png" alt="" />
+					<img src="../../assets/scarch/img02.png" alt="" />
 					<p>双向转头</p>
 					<p><strong>8</strong>次</p>
 					<div class="bottom_col">
@@ -101,7 +101,7 @@
 					</div>
 				</div>
 				<div class="cli_col">
-					<img src="../assets/scarch/img03.png" alt="" />
+					<img src="../../assets/scarch/img03.png" alt="" />
 					<p>深层颈屈肌动态激活</p>
 					<p><strong>5</strong>次</p>
 					<div class="bottom_col">
@@ -109,7 +109,7 @@
 					</div>
 				</div>
 				<div class="cli_col">
-					<img src="../assets/scarch/img04.png" alt="" />
+					<img src="../../assets/scarch/img04.png" alt="" />
 					<p>坐姿胸部拉伸</p>
 					<p><strong>20</strong> "</p>
 					<div class="bottom_col">
@@ -124,14 +124,14 @@
 			<p>TA 们刚刚完成训练</p>
 			<div class="footerImg">
 				<ul>
-					<img src="../assets/scarch/list1.png" alt="" />
-					<img src="../assets/scarch/list02.png" alt="" />
-					<img src="../assets/scarch/list3.png" alt="" />
+					<img src="../../assets/scarch/list1.png" alt="" />
+					<img src="../../assets/scarch/list02.png" alt="" />
+					<img src="../../assets/scarch/list3.png" alt="" />
 				</ul>
 				<ul>
-					<img src="../assets/scarch/list4.png" alt="" />
-					<img src="../assets/scarch/list5.png" alt="" />
-					<img src="../assets/scarch/list6.png" alt="" />
+					<img src="../../assets/scarch/list4.png" alt="" />
+					<img src="../../assets/scarch/list5.png" alt="" />
+					<img src="../../assets/scarch/list6.png" alt="" />
 				</ul>
 			</div>
 			<a href="">查看更多</a>
@@ -145,7 +145,7 @@
 </template>
 
 <script>
-import headersList from '../components/header.vue'
+import headersList from '../../components/header.vue'
 export default {
 	components:{
 		headersList
@@ -182,7 +182,7 @@ export default {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	background:url(../assets/scarch/1512976984016_750x600.jpg); 
+	background:url(../../assets/scarch/1512976984016_750x600.jpg); 
 	background-repeat:no-repeat; 
 	background-attachment:fixed;
 	background-size: 100%;
@@ -237,7 +237,7 @@ export default {
 				right: 23/50rem;
 				top: 5/50rem;
 				height: 10/50rem;
-				background:url(../assets/scarch/icon_outdoor_info.png);
+				background:url(../../assets/scarch/icon_outdoor_info.png);
 				background-size: 10/50rem auto;
 			}
 		}

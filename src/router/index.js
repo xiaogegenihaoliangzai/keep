@@ -5,7 +5,7 @@ import search from '../pages/search'
 import mine from '../pages/mine'
 import plan from '../pages/plan'
 import community from '../pages/community/community'
-import deday from '../pages/community/communitydeday'
+import communitydeday from '../pages/community/communitydeday'
 import sports from '../pages/sports'
 import login from '../pages/login'
 //import person from '../pages/person'
@@ -18,8 +18,8 @@ import city from '@/pages/community/secondrouter/city'
 
 
 
-import comban from '@/pages/comban'
-import searchall from '@/pages/searchall'
+import comban from '@/pages/searchAll/comban'
+import searchall from '@/pages/searchAll/searchall'
 Vue.use(Router)
 
 export default new Router({
@@ -60,9 +60,9 @@ export default new Router({
 		  {path:"city",component: city},
 		  ]
     },{
-      path: '/deday',
-      name: 'deday',
-      component: deday
+      path: '/communitydeday',
+      name: 'communitydeday',
+      component: communitydeday
     },
     {
       path: '/sports',

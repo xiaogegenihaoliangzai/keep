@@ -6,7 +6,7 @@
 			<div class="sec_sec">
 				<div class="box" v-for="(item,index) in arr2">
 					<a href="#">
-						<img :src="item.imgsrc">
+						<img :src="item.imgsrc" @click="nice">
 						<p>{{item.title}}</p>
 						<ul>
 							<li><img :src="item.thumbsrc"></li>
@@ -17,13 +17,13 @@
 					</a>
 				</div>
 			</div>
-			<div class="sec_sec">
+			<div class="sec_sec" id="sec_sec">
 				<div class="box" v-for="(item,index) in arr2">
 					<a href="#">
-						<img :src="item.imgsrc">
+						<img v-lazy.sec_sec="item.imgsrc">
 						<p>{{item.title}}</p>
 						<ul>
-							<li><img :src="item.thumbsrc"></li>
+							<li><img v-lazy.sec_sec="item.thumbsrc"></li>
 							<li>{{item.name}}</li>
 							<li><img src="../../../assets/community/icon_comment_like.png"></li>
 							<li>{{item.cont}}</li>
@@ -31,10 +31,14 @@
 					</a>
 				</div>
 			</div>
-
-	
+		
+			
 
 			
+			
+			
+			
+	
 			
 		<!--	
 			<div class="sec_sec">
@@ -70,12 +74,13 @@
 </template>
 
 <script>
+
 	export default {
 		data: function() {
 			return {
 				arr: [],
 				arr2: [],
-				currIndex: 0
+				currIndex: 0,
 		
 			}
 		},
@@ -95,7 +100,7 @@
 
 			},
 				fn1() {
-				this.$axios.get("../../static/data/json6.json")
+				this.$axios.get("../../static/data/json8.json")
 					.then(res => {
 
 						console.log(res.data.data)
@@ -104,11 +109,12 @@
 
 					})
 			},
-			run (){
+			nice(){
 				console.log(111)
-				this.$router.push('communitydeday')
+				this.$router.push('/communitydeday')
 			}
-		}
+        }
+		
 		
 	}
 </script>

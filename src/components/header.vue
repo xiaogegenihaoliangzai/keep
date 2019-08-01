@@ -20,13 +20,14 @@
 	 line-height: 50/50rem;
 	 font-weight: 700;
 	 margin-right: 6rem;
+	 width: 1.4rem;
 	 font-weight: 600;
 	 float: left;
-	 margin-left: 20/50rem;
+	 margin-left: 5/50rem;
 	}
 
 	.headerWrap img{
-		width: 30px;
+		width: 30/50rem;
 		position: absolute;
 		top:10/50rem;
 		right: 10/50rem;

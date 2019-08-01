@@ -2,11 +2,11 @@
   <div class="AllProline">
   	<div class="bgc">
 	  	<div class="fonimg">
-	    	<img src="../assets/scarch/icon_arrow_left_lined_dark.png" alt="" />
+	    	<img src="../../assets/scarch/icon_arrow_left_lined_dark.png" alt="" />
 	  	</div>
 	  	<div class="font_ps">
 		    <headeras title="全部课程">
-		    	<img src="../assets/scarch/icon_search_lined_dark.png" class="right" slot="rightImg" alt="" />
+		    	<img src="../../assets/scarch/icon_search_lined_dark.png" class="right" slot="rightImg" alt="" />
 		    </headeras>
 	  	</div>
   	</div>
@@ -38,7 +38,7 @@
 				    <van-button block type="info" @click="onConfirm">确认</van-button>
 				  </van-dropdown-item>
 					
-					<img src="../assets/scarch/tc_ic_course_filter_unselected.png" class="imgfont" alt="" />
+					<img src="../../assets/scarch/tc_ic_course_filter_unselected.png" class="imgfont" alt="" />
 				  <van-dropdown-item style="top:50px;">
 				    <van-switch-cell v-model="switch1" title="包邮" />
 				    <van-switch-cell v-model="switch2" title="团购" />
@@ -53,9 +53,9 @@
 			<div class="bgc">
 			  	<section class="imglist">
 			  		<router-link to="/comban">
-			  			<img src="../assets/scarch/list.png" alt="" />
+			  			<img src="../../assets/scarch/list.png" alt="" />
 			  		</router-link>
-			  		<img src="../assets/scarch/list2.png" alt="" />
+			  		<img src="../../assets/scarch/list2.png" alt="" />
 			  	</section>
 		  	</div>
 
@@ -79,8 +79,8 @@
 </template>
 
 <script>
-import headeras from '../components/header.vue'
-import tabbar from '../components/Tabbar.vue'
+import headeras from '../../components/header.vue'
+import tabbar from '../../components/Tabbar.vue'
 export default {
   data(){
   	return {
