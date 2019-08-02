@@ -1,22 +1,22 @@
 <template>
 
 	<div class="comm_warp">
-		
+
 		<!--头部组件-->
 		<div class="header">
-			<headersList title="动态详情">
+			<headersList title="动态详情" class="pp">
 				<img src="../../assets/community/icon_search_lined_dark.png" slot='leftImg' class='left' />
-				<img src="../../assets/community/mo_store_title_back.png" slot="rightImg" class="right" />
+				<img src="../../assets/community/mo_store_title_back.png" slot="rightImg" class="right" @click="Goback" />
 			</headersList>
-		</div>		
+		</div>
 		<!--个人详情-->
-     <commu name="小明">
-     	<img class="imgsrc" src="../../assets/community/016.jpg" slot="imgsrc"/>  	
-     </commu>
-     <!--个人信息宣言-->
-     <deday_con></deday_con>
+		<commu name="小明">
+			<img class="imgsrc" src="../../assets/community/016.jpg" slot="imgsrc" />
+		</commu>
+		<!--个人信息宣言-->
+		<deday_con></deday_con>
 		<div class="content">
-			<div class="content_sec">	
+			<div class="content_sec">
 				<div class="saveimg">
 					<img src="../../assets/community/016.jpg" />
 					<img src="../../assets/community/016.jpg" />
@@ -135,12 +135,12 @@
 			<h1>你可能感兴趣</h1></div>
 		<div class="sec">
 			<div class="sec_sec">
-				<div class="box" v-for="(item,index) in arr2">
+				<div class="box" v-for="(item,index) in arr">
 					<a href="#">
-						<img :src="item.imgsrc">
+						<img v-lazy.sec_sec="item.imgsrc">
 						<p>{{item.title}}</p>
 						<ul>
-							<li><img :src="item.thumbsrc"></li>
+							<li><img v-lazy.sec_sec="item.thumbsrc"></li>
 							<li>{{item.name}}</li>
 							<li><img src="../../assets/community/icon_comment_like.png"></li>
 							<li>{{item.cont}}</li>
@@ -151,10 +151,10 @@
 			<div class="sec_sec">
 				<div class="box" v-for="(item,index) in arr2">
 					<a href="#">
-						<img :src="item.imgsrc">
+						<img v-lazy.sec_sec="item.imgsrc">
 						<p>{{item.title}}</p>
 						<ul>
-							<li><img :src="item.thumbsrc"></li>
+							<li><img v-lazy.sec_sec="item.thumbsrc"></li>
 							<li>{{item.name}}</li>
 							<li><img src="../../assets/community/icon_comment_like.png"></li>
 							<li>{{item.cont}}</li>
@@ -162,9 +162,9 @@
 					</a>
 				</div>
 			</div>
-
 		</div>
-
+	<!--回到顶部-->
+      <backtop></backtop>
 	</div>
 </template>
 
@@ -172,12 +172,14 @@
 	import headersList from '../../components/header.vue'
 	import commu from '../../components/commu.vue'
 	import deday_con from '../../components/deday_con.vue'
+	import backtop from '../../components/backtop.vue'
 	export default {
 
 		components: {
 			headersList,
 			commu,
-			deday_con
+			deday_con,
+			backtop
 		},
 		data: function() {
 			return {
@@ -192,41 +194,38 @@
 		},
 		methods: {
 			fn() {
-				this.$axios.get("../static/data/json1.json")
-					.then(res => {
-						//console.log(res.data.data.entries)
-
-						this.arr = res.data.data.entries
-
+				this.$axios.get("../static/data/json7.json")
+					.then(res => {						
+						this.arr = res.data.data
 					})
-
 			},
 			fn1() {
 				this.$axios.get("../../static/data/json8.json")
 					.then(res => {
-
-						console.log(res.data.data)
-							//console.log(res.data.data.entries)												
+						//console.log(res.data.data)																
 						this.arr2 = res.data.data
-
 					})
+			},
+			Goback() {
+				this.$router.push('/community')
 			}
 		}
 	}
 </script>
 
 <style scoped lang="less">
-
-.imgsrc{
-	border-radius:50% ;	
-	width: 0.7rem;
-	height: 0.7rem;	
-	text-align: center;
-	margin-top: 0.2rem;
-}
-
-
-
+	.imgsrc {
+		border-radius: 50%;
+		width: 0.7rem;
+		height: 0.7rem;
+		text-align: center;
+		margin-top: 0.2rem;
+	}
+	
+	.pp {
+		margin-left: 3rem;
+	}
+	
 	.comm_warp .header .left {
 		margin-left: 5/50rem;
 	}
@@ -244,7 +243,7 @@
 		width: 100%;
 		background: white;
 	}
-
+	
 	.content .content_sec .saveimg {
 		margin: 0.2rem 0.2rem;
 		overflow: hidden;
@@ -416,7 +415,7 @@
 	/*评论区结束*/
 	
 	.cc {
-		margin-top: 0.25rem;
+		margin-top: 0.15rem;
 		padding-left: 0.25rem;
 		height: 1rem;
 		line-height: 1rem;
@@ -433,10 +432,9 @@
 	}
 	
 	.sec .sec_sec {
-		padding: 0rem 0.1rem;
+		padding: 0.1rem 0.1rem;
 		background: #FFFFFF;
-		border-radius: 0.1rem;
-		width: 49%;
+		width: 50%;
 	}
 	
 	.sec .sec_sec .box {
@@ -461,7 +459,7 @@
 		display: -webkit-box;
 		-webkit-line-clamp: 2;
 		-webkit-box-orient: vertical;
-		font-size: 0.35rem;
+		font-size: 0.3rem;
 		padding: 0 0.15rem;
 		color: black;
 		text-align: left;
@@ -470,18 +468,25 @@
 	
 	.sec .sec_sec .box ul {
 		overflow: hidden;
+		display: flex;
+		align-content: space-between;
+		align-items: center;
+		padding: 0 0.2rem;
+		
 	}
 	
 	.sec .sec_sec .box ul li {
-		float: left;
+		line-height: 0.5rem;
+		font-size: 12/50rem;
+		
 	}
 	
 	.sec .sec_sec .box ul li:nth-of-type(1) {
-		margin-right: 0.2rem;
+		margin-right: 0.1rem;
 	}
 	
 	.sec .sec_sec .box ul li:nth-of-type(2) {
-		margin-right: 0.8rem;
+		margin-right: 0.5rem;
 	}
 	
 	.sec .sec_sec .box ul li:nth-of-type(3) {
@@ -489,6 +494,7 @@
 	}
 	
 	.sec .sec_sec .box ul img {
-		width: 0.5rem;
+		width: 0.4rem;
+		
 	}
 </style>

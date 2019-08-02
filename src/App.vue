@@ -2,6 +2,7 @@
     <yd-layout id="app">
       <router-view/>
         <tabbar  slot="tabbar"  v-if="$route.path!='/'"></tabbar>
+       
     </yd-layout>
 
 </template>
