@@ -9,14 +9,22 @@
 
       <Tabbar slot="bar">
             <yd-tab-panel name="" slot="list1" label="练课程">
+              <div class="var">
+              	<div class="canjia">我参加的课程</div>
+              	<div class="tianjia">参加课程后，可以在这里快速开始课程</div>
+              	<div class="faxiang">
+              		<a href="#">发现课程</a>
+              	</div>
+              </div>
+              <div class="temp2">
+              	<span class="xuanze">为你推荐的课程</span>
+              	<span class="huan">换一换</span>
+              	<div class="tu1"><img src="../assets/sports/微信图片_201907021532507.jpg" alt="" /></div>
+              </div>
 
+              <div class="dibu">-没有更多内容-</div>
             </yd-tab-panel>
-            <yd-tab-panel slot="list5" label="">
 
-            </yd-tab-panel>
-            <yd-tab-panel slot="list6" label="">
-
-            </yd-tab-panel>
              <yd-tab-panel slot="list2" label="练动作">
               <div class="temp3">
               	<span class="ku">动作库</span>
@@ -227,7 +235,75 @@
                     </div>
             </yd-tab-panel>
             <yd-tab-panel slot="list4" label="智能硬件">
+                <div class="swiper-container">
+                  <div class="swipertop">
+                    <p class="sitem">为&nbsp;&nbsp;&nbsp;运&nbsp;&nbsp;&nbsp;动&nbsp;&nbsp;&nbsp;而&nbsp;&nbsp;&nbsp;生</p>
+                    <p class="huans">Keep 手环</p>
+                  </div>
+                  <van-swipe @change="onChange">
+                    <van-swipe-item><img src="../assets/sports/微信图片_20190702153249.png" alt="" /></van-swipe-item>
+                    <van-swipe-item><img src="../assets/sports/微信图片_20190702153249.jpg" alt="" /></van-swipe-item>
+                    <van-swipe-item><img src="../assets/sports/微信图片_201907021532491.jpg" alt="" /></van-swipe-item>
 
+                  </van-swipe>
+                  <div class="btn">
+                    <button class="btn1">绑定设备</button>
+                  <button class="btn2">了解详情</button>
+                  </div>
+
+                </div>
+
+                 <div class="swiper-container">
+                  <div class="swipertop">
+                    <p class="sitem">要&nbsp;&nbsp;&nbsp;你&nbsp;&nbsp;&nbsp;好&nbsp;&nbsp;&nbsp;看</p>
+                    <p class="huans">Keep 体脂称</p>
+                  </div>
+                  <van-swipe @change="onChange">
+                    <van-swipe-item><img src="../assets/sports/kt_bg_kibra_pink.png" alt="" /></van-swipe-item>
+                    <van-swipe-item><img src="../assets/sports/kt_bg_kibra_deep_blue.png" alt="" /></van-swipe-item>
+                    <van-swipe-item><img src="../assets/sports/kt_bg_kibra_purple.png" alt="" /></van-swipe-item>
+                     <van-swipe-item><img src="../assets/sports/kt_bg_kibra_tiffany_blue.png" alt="" /></van-swipe-item>
+
+                  </van-swipe>
+                  <div class="btn">
+                    <button class="btn1">绑定设备</button>
+                  <button class="btn2">了解详情</button>
+                  </div>
+
+                </div>
+                 <div class="swiper-container">
+                  <div class="swipertop">
+                    <p class="sitem">跟&nbsp;&nbsp;&nbsp;着&nbsp;&nbsp;&nbsp;跑&nbsp;&nbsp;&nbsp;就&nbsp;&nbsp;&nbsp;对&nbsp;&nbsp;&nbsp;了</p>
+                    <p class="huans">Keep 跑步机</p>
+                  </div>
+                  <van-swipe @change="onChange">
+                    <van-swipe-item><img src="../assets/sports/kt_bg_keloton_searching.png" alt="" /></van-swipe-item>
+
+
+                  </van-swipe>
+                  <div class="btn">
+                    <button class="btn1">绑定设备</button>
+                  <button class="btn2">了解详情</button>
+                  </div>
+
+                </div>
+                 <div class="swiper-container">
+                  <div class="swipertop">
+                    <p class="sitem">比&nbsp;&nbsp;&nbsp;跑&nbsp;&nbsp;&nbsp;轻&nbsp;&nbsp;&nbsp;松&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;比&nbsp;&nbsp;&nbsp;走&nbsp;&nbsp;&nbsp;更&nbsp;&nbsp;&nbsp;燃</p>
+                    <p class="huans">Keep 健走机</p>
+                  </div>
+                  <van-swipe @change="onChange">
+                    <van-swipe-item><img src="../assets/sports/kt_bg_walkman_searching.png" alt="" /></van-swipe-item>
+
+
+                  </van-swipe>
+                  <div class="btn">
+                    <button class="btn1">绑定设备</button>
+                  <button class="btn2">了解详情</button>
+                  </div>
+
+                </div>
+                  <div class="dibu">-没有更多内容-</div>
             </yd-tab-panel>
        </Tabbar>
 
@@ -238,6 +314,7 @@
   import Tabbar from '../components/Tabbar.vue'
 
 	import theheader from '../components/header.vue'
+
 	export default {
 		components: {
       Tabbar,
@@ -252,7 +329,11 @@
 
                 ]
       }
+    },methods: {
+    onChange(index) {
+      Toast('当前 Swipe 索引：' + index);
     }
+  }
 	}
 </script>
 
@@ -521,6 +602,64 @@ div{
     text-decoration: none;
     font-size: 13/50rem;
 
+  }
+}
+.swiper-container{
+  width: 95%;
+  background-color: white;
+  margin-top: 10/50rem;
+  line-height: 28/50rem;
+  text-align: center;
+  font-size: 13/50rem;
+  border-radius: 10/50rem;
+  .sitem{
+    color: #a9a9a9;
+    margin-top: 12/50rem;
+  }
+  .huans{
+    font-size: 26/50rem;
+    margin-bottom: 5/50rem;
+  }
+   img{
+    width: 50%;
+
+  }
+  .btn{
+    margin-bottom: 10/50rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 15/50rem;
+    .btn1,.btn2{
+      border: none;
+      padding: 8/50rem 22/50rem;
+      text-align: center;
+      border-radius: 20/50rem;
+      border: 1px solid #3cb371;
+      color: #3cb371;
+
+    }
+    .btn1{
+      background-color: #3cb371;
+      color: white;
+      border: none;
+    }
+  }
+
+}
+
+.temp2{
+  padding: 12/50rem;
+  overflow: hidden;
+  .xuanze{
+    float: left;
+    color: black;
+  }
+  .huan{
+    float: right;
+  }
+  img{
+    margin-top: 15/50rem;
+    width: 100%;
   }
 }
 </style>

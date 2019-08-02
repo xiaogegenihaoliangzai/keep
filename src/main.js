@@ -44,7 +44,7 @@ Vue.use(YDUI);
 Vue.use(MintUI)
 
 
-
+import { Swipe, SwipeItem } from 'vant';
 
 
 

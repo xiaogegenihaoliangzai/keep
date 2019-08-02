@@ -35,8 +35,8 @@
 	.headerWrap img:nth-of-type(2) .right{
 		left: 80/50rem;
 		}
-	.headerWrap  .right{
-		right: 50/50rem;
-	}
+  .right{
+    right: 50/50rem;
+  }
 
 </style>
