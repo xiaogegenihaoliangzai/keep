@@ -12,7 +12,7 @@ import community from '../pages/community/community'
 import communitydeday from '../pages/community/communitydeday'
 import sports from '../pages/sports/sports'
 import login from '../pages/login/login'
-//import person from '../pages/person'
+import person from '../pages/mine/person'
 
 import hot from '@/pages/community/secondrouter/hot'
 import attention from '@/pages/community/secondrouter/attention'
@@ -88,6 +88,12 @@ export default new Router({
       path: '/sports',
       name: 'sports',
       component: sports
-    }
+    },
+	,
+	{
+	  path: '/person',
+	  name: 'person',
+	  component: person
+	}
   ]
 })
