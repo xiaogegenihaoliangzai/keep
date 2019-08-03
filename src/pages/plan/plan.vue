@@ -1,15 +1,22 @@
 <template>
 	<div>
 		<div class="bg">
-			<img src="../assets/plan/微信图片_20190703173825.jpg">
+			<img src="../../assets/plan/微信图片_20190703173825.jpg">
 		</div>
 		<div class="aiplan">
-			<p>免费获取智能计划</p>
+			<p @click="tomsg">免费获取智能计划</p>
 		</div>
 	</div>
 </template>
 
 <script>
+	export default{
+		methods:{
+			tomsg(){
+				this.$router.push('./plan2')
+			}
+		}
+	}
 </script>
 
 <style scoped="scoped" lang="less">
@@ -26,7 +33,7 @@
 .aiplan{
 	width: 100%;
 	position: fixed;
-	bottom: 100/50rem;
+	bottom: 90/50rem;
 	text-align: center;
 	line-height: 51/50rem;
 	font-size: 16/50rem;

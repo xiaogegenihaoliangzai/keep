@@ -2,8 +2,8 @@
   <div>
           <div class="main">
             <theheader title="运动">
-              <img src="../assets/sports/su_icon_search.png" alt="" slot="rightImg" class="right" />
-              <img src="../assets/sports/tc_icon_kstar.png" alt="" slot="leftImg" class="left" />
+              <img src="../../assets/sports/su_icon_search.png" alt="" slot="rightImg" class="right" />
+              <img src="../../assets/sports/tc_icon_kstar.png" alt="" slot="leftImg" class="left" />
             </theheader>
           </div>
 
@@ -19,7 +19,7 @@
               <div class="temp2">
               	<span class="xuanze">为你推荐的课程</span>
               	<span class="huan">换一换</span>
-              	<div class="tu1"><img src="../assets/sports/微信图片_201907021532507.jpg" alt="" /></div>
+              	<div class="tu1"><img src="../../assets/sports/微信图片_201907021532507.jpg" alt="" /></div>
               </div>
 
               <div class="dibu">-没有更多内容-</div>
@@ -28,27 +28,27 @@
              <yd-tab-panel slot="list2" label="练动作">
               <div class="temp3">
               	<span class="ku">动作库</span>
-              	<span class="tu2"><img src="../assets/sports/icon_more.png" alt="" /></span>
+              	<span class="tu2"><img src="../../assets/sports/icon_more.png" alt="" /></span>
               	<ul>
               		<li>
-              			<img class="dongzhuo" src="../assets/sports/微信图片_201907032134561.png" alt="" />
+              			<img class="dongzhuo" src="../../assets/sports/微信图片_201907032134561.png" alt="" />
               			<p>胸部</p>
               		</li>
               		<li>
-              			<img class="dongzhuo" src="../assets/sports/微信图片_20190703213516.png" alt="" />
+              			<img class="dongzhuo" src="../../assets/sports/微信图片_20190703213516.png" alt="" />
               			<p>背部</p>
               		</li>
               		<li>
-              			<img class="dongzhuo" src="../assets/sports/微信图片_20190703213456.png" alt="" />
+              			<img class="dongzhuo" src="../../assets/sports/微信图片_20190703213456.png" alt="" />
               			<p>手臂</p>
               		</li>
               		<li>
-              			<img class="dongzhuo" src="../assets/sports/微信图片_20190703220649.png" alt="" />
+              			<img class="dongzhuo" src="../../assets/sports/微信图片_20190703220649.png" alt="" />
               			<p>颈部</p>
               		</li>
               		<li>
 
-              			<img class="dongzhuo" src="../assets/sports/微信图片_20190703220655.png" alt="" />
+              			<img class="dongzhuo" src="../../assets/sports/微信图片_20190703220655.png" alt="" />
               			<p>腹部</p>
               		</li>
               	</ul>
@@ -57,58 +57,58 @@
               <div class="var4">
               	<ul>
               		<li>
-              			<a href="#"><img src="../assets/sports/1.png" alt="" /></a>
+              			<a href="#"><img src="../../assets/sports/1.png" alt="" /></a>
               		</li>
               		<li>
-              			<a href="#"><img src="../assets/sports/2.png" alt="" /></a>
-              		</li>
-              	</ul>
-              	<ul>
-              		<li>
-              			<a href="#"><img src="../assets/sports/3.png" alt="" /></a>
-              		</li>
-              		<li>
-              			<a href="#"><img src="../assets/sports/4.png" alt="" /></a>
+              			<a href="#"><img src="../../assets/sports/2.png" alt="" /></a>
               		</li>
               	</ul>
               	<ul>
               		<li>
-              			<a href="#"><img src="../assets/sports/5.png" alt="" /></a>
+              			<a href="#"><img src="../../assets/sports/3.png" alt="" /></a>
               		</li>
               		<li>
-              			<a href="#"><img src="../assets/sports/6.png" alt="" /></a>
-              		</li>
-              	</ul>
-              	<ul>
-              		<li>
-              			<a href="#"><img src="../assets/sports/7.png" alt="" /></a>
-              		</li>
-              		<li>
-              			<a href="#"><img src="../assets/sports/8.png" alt="" /></a>
+              			<a href="#"><img src="../../assets/sports/4.png" alt="" /></a>
               		</li>
               	</ul>
               	<ul>
               		<li>
-              			<a href="#"><img src="../assets/sports/9.png" alt="" /></a>
+              			<a href="#"><img src="../../assets/sports/5.png" alt="" /></a>
               		</li>
               		<li>
-              			<a href="#"><img src="../assets/sports/10.png" alt="" /></a>
-              		</li>
-              	</ul>
-              	<ul>
-              		<li>
-              			<a href="#"><img src="../assets/sports/11.png" alt="" /></a>
-              		</li>
-              		<li>
-              			<a href="#"><img src="../assets/sports/12.png" alt="" /></a>
+              			<a href="#"><img src="../../assets/sports/6.png" alt="" /></a>
               		</li>
               	</ul>
               	<ul>
               		<li>
-              			<a href="#"><img src="../assets/sports/13.png" alt="" /></a>
+              			<a href="#"><img src="../../assets/sports/7.png" alt="" /></a>
               		</li>
               		<li>
-              			<a href="#"><img src="../assets/sports/14.png" alt="" /></a>
+              			<a href="#"><img src="../../assets/sports/8.png" alt="" /></a>
+              		</li>
+              	</ul>
+              	<ul>
+              		<li>
+              			<a href="#"><img src="../../assets/sports/9.png" alt="" /></a>
+              		</li>
+              		<li>
+              			<a href="#"><img src="../../assets/sports/10.png" alt="" /></a>
+              		</li>
+              	</ul>
+              	<ul>
+              		<li>
+              			<a href="#"><img src="../../assets/sports/11.png" alt="" /></a>
+              		</li>
+              		<li>
+              			<a href="#"><img src="../../assets/sports/12.png" alt="" /></a>
+              		</li>
+              	</ul>
+              	<ul>
+              		<li>
+              			<a href="#"><img src="../../assets/sports/13.png" alt="" /></a>
+              		</li>
+              		<li>
+              			<a href="#"><img src="../../assets/sports/14.png" alt="" /></a>
               		</li>
               	</ul>
 
@@ -121,7 +121,7 @@
                     	<div id="scroller">
                         <div class="bgc">
                     		<div class="box1">
-                    			<div class="tu3"><img src="../assets/sports/微信图片_20190702153250.png" alt="" /></div>
+                    			<div class="tu3"><img src="../../assets/sports/微信图片_20190702153250.png" alt="" /></div>
                     			<ul>
 
                     				<li>
@@ -147,23 +147,23 @@
                         <div class="var3">
                           <div class="protion">
                             <span class="ku">燃脂跑课程精选</span>
-                            <span class="tu2"><img src="../assets/sports/icon_more.png" alt="" /></span>
+                            <span class="tu2"><img src="../../assets/sports/icon_more.png" alt="" /></span>
                           </div>
                     			<ul>
-                    				<li><img class="gl3" src="../assets/sports/微信图片_201907021532503.jpg" alt="" /></li>
-                    				<li><img class="gl5" src="../assets/sports/_201907021532501.jpg" alt="" /></li>
+                    				<li><img class="gl3" src="../../assets/sports/微信图片_201907021532503.jpg" alt="" /></li>
+                    				<li><img class="gl5" src="../../assets/sports/_201907021532501.jpg" alt="" /></li>
                     			</ul>
                     		</div>
                     		 <div class="var3">
                     		  <div class="protion">
                     		    <span class="ku">燃脂跑课程精选</span>
-                    		    <span class="tu2"><img src="../assets/sports/icon_more.png" alt="" /></span>
+                    		    <span class="tu2"><img src="../../assets/sports/icon_more.png" alt="" /></span>
                     		  </div>
                     			<ul>
-                    				<li><img class="gl3" src="../assets/sports/微信图片_201907021532505.jpg" alt="" />
+                    				<li><img class="gl3" src="../../assets/sports/微信图片_201907021532505.jpg" alt="" />
                             <p class="shang">如何能够坚持跑步?</p>
                             <p class="xiang">7月先定一个小目标</p></li>
-                    				<li><img class="gl5" src="../assets/sports/201907021532504.jpg" alt="" />
+                    				<li><img class="gl5" src="../../assets/sports/201907021532504.jpg" alt="" />
                             <p class="shang">让暑假不无聊</p>
                             <p class="xiang">游戏刷刷的过</p></li>
                     			</ul>
@@ -173,7 +173,7 @@
                           <div class="conp">
                     			<span class="ku">跑道辅助训练</span>
                           </div>
-                    			<div><img src="../assets/sports/微信图片_201907021532506.jpg" alt="" /></div>
+                    			<div><img src="../../assets/sports/微信图片_201907021532506.jpg" alt="" /></div>
 
                     		</div>
 
@@ -184,7 +184,7 @@
                     			<div>
                     				<ul>
 
-                    					<img src="../assets/sports/1.jpg" alt="" /> <span class="ling">骑黑马的爱跳水的Ting</span><p><strong>8.22</strong>公里</p></li>
+                    					<img src="../../assets/sports/1.jpg" alt="" /> <span class="ling">骑黑马的爱跳水的Ting</span><p><strong>8.22</strong>公里</p></li>
                     				</ul>
                     			</div>
                     			<p class="ck">查看排行榜</p>
@@ -241,9 +241,9 @@
                     <p class="huans">Keep 手环</p>
                   </div>
                   <van-swipe @change="onChange">
-                    <van-swipe-item><img src="../assets/sports/微信图片_20190702153249.png" alt="" /></van-swipe-item>
-                    <van-swipe-item><img src="../assets/sports/微信图片_20190702153249.jpg" alt="" /></van-swipe-item>
-                    <van-swipe-item><img src="../assets/sports/微信图片_201907021532491.jpg" alt="" /></van-swipe-item>
+                    <van-swipe-item><img src="../../assets/sports/微信图片_20190702153249.png" alt="" /></van-swipe-item>
+                    <van-swipe-item><img src="../../assets/sports/微信图片_20190702153249.jpg" alt="" /></van-swipe-item>
+                    <van-swipe-item><img src="../../assets/sports/微信图片_201907021532491.jpg" alt="" /></van-swipe-item>
 
                   </van-swipe>
                   <div class="btn">
@@ -259,10 +259,10 @@
                     <p class="huans">Keep 体脂称</p>
                   </div>
                   <van-swipe @change="onChange">
-                    <van-swipe-item><img src="../assets/sports/kt_bg_kibra_pink.png" alt="" /></van-swipe-item>
-                    <van-swipe-item><img src="../assets/sports/kt_bg_kibra_deep_blue.png" alt="" /></van-swipe-item>
-                    <van-swipe-item><img src="../assets/sports/kt_bg_kibra_purple.png" alt="" /></van-swipe-item>
-                     <van-swipe-item><img src="../assets/sports/kt_bg_kibra_tiffany_blue.png" alt="" /></van-swipe-item>
+                    <van-swipe-item><img src="../../assets/sports/kt_bg_kibra_pink.png" alt="" /></van-swipe-item>
+                    <van-swipe-item><img src="../../assets/sports/kt_bg_kibra_deep_blue.png" alt="" /></van-swipe-item>
+                    <van-swipe-item><img src="../../assets/sports/kt_bg_kibra_purple.png" alt="" /></van-swipe-item>
+                     <van-swipe-item><img src="../../assets/sports/kt_bg_kibra_tiffany_blue.png" alt="" /></van-swipe-item>
 
                   </van-swipe>
                   <div class="btn">
@@ -277,7 +277,7 @@
                     <p class="huans">Keep 跑步机</p>
                   </div>
                   <van-swipe @change="onChange">
-                    <van-swipe-item><img src="../assets/sports/kt_bg_keloton_searching.png" alt="" /></van-swipe-item>
+                    <van-swipe-item><img src="../../assets/sports/kt_bg_keloton_searching.png" alt="" /></van-swipe-item>
 
 
                   </van-swipe>
@@ -293,7 +293,7 @@
                     <p class="huans">Keep 健走机</p>
                   </div>
                   <van-swipe @change="onChange">
-                    <van-swipe-item><img src="../assets/sports/kt_bg_walkman_searching.png" alt="" /></van-swipe-item>
+                    <van-swipe-item><img src="../../assets/sports/kt_bg_walkman_searching.png" alt="" /></van-swipe-item>
 
 
                   </van-swipe>
@@ -311,9 +311,9 @@
 </template>
 
 <script>
-  import Tabbar from '../components/Tabbar.vue'
+  import Tabbar from '../../components/Tabbar.vue'
 
-	import theheader from '../components/header.vue'
+	import theheader from '../../components/header.vue'
 
 	export default {
 		components: {
@@ -323,9 +323,9 @@
     data(){
       return {
         list: [
-                    {img:require("../assets/sports/微信图片_20190704185625.png"),img2:require("../assets/sports/微信图片_201907021537281.png"), title: "跑步打卡小分队",mmap:"备赛专用8周突破21公里",title2:"跑步秘籍.更快、更远、更安全",mmap2:"完美训练方案--提速、提距、不伤膝盖"},
-                    {img:require("../assets/sports/微信图片_20190704185646.png"),img2:require("../assets/sports/微信图片_20190702153730.png"),title: "10公里突破",mmap:"备赛专用8周突破42公里",title2:"爱上跑步，享受跑步",mmap2:"跑步大神吴栋带你跑！"},
-                    {img:require("../assets/sports/微信图片_20190704185625.png"),img2:require("../assets/sports/微信图片_20190702153729.png"),title: "半程马拉松集训",mmap:"里程进阶，5周打造超长耐力",title2:"跑步秘籍.怎样跑步不粗腿",mmap2:"姿势对，你也能跑出细腿翘臀！"}
+                    {img:require("../../assets/sports/微信图片_20190704185625.png"),img2:require("../../assets/sports/微信图片_201907021537281.png"), title: "跑步打卡小分队",mmap:"备赛专用8周突破21公里",title2:"跑步秘籍.更快、更远、更安全",mmap2:"完美训练方案--提速、提距、不伤膝盖"},
+                    {img:require("../../assets/sports/微信图片_20190704185646.png"),img2:require("../../assets/sports/微信图片_20190702153730.png"),title: "10公里突破",mmap:"备赛专用8周突破42公里",title2:"爱上跑步，享受跑步",mmap2:"跑步大神吴栋带你跑！"},
+                    {img:require("../../assets/sports/微信图片_20190704185625.png"),img2:require("../../assets/sports/微信图片_20190702153729.png"),title: "半程马拉松集训",mmap:"里程进阶，5周打造超长耐力",title2:"跑步秘籍.怎样跑步不粗腿",mmap2:"姿势对，你也能跑出细腿翘臀！"}
 
                 ]
       }

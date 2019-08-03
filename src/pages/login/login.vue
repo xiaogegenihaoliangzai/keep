@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div id="box">
-			<video src="../video/intro.mp4" autoplay="autoplay" height="100%" width="100%" loop="loop" ></video>
+			<video src="../../video/intro.mp4" autoplay="autoplay" height="100%" width="100%" loop="loop" ></video>
 			<div class="bgvideo"></div>
 			<p class="passlogin">密码登录</p>
 			<div class="content">

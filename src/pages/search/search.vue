@@ -2,7 +2,7 @@
   <div class="search">
   	<div class="divHeader">
   		<headersList title="探索">
-  			<img src="../assets/scarch/icon_search_lined_dark.png" alt="" slot="leftImg" class="right" />
+  			<img src="../../assets/scarch/icon_search_lined_dark.png" alt="" slot="leftImg" class="right" />
   		</headersList>
   	</div>
   	<Tabbar slot="bar">
@@ -12,10 +12,10 @@
   					<div class="banner">
 		              <div class="swiper-container">
 						    <div class="swiper-wrapper">
-						        <div class="swiper-slide"><img src="../assets/scarch/banner01.png" alt="" /></div>
-						        <div class="swiper-slide"><img src="../assets/scarch/banner02.png" alt="" /></div>
-						        <div class="swiper-slide"><img src="../assets/scarch/banner03.png" alt="" /></div>
-						        <div class="swiper-slide"><img src="../assets/scarch/banner04.png" alt="" /></div>
+						        <div class="swiper-slide"><img src="../../assets/scarch/banner01.png" alt="" /></div>
+						        <div class="swiper-slide"><img src="../../assets/scarch/banner02.png" alt="" /></div>
+						        <div class="swiper-slide"><img src="../../assets/scarch/banner03.png" alt="" /></div>
+						        <div class="swiper-slide"><img src="../../assets/scarch/banner04.png" alt="" /></div>
 						    </div>
 						    <div class="swiper-pagination"></div>
 					   </div>
@@ -24,21 +24,21 @@
 					<yd-flexbox>
 			            <yd-flexbox-item>
 			            	<router-link to="/searchall">
-			            		<img src="../assets/scarch/su_training_entrance_all.png" alt="" />
+			            		<img src="../../assets/scarch/su_training_entrance_all.png" alt="" />
 			            		<p>找课程</p>
 			            	</router-link>
 			            </yd-flexbox-item>
 			            
 			            <yd-flexbox-item>
-			            	<img src="../assets/scarch/tc_icon_food_library.png" alt="" />
+			            	<img src="../../assets/scarch/tc_icon_food_library.png" alt="" />
 			            	<p>动作库</p>
 			            </yd-flexbox-item>
 			            <yd-flexbox-item>
-			            	<img src="../assets/scarch/tc_icon_food_classify.png" alt="" />
+			            	<img src="../../assets/scarch/tc_icon_food_classify.png" alt="" />
 			            	<p>活动挑战</p>
 			            </yd-flexbox-item>
 			            <yd-flexbox-item>
-			            	<img src="../assets/scarch/su_training_entrance_mine.png" alt="" />
+			            	<img src="../../assets/scarch/su_training_entrance_mine.png" alt="" />
 			            	<p>私家课</p>
 			            </yd-flexbox-item>
 			          
@@ -54,7 +54,7 @@
 					<div class="wid">
 						<yd-flexbox>
 				            <div class="lefts"><yd-flexbox-item>热门课程分类</yd-flexbox-item></div>
-				            <div><img src="../assets/scarch/kt_kibra_setting_right_arrow.png" alt="" /></div>
+				            <div><img src="../../assets/scarch/kt_kibra_setting_right_arrow.png" alt="" /></div>
 				        </yd-flexbox>
 			        </div>
 			        	<div class="menus">
@@ -72,7 +72,7 @@
 					<div class="wid">
 						<yd-flexbox>
 				            <div class="lefts"><yd-flexbox-item>全站热门活动</yd-flexbox-item></div>
-				            <div><img src="../assets/scarch/kt_kibra_setting_right_arrow.png" alt="" /></div>
+				            <div><img src="../../assets/scarch/kt_kibra_setting_right_arrow.png" alt="" /></div>
 				        </yd-flexbox>
 			        </div>
 
@@ -125,8 +125,8 @@
 				        </yd-flexbox>
 			        </div>
 			        <div class="proline">
-						<img src="../assets/scarch/img.png" alt="" />
-						<img src="../assets/scarch/img2.png" alt="" />
+						<img src="../../assets/scarch/img.png" alt="" />
+						<img src="../../assets/scarch/img2.png" alt="" />
 			        </div>
 				</aside>
 	        </yd-tab-panel>
@@ -151,8 +151,8 @@
 
 <script>
 import Swiper from 'swiper';
-import headersList from '../components/header.vue'
-import Tabbar from '../components/Tabbar.vue'
+import headersList from '../../components/header.vue'
+import Tabbar from '../../components/Tabbar.vue'
 export default {
 	data(){
 		return {
@@ -181,7 +181,7 @@ export default {
 	},
 	methods:{
 		btns(){
-			this.$axios.get("../../static/data/新建文本文档.json").then(res=>{
+			this.$axios.get("../../../static/data/新建文本文档.json").then(res=>{
 				console.log(res.data)
 			})
 		}
@@ -220,16 +220,16 @@ export default {
 	border-radius: 5/50rem;
 	margin: 3/50rem;
 	overflow: hidden;
-	background:url(../assets/scarch/01.png)no-repeat right bottom;
+	background:url(../../assets/scarch/01.png)no-repeat right bottom;
 	background-size: auto 40%;
 	background-color: #F1EFFA;
 	&:nth-of-type(2){
-		background:url(../assets/scarch/02.png)no-repeat right bottom;
+		background:url(../../assets/scarch/02.png)no-repeat right bottom;
 		background-size: auto 40%;
 		background-color: #F0F3FC;
 	}
 	&:nth-of-type(3){
-		background:url(../assets/scarch/03.png)no-repeat right bottom;
+		background:url(../../assets/scarch/03.png)no-repeat right bottom;
 		background-size: auto 40%;
 		background-color: #F7FBFA;
 	}
