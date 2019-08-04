@@ -28,7 +28,6 @@ import Vant from 'vant';
 import 'vant/lib/index.css';
 Vue.use(Vant);
 
-
 //回到顶部
 import {BackTop} from 'vue-ydui/dist/lib.rem/backtop';
 Vue.component(BackTop.name, BackTop);
@@ -48,6 +47,10 @@ import YDUI from 'vue-ydui'; /* 相当于import YDUI from 'vue-ydui/ydui.rem.js'
 Vue.use(YDUI);
 Vue.use(MintUI)
 
+
+import { Lazyload } from 'mint-ui';
+
+Vue.use(Lazyload);
 
 import { Swipe, SwipeItem } from 'vant';
 

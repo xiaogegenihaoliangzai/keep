@@ -54,12 +54,10 @@
 
 			<div class="bgc">
 			  	<section class="imglist" v-model="items">
-			  		<router-link to="/comban">
-			  			<img src="../../assets/scarch/list.png" v-show="isShowList" alt="" />
+			  		<router-link to="/comban" v-for="(item,index) in listie" :key="index">
+			  			<img  v-lazy.imglist="item.img" v-show="isShowList" />
 			  		</router-link>
-			  		<router-link to="/comban" v-show="isShow">
-			  			<img src="../../assets/scarch/list2.png" alt="" />
-			  		</router-link>
+
 			  	</section>
 		  	</div>
 
@@ -101,7 +99,12 @@ export default {
       	],
       	isShow:true,
       	isShowList:true,
-      	items:''
+      	items:'',
+      	listie:[
+        {img:require('../../assets/scarch/list2.png')},
+      	{img:require('../../assets/scarch/list2.png')}
+      	]
+
   	}
   },
   components:{
@@ -137,6 +140,7 @@ export default {
 .bgc{
 	background-color: #fff;
 }
+
 .imgfont{
 	height:30/50rem;
 	width: 30/50rem;
