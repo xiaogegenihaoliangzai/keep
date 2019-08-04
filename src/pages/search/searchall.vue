@@ -12,12 +12,11 @@
 		    </headeras>
 	  	</div>
   	</div>
-  	<tabbar class="widlist">
-  		<yd-tab-panel slot="list1" label="全部">
-  			
+  	  	<tabbar class="widlist">
+  		<yd-tab-panel slot="list1" label="全部">			
   			<section class="tabpotion">
 		  		<van-dropdown-menu>
-				  <div @click="btnList" ><van-dropdown-item title="排序" style="top:50px;" v-model="value" :options="option"  /></div>
+				  <van-dropdown-item title="排序" style="top:50px;" v-model="value" :options="option" />
 				  <van-dropdown-item style="top:50px;" title="部位" ref="item">
 				    <van-switch-cell v-model="switch1" title="全身" />
 				    <van-switch-cell v-model="switch2" title="胸部" />
@@ -31,15 +30,13 @@
 				    <van-switch-cell v-model="switch2" title="颈部" />
 				    <van-button block type="info" @click="onConfirm">确认</van-button>
 				  </van-dropdown-item>
-
 				  <van-dropdown-item style="top:50px;" title="难度" ref="item">
 				    <van-switch-cell v-model="switch1" title="包邮" />
 				    <van-switch-cell v-model="switch2" title="团购" />
 				    <van-switch-cell v-model="switch2" title="团购" />
 				    <van-switch-cell v-model="switch2" title="团购" />
 				    <van-button block type="info" @click="onConfirm">确认</van-button>
-				  </van-dropdown-item>
-					
+				  </van-dropdown-item>					
 					<img src="../../assets/scarch/tc_ic_course_filter_unselected.png" class="imgfont" alt="" />
 				  <van-dropdown-item style="top:50px;">
 				    <van-switch-cell v-model="switch1" title="包邮" />
@@ -48,21 +45,16 @@
 				    <van-switch-cell v-model="switch2" title="团购" />
 				    <van-button block type="info" @click="onConfirm">确认</van-button>
 				  </van-dropdown-item>
-
 				</van-dropdown-menu>
 		  	</section>
-
 			<div class="bgc">
-			  	<section class="imglist" v-model="items">
+			  	<section class="imglist">
 			  		<router-link to="/comban">
-			  			<img src="../../assets/scarch/list.png" v-show="isShowList" alt="" />
+			  			<img src="../../assets/scarch/list.png" alt="" />
 			  		</router-link>
-			  		<router-link to="/comban" v-show="isShow">
-			  			<img src="../../assets/scarch/list2.png" alt="" />
-			  		</router-link>
+			  		<img src="../../assets/scarch/list2.png" alt="" />
 			  	</section>
-		  	</div>
-
+		  </div>
   		</yd-tab-panel>
         <yd-tab-panel slot="list2" label="健身">333333</yd-tab-panel>
         <yd-tab-panel slot="list3" label="跑步">444444</yd-tab-panel>
@@ -70,15 +62,7 @@
         <yd-tab-panel slot="list4" label="操课">555555</yd-tab-panel>
         <yd-tab-panel slot="list4" label="行走">555555</yd-tab-panel>
         <yd-tab-panel slot="list4" label="球类">555555</yd-tab-panel>
-
-
-
   	</tabbar>
-
-
-  	
-
-
   </div>
 </template>
 

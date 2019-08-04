@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-
 import search from '../pages/search/search'
 import mine from '../pages/mine/mine'
 import class2 from '../pages/mine/class2'
@@ -13,20 +12,14 @@ import communitydeday from '../pages/community/communitydeday'
 import sports from '../pages/sports/sports'
 import login from '../pages/login/login'
 import person from '../pages/mine/person'
-
 import hot from '@/pages/community/secondrouter/hot'
 import attention from '@/pages/community/secondrouter/attention'
 import topic from '@/pages/community/secondrouter/topic'
 import diary from '@/pages/community/secondrouter/diary'
 import city from '@/pages/community/secondrouter/city'
-
-
-
 import comban from '@/pages/search/comban'
 import searchall from '@/pages/search/searchall'
 Vue.use(Router)
-
-
 export default new Router({
   routes: [
     {

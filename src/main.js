@@ -26,28 +26,13 @@ Vue.component(TabItem.name, TabItem);
 Vue.prototype.$axios=Axios;
 import Vant from 'vant';
 import 'vant/lib/index.css';
-
- 
-import { PullRefresh } from 'vant';
-
-Vue.use(PullRefresh);
-
-
-
-Vue.use(Swipe).use(SwipeItem);
-
+Vue.use(Vant);
 //回到顶部
 import {BackTop} from 'vue-ydui/dist/lib.rem/backtop';
 Vue.component(BackTop.name, BackTop);
-
-
-
 //下拉刷新
 import {InfiniteScroll} from 'vue-ydui/dist/lib.rem/infinitescroll';
 Vue.component(InfiniteScroll.name, InfiniteScroll);
-
-import { Loadmore } from 'mint-ui';
-Vue.component(Loadmore.name, Loadmore);
 
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
@@ -61,10 +46,7 @@ import YDUI from 'vue-ydui'; /* 相当于import YDUI from 'vue-ydui/ydui.rem.js'
 Vue.use(YDUI);
 Vue.use(MintUI)
 
-
 import { Swipe, SwipeItem } from 'vant';
-
-
 
 /* eslint-disable no-new */
 new Vue({

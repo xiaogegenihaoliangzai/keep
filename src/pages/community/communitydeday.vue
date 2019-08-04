@@ -190,6 +190,7 @@
 		mounted() {
 			this.fn();
 			this.fn1();
+			
 
 		},
 		methods: {

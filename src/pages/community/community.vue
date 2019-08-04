@@ -109,7 +109,7 @@ export default {
 	},
 	mounted() {
 		this.fn();
-		this.fn1();
+		this.fn1();	
 	},
 	methods: {
 		fn() {
@@ -127,7 +127,8 @@ export default {
 		},
 		nice() {
 
-			this.$router.push('/communitydeday')
+			this.$router.push('communitydeday');
+		document.documentElement.scrollTop=0
 		},
 		loadTop() {
 			this.$refs.loadmore.onTopLoaded();
