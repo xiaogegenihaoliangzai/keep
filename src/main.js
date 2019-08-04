@@ -27,7 +27,6 @@ Vue.component(TabItem.name, TabItem);
 Vue.prototype.$axios=Axios;
 import Vant from 'vant';
 import 'vant/lib/index.css';
-
  
 import { PullRefresh } from 'vant';
 
@@ -56,6 +55,10 @@ import YDUI from 'vue-ydui'; /* 相当于import YDUI from 'vue-ydui/ydui.rem.js'
 Vue.use(YDUI);
 Vue.use(MintUI)
 
+
+import { Lazyload } from 'mint-ui';
+
+Vue.use(Lazyload);
 
 import { Swipe, SwipeItem } from 'vant';
 

@@ -31,7 +31,6 @@
 				    <van-switch-cell v-model="switch2" title="颈部" />
 				    <van-button block type="info" @click="onConfirm">确认</van-button>
 				  </van-dropdown-item>
-
 				  <van-dropdown-item style="top:50px;" title="难度" ref="item">
 				    <van-switch-cell v-model="switch1" title="包邮" />
 				    <van-switch-cell v-model="switch2" title="团购" />
@@ -39,8 +38,7 @@
 				    <van-switch-cell v-model="switch2" title="团购" />
 				    <van-button block type="info" @click="onConfirm">确认</van-button>
 				  </van-dropdown-item>
-					
-					<!-- <img src="../../assets/scarch/tc_ic_course_filter_unselected.png" class="imgfont" alt="" /> -->
+					 <img src="../../assets/scarch/tc_ic_course_filter_unselected.png" class="imgfont" alt="" /> 
 				  <van-dropdown-item style="top:50px;" title="时间" ref="item">
 				    <van-switch-cell v-model="switch1" title="包邮" />
 				    <van-switch-cell v-model="switch2" title="团购" />
@@ -48,18 +46,15 @@
 				    <van-switch-cell v-model="switch2" title="团购" />
 				    <van-button block type="info" @click="onConfirm">确认</van-button>
 				  </van-dropdown-item>
-
 				</van-dropdown-menu>
 		  	</section>
 
 			<div class="bgc">
 			  	<section class="imglist" v-model="items">
-			  		<router-link to="/comban">
-			  			<img src="../../assets/scarch/list.png" v-show="isShowList" alt="" />
+			  		<router-link to="/comban" v-for="(item,index) in listie" :key="index">
+			  			<img  v-lazy.imglist="item.img" v-show="isShowList" />
 			  		</router-link>
-			  		<router-link to="/comban" v-show="isShow">
-			  			<img src="../../assets/scarch/list2.png" alt="" />
-			  		</router-link>
+
 			  	</section>
 		  	</div>
 
@@ -101,7 +96,12 @@ export default {
       	],
       	isShow:true,
       	isShowList:true,
-      	items:''
+      	items:'',
+      	listie:[
+        {img:require('../../assets/scarch/list2.png')},
+      	{img:require('../../assets/scarch/list2.png')}
+      	]
+
   	}
   },
   components:{
@@ -137,6 +137,7 @@ export default {
 .bgc{
 	background-color: #fff;
 }
+
 .imgfont{
 	height:30/50rem;
 	width: 30/50rem;
