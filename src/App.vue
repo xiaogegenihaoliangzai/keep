@@ -17,7 +17,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
 *{
     margin: 0 auto;
     padding: 0;
@@ -57,8 +57,12 @@ ol, ul ,li{list-style: none;}
   overflow: visible;
 }
 .yd-tab-nav .yd-tab-active:before{
-  width: 18%;
+  width: 15/50rem;
   margin-left: -11%;
+}
+.yd-tab-nav{
+	min-width:  100%!important;
+	text-align: center!important;
 }
 .yd-list-theme2 .yd-list-item .yd-list-mes{
   margin-top: 0.26rem;
