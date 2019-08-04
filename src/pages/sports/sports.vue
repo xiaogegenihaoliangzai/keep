@@ -1,6 +1,7 @@
 <template>
   <div>
-          <div class="main">
+
+          <div class="main bgc" >
             <theheader title="运动">
               <img src="../../assets/sports/su_icon_search.png" alt="" slot="rightImg" class="right" />
               <img src="../../assets/sports/tc_icon_kstar.png" alt="" slot="leftImg" class="left" />
@@ -122,7 +123,8 @@
                         <div class="bgc">
                     		<div class="box1">
                     			<div class="tu3"><img src="../../assets/sports/微信图片_20190702153250.png" alt="" /></div>
-                    			<ul>
+                    			
+                          <ul>
 
                     				<li>
                     					<a href="#" class="ren">燃脂跑</a>
@@ -237,7 +239,7 @@
             <yd-tab-panel slot="list4" label="智能硬件">
                 <div class="swiper-container">
                   <div class="swipertop">
-                    <p class="sitem">为&nbsp;&nbsp;&nbsp;运&nbsp;&nbsp;&nbsp;动&nbsp;&nbsp;&nbsp;而&nbsp;&nbsp;&nbsp;生</p>
+                    <p class="sitem">为运动而生</p>
                     <p class="huans">Keep 手环</p>
                   </div>
                   <van-swipe @change="onChange">
@@ -255,9 +257,10 @@
 
                  <div class="swiper-container">
                   <div class="swipertop">
-                    <p class="sitem">要&nbsp;&nbsp;&nbsp;你&nbsp;&nbsp;&nbsp;好&nbsp;&nbsp;&nbsp;看</p>
+                    <p class="sitem">要你好看</p>
                     <p class="huans">Keep 体脂称</p>
                   </div>
+
                   <van-swipe @change="onChange">
                     <van-swipe-item><img src="../../assets/sports/kt_bg_kibra_pink.png" alt="" /></van-swipe-item>
                     <van-swipe-item><img src="../../assets/sports/kt_bg_kibra_deep_blue.png" alt="" /></van-swipe-item>
@@ -273,7 +276,7 @@
                 </div>
                  <div class="swiper-container">
                   <div class="swipertop">
-                    <p class="sitem">跟&nbsp;&nbsp;&nbsp;着&nbsp;&nbsp;&nbsp;跑&nbsp;&nbsp;&nbsp;就&nbsp;&nbsp;&nbsp;对&nbsp;&nbsp;&nbsp;了</p>
+                    <p class="sitem">跟着跑就对了</p>
                     <p class="huans">Keep 跑步机</p>
                   </div>
                   <van-swipe @change="onChange">
@@ -289,7 +292,7 @@
                 </div>
                  <div class="swiper-container">
                   <div class="swipertop">
-                    <p class="sitem">比&nbsp;&nbsp;&nbsp;跑&nbsp;&nbsp;&nbsp;轻&nbsp;&nbsp;&nbsp;松&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;比&nbsp;&nbsp;&nbsp;走&nbsp;&nbsp;&nbsp;更&nbsp;&nbsp;&nbsp;燃</p>
+                    <p class="sitem">比跑轻松,比走更燃</p>
                     <p class="huans">Keep 健走机</p>
                   </div>
                   <van-swipe @change="onChange">
@@ -305,16 +308,22 @@
                 </div>
                   <div class="dibu">-没有更多内容-</div>
             </yd-tab-panel>
+            <yd-tab-panel slot="list5" label="行走">
+              </yd-tab-panel>
+               <yd-tab-panel slot="list6" label="瑜珈">
+              </yd-tab-panel>
        </Tabbar>
 
 </div>
 </template>
 
 <script>
+
   import Tabbar from '../../components/Tabbar.vue'
 
 	import theheader from '../../components/header.vue'
 
+  
 	export default {
 		components: {
       Tabbar,
@@ -329,7 +338,7 @@
 
                 ]
       }
-    },methods: {
+    },  methods: {
     onChange(index) {
       Toast('当前 Swipe 索引：' + index);
     }
@@ -338,14 +347,23 @@
 </script>
 
 <style scoped lang="less">
+.wrapper{
+  background-color: #fafafa;
+}
 .main{
   width: 100%;
   overflow: hidden;
+  .left{
+     right:50/50rem !important;
+  }
 }
 .headerWrap  .left{
   right: 95/50rem;
 }
+
 .box1{
+  margin-top: 6/50rem;
+  background-color: white;
   position: relative;
   .tu3{
     width: 100%;
@@ -355,6 +373,7 @@
       height: 75%;
     }
   }
+  
   ul{
     width: 75%;
     text-align: center;
@@ -375,6 +394,7 @@
   margin-top: 10/50rem;
   padding-bottom: 20/50rem;
   overflow: hidden;
+  background-color: white;
  .canjia{
    color: black;
    float: left;
@@ -404,7 +424,8 @@
 .protion{
   width: 100%;
   height: 50/50rem;
-
+  margin-top: 8/50rem;
+  background-color: white;
   overflow: hidden;
   span{
     font-size: 14/50rem;
@@ -425,8 +446,9 @@
     display: flex;
     flex-wrap: nowrap;
     height: 120/50rem;
-    overflow: scrolls;
-
+    overflow: scroll;
+    margin-top: 8/50rem;
+    background-color: white;
     li{
         width: 100%;
         float: left;
@@ -444,7 +466,7 @@
 .temp3{
   overflow: hidden;
   background-color: white;
-  border-top: 3px solid gainsboro;
+  
   margin-top: 5/50rem;
   .ku{
     display: block;
@@ -481,8 +503,8 @@
 }
 .var4{
   width: 100%;
-  background-color: gainsboro;
-
+  background-color: #fafafa;
+  margin-top: 6/50rem;
  ul{
     overflow: hidden;
    li{
@@ -511,8 +533,9 @@
   }
 }
 .var6{
-  margin-top:50/50rem;
+  margin-top:8/50rem;
   width: 100%;
+ background-color: white;
   overflow: hidden;
   img{
     width: 95%;
@@ -526,8 +549,8 @@
     border-top :1px solid #ccc;
     border-bottom :1px solid #ccc;
     position: relative;
-
-
+    background-color: white;
+    margin-top: 6/50rem;
       img{
         width: 40/50rem;
         height: 40/50rem;
@@ -586,6 +609,8 @@ div{
   width: 100%;
   height: 50/50rem;
   position: relative;
+  margin-top: 8/50rem;
+  background-color: white;
   span{
     font-size: 14/50rem;
     float: left;
@@ -614,6 +639,7 @@ div{
   border-radius: 10/50rem;
   .sitem{
     color: #a9a9a9;
+    letter-spacing: 8/50rem;
     margin-top: 12/50rem;
   }
   .huans{
@@ -650,6 +676,8 @@ div{
 .temp2{
   padding: 12/50rem;
   overflow: hidden;
+  margin-top: 8/50rem;
+  background-color: white;
   .xuanze{
     float: left;
     color: black;
@@ -662,4 +690,5 @@ div{
     width: 100%;
   }
 }
+
 </style>
