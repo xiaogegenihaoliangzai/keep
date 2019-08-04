@@ -27,6 +27,7 @@ import comban from '@/pages/search/comban'
 import searchall from '@/pages/search/searchall'
 Vue.use(Router)
 
+
 export default new Router({
   routes: [
     {

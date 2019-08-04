@@ -141,7 +141,7 @@
 						<p>{{item.title}}</p>
 						<ul>
 							<li><img v-lazy.sec_sec="item.thumbsrc"></li>
-							<li>{{item.name}}</li>
+							<li>{{item.username}}</li>
 							<li><img src="../../assets/community/icon_comment_like.png"></li>
 							<li>{{item.cont}}</li>
 						</ul>
@@ -155,7 +155,7 @@
 						<p>{{item.title}}</p>
 						<ul>
 							<li><img v-lazy.sec_sec="item.thumbsrc"></li>
-							<li>{{item.name}}</li>
+							<li>{{item.username}}</li>
 							<li><img src="../../assets/community/icon_comment_like.png"></li>
 							<li>{{item.cont}}</li>
 						</ul>
@@ -459,7 +459,7 @@
 		display: -webkit-box;
 		-webkit-line-clamp: 2;
 		-webkit-box-orient: vertical;
-		font-size: 0.3rem;
+		font-size: 0.25rem;
 		padding: 0 0.15rem;
 		color: black;
 		text-align: left;
@@ -469,32 +469,27 @@
 	.sec .sec_sec .box ul {
 		overflow: hidden;
 		display: flex;
-		align-content: space-between;
+		align-content:space-around;
 		align-items: center;
-		padding: 0 0.2rem;
-		
+		padding: 0 0.1rem;
+
 	}
-	
+
 	.sec .sec_sec .box ul li {
-		line-height: 0.5rem;
+		line-height: 0.7rem;
 		font-size: 12/50rem;
 		
+
 	}
-	
-	.sec .sec_sec .box ul li:nth-of-type(1) {
-		margin-right: 0.1rem;
-	}
-	
+
 	.sec .sec_sec .box ul li:nth-of-type(2) {
-		margin-right: 0.5rem;
-	}
-	
-	.sec .sec_sec .box ul li:nth-of-type(3) {
-		margin-right: 0.2rem;
-	}
-	
-	.sec .sec_sec .box ul img {
-		width: 0.4rem;
+		margin-left: 0.1rem;
 		
 	}
+
+	.sec .sec_sec .box ul img {
+		width: 0.4rem;
+
+	}
+
 </style>

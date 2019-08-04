@@ -1,7 +1,9 @@
 <template>
 	<div class="comban">
 		<div class="fonimg">
-	    	<img src="../../assets/scarch/icon_arrow_left_lined.png" alt="" />
+			<router-link to="searchall">
+	    		<img src="../../assets/scarch/icon_arrow_left_lined.png" alt="" />
+			</router-link>
 	  	</div>
 		<headersList class="inproimg">
 		  	<img src="../../assets/scarch/icon_share_android_filled.png" class="right" slot="rightImg" alt="" />

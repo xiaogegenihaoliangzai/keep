@@ -27,8 +27,15 @@ Vue.component(TabItem.name, TabItem);
 Vue.prototype.$axios=Axios;
 import Vant from 'vant';
 import 'vant/lib/index.css';
-Vue.use(Vant);
 
+ 
+import { PullRefresh } from 'vant';
+
+Vue.use(PullRefresh);
+
+
+
+Vue.use(Swipe).use(SwipeItem);
 
 //回到顶部
 import {BackTop} from 'vue-ydui/dist/lib.rem/backtop';
