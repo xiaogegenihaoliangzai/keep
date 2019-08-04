@@ -27,7 +27,7 @@
 		</div>
 		-->
 
-		<Tabbar>
+		<Tabbar class="uu">
 			<div slot="list1">
 				<yd-tab-panel label="热门" class="item_list">
 					<section class="sec">
@@ -38,7 +38,7 @@
 									<p>{{item.title}}</p>
 									<ul>
 										<li><img v-lazy.sec_sec="item.thumbsrc"></li>
-										<li>{{item.name}}</li>
+										<li>{{item.username}}</li>
 										<li><img src="../../assets/community/icon_comment_like.png"></li>
 										<li>{{item.cont}}</li>
 									</ul>
@@ -52,7 +52,7 @@
 									<p>{{item.title}}</p>
 									<ul>
 										<li><img v-lazy.sec_sec="item.thumbsrc"></li>
-										<li>{{item.name}}</li>
+										<li>{{item.username}}</li>
 										<li><img src="../../assets/community/icon_comment_like.png"></li>
 										<li>{{item.cont}}</li>
 									</ul>
@@ -126,6 +126,9 @@
 </script>
 
 <style scoped lang="less">
+.uu{
+	width: 100%;
+}
 .imgtt{
 	width: 100%;
 	height: 100%;
@@ -201,27 +204,20 @@
 	.sec .sec_sec .box ul {
 		overflow: hidden;
 		display: flex;
-		align-content: space-between;
+		align-content:space-around;
 		align-items: center;
-		padding: 0 0.2rem;
+		padding: 0 0.1rem;
 
 	}
 
 	.sec .sec_sec .box ul li {
-		line-height: 0.5rem;
+		line-height: 0.7rem;
 
-	}
-
-	.sec .sec_sec .box ul li:nth-of-type(1) {
-		margin-right: 0.1rem;
 	}
 
 	.sec .sec_sec .box ul li:nth-of-type(2) {
-		margin-right: 0.5rem;
-	}
-
-	.sec .sec_sec .box ul li:nth-of-type(3) {
-		margin-right: 0.2rem;
+		margin-left: 0.1rem;
+		
 	}
 
 	.sec .sec_sec .box ul img {
