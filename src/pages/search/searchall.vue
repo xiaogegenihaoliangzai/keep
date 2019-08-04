@@ -2,7 +2,9 @@
   <div class="AllProline">
   	<div class="bgc">
 	  	<div class="fonimg">
-	    	<img src="../../assets/scarch/icon_arrow_left_lined_dark.png" alt="" />
+	  		<router-link to="search">
+	    		<img src="../../assets/scarch/icon_arrow_left_lined_dark.png" alt="" />
+	  		</router-link>
 	  	</div>
 	  	<div class="font_ps">
 		    <headeras title="全部课程">
@@ -15,7 +17,7 @@
   			
   			<section class="tabpotion">
 		  		<van-dropdown-menu>
-				  <van-dropdown-item title="排序" style="top:50px;" v-model="value" :options="option" />
+				  <div @click="btnList" ><van-dropdown-item title="排序" style="top:50px;" v-model="value" :options="option"  /></div>
 				  <van-dropdown-item style="top:50px;" title="部位" ref="item">
 				    <van-switch-cell v-model="switch1" title="全身" />
 				    <van-switch-cell v-model="switch2" title="胸部" />
@@ -51,11 +53,13 @@
 		  	</section>
 
 			<div class="bgc">
-			  	<section class="imglist">
+			  	<section class="imglist" v-model="items">
 			  		<router-link to="/comban">
-			  			<img src="../../assets/scarch/list.png" alt="" />
+			  			<img src="../../assets/scarch/list.png" v-show="isShowList" alt="" />
 			  		</router-link>
-			  		<img src="../../assets/scarch/list2.png" alt="" />
+			  		<router-link to="/comban" v-show="isShow">
+			  			<img src="../../assets/scarch/list2.png" alt="" />
+			  		</router-link>
 			  	</section>
 		  	</div>
 
@@ -94,7 +98,10 @@ export default {
         	{ text: '新课优先', value: 1 },
         	{ text: '时长从短到长', value: 2 },
         	{ text: '卡路里消耗从高到低', value: 3 },
-      	]
+      	],
+      	isShow:true,
+      	isShowList:true,
+      	items:''
   	}
   },
   components:{
@@ -104,6 +111,15 @@ export default {
   methods: {
     onConfirm() {
       this.$refs.item.toggle();
+    },
+    btnList(index){
+    	console.log();
+    	this.items=index.target.innerText;
+    	if(this.items=="新课优先"){
+    		this.isShow=false;
+    	}else{
+    		this.isShow=true;
+    	}
     }
   }
 }
