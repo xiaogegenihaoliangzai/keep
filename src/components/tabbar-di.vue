@@ -58,11 +58,11 @@
  	.item{
 		flex: 1;
 		text-align: center;
-    color:black
+    	color:#BFC2C7
 	}
 	img{
 
-		width: 30/50rem;
+		width: 25/50rem;
 		display: inline-flex;
 	}
 
