@@ -32,9 +32,15 @@ Vue.use(Vant);
 //回到顶部
 import {BackTop} from 'vue-ydui/dist/lib.rem/backtop';
 Vue.component(BackTop.name, BackTop);
+
+
+
 //下拉刷新
 import {InfiniteScroll} from 'vue-ydui/dist/lib.rem/infinitescroll';
 Vue.component(InfiniteScroll.name, InfiniteScroll);
+
+import { Loadmore } from 'mint-ui';
+Vue.component(Loadmore.name, Loadmore);
 
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
