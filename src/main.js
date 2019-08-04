@@ -39,7 +39,7 @@ Vue.use(PullRefresh);
 
 Vue.use(Swipe).use(SwipeItem);
 
->>>>>>> 5a9b2e3204b8fc83ef88fc3950fe26eb082752fc
+
 //回到顶部
 import {BackTop} from 'vue-ydui/dist/lib.rem/backtop';
 Vue.component(BackTop.name, BackTop);
@@ -59,14 +59,14 @@ import YDUI from 'vue-ydui'; /* 相当于import YDUI from 'vue-ydui/ydui.rem.js'
 Vue.use(YDUI);
 Vue.use(MintUI)
 
-<<<<<<< HEAD
-=======
+
+
 
 import { Lazyload } from 'mint-ui';
 
 Vue.use(Lazyload);
 
->>>>>>> 5a9b2e3204b8fc83ef88fc3950fe26eb082752fc
+
 import { Swipe, SwipeItem } from 'vant';
 
 /* eslint-disable no-new */

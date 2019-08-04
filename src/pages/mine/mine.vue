@@ -84,8 +84,8 @@
 				<span class="tt"><img src="../../assets/wo-img/ic_portrait_training_right_on.png"></span>
 			</p>
 			<p>
-				<span>160.0<em>身高cm</em></span>
-				<span>49.0<em>体重kg</em></span>
+				<span>175.0<em>身高cm</em></span>
+				<span>70.0<em>体重kg</em></span>
 			</p>
 		</div>
 

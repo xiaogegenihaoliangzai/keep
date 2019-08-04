@@ -36,15 +36,15 @@
 				    <van-switch-cell v-model="switch2" title="团购" />
 				    <van-switch-cell v-model="switch2" title="团购" />
 				    <van-button block type="info" @click="onConfirm">确认</van-button>
-<<<<<<< HEAD
+
 				  </van-dropdown-item>					
 					<img src="../../assets/scarch/tc_ic_course_filter_unselected.png" class="imgfont" alt="" />
-				  <van-dropdown-item style="top:50px;">
-=======
+
+
 				  </van-dropdown-item>
 					 <img src="../../assets/scarch/tc_ic_course_filter_unselected.png" class="imgfont" alt="" /> 
-				  <van-dropdown-item style="top:50px;" title="时间" ref="item">
->>>>>>> 5a9b2e3204b8fc83ef88fc3950fe26eb082752fc
+				  <van-dropdown-item style="top:50px;"  >
+
 				    <van-switch-cell v-model="switch1" title="包邮" />
 				    <van-switch-cell v-model="switch2" title="团购" />
 				    <van-switch-cell v-model="switch2" title="团购" />
@@ -54,19 +54,19 @@
 				</van-dropdown-menu>
 		  	</section>
 			<div class="bgc">
-<<<<<<< HEAD
+
 			  	<section class="imglist">
 			  		<router-link to="/comban">
 			  			<img src="../../assets/scarch/list.png" alt="" />
 			  		</router-link>
 			  		<img src="../../assets/scarch/list2.png" alt="" />
-=======
+	</section>
 			  	<section class="imglist" v-model="items">
 			  		<router-link to="/comban" v-for="(item,index) in listie" :key="index">
 			  			<img  v-lazy.imglist="item.img" v-show="isShowList" />
 			  		</router-link>
 
->>>>>>> 5a9b2e3204b8fc83ef88fc3950fe26eb082752fc
+
 			  	</section>
 		  </div>
   		</yd-tab-panel>
@@ -77,11 +77,11 @@
         <yd-tab-panel slot="list4" label="行走">555555</yd-tab-panel>
         <yd-tab-panel slot="list4" label="球类">555555</yd-tab-panel>
   	</tabbar>
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 5a9b2e3204b8fc83ef88fc3950fe26eb082752fc
+
+
+
   </div>
 </template>
 
