@@ -30,19 +30,19 @@
 				<ul class="top-2">
 					<li>
 						<span>22</span><br>
-						<strong @click="run"> 关注</strong>
+						<em @click="run"> 关注</em>
 					</li>
 					<li>
 						<span>3</span><br>
-						<strong>  粉丝</strong>
+						<em>粉丝</em>
 					</li>
 					<li>
 						<span>5</span><br>
-						<strong> 动态</strong>
+						<em>动态</em>
 					</li>
 					<li>
 						<span>1000</span><br>
-						<strong> 卡路里币</strong>
+						<em>卡路里币</em>
 					</li>
 				</ul>
 			</div>
@@ -66,11 +66,11 @@
 		<div class="active2">
 			<p>
 				<span>我的运动数据</span>
-				<img src="../../assets/wo-img/ic_music_more.png">
+				<img src="../../assets/wo-img/ic_portrait_training_right_on.png">
 			</p>
 			<p>
-				<span>总运动</span><strong>(分钟)</strong>
-				<span>本周消耗</span><strong>(千卡)</strong>
+				<span>总运动</span><em>(分钟)</em>
+				<span>本周消耗</span><em>(千卡)</em>
 			</p>
 			<p>
 				<span>56</span>
@@ -81,65 +81,68 @@
 		<div class="active3">
 			<p>
 				<span class="ww">我的身体数据<img src="../../assets/wo-img/fd_icon_eye_lined.png"></span>
-				<span class="tt"><img src="../../assets/wo-img/ic_music_more.png"></span>
+				<span class="tt"><img src="../../assets/wo-img/ic_portrait_training_right_on.png"></span>
 			</p>
 			<p>
-				<span>160.0<strong>身高cm</strong></span>
-				<span>49.0<strong>体重kg</strong></span>
+				<span>160.0<em>身高cm</em></span>
+				<span>49.0<em>体重kg</em></span>
 			</p>
 		</div>
 
 		<div class="list">
-			<mines>
-				<i class="fa fa-star-o" aria-hidden="true" slot="left"></i>
-				<p slot="center">我的收藏</p>
-				<img src="../../assets/wo-img/ic_portrait_training_right_on.png" slot="right" />
-			</mines>
-			<mines>
-				<i class="fa fa-file-text-o" aria-hidden="true" slot="left"></i>
-				<p slot="center">草稿箱</p>
-				<img src="../../assets/wo-img/ic_portrait_training_right_on.png" slot="right" />
-			</mines>
-			<mines>
-				<i class="fa fa-female" aria-hidden="true" slot="left"></i>
-				<p slot="center">身体测试</p>
-				<img src="../../assets/wo-img/ic_portrait_training_right_on.png" slot="right" />
-			</mines>
-			<mines>
-				<i class="fa fa-user-circle" aria-hidden="true" slot="left"></i>
-				<p slot="center">我的Keepland</p>
-				<img src="../../assets/wo-img/ic_portrait_training_right_on.png" slot="right" />
-			</mines>
-			<mines>
-				<i class="fa fa-suitcase" aria-hidden="true" slot="left"></i>
-				<p slot="center">我的钱包</p>
-				<img src="../../assets/wo-img/ic_portrait_training_right_on.png" slot="right" />
-			</mines>
-			<mines title="草稿箱">
-				<i class="fa fa-file-text-o" aria-hidden="true" slot="left"></i>
-				<p slot="center">我的订单</p>
-				<img src="../../assets/wo-img/ic_portrait_training_right_on.png" slot="right" />
-			</mines>
-			<mines title="身体测试">
-				<i class="fa fa-cart-arrow-down" aria-hidden="true" slot="left"></i>
-				<p slot="center">我的购物车</p>
-				<img src="../../assets/wo-img/ic_portrait_training_right_on.png" slot="right" />
-			</mines>
-			<mines title="我的Keepland">
-				<i class="fa fa-superpowers" aria-hidden="true" slot="left"></i>
-				<p slot="center">我的卡路里工厂</p>
-				<img src="../../assets/wo-img/ic_portrait_training_right_on.png" slot="right" />
-			</mines>
-			<mines title="身体测试">
-				<i class="fa fa-heart-o" aria-hidden="true" slot="left"></i>
-				<p slot="center">领取七夕大礼包</p>
-				<img src="../../assets/wo-img/ic_portrait_training_right_on.png" slot="right" />
-			</mines>
-			<mines title="我的Keepland">
-				<i class="fa fa-share-alt" aria-hidden="true" slot="left"></i>
-				<p slot="center">帮助中心</p>
-				<img src="../../assets/wo-img/ic_portrait_training_right_on.png" slot="right" />
-			</mines>
+			<div class="wid">
+				<mines>
+					<i class="fa fa-star-o" aria-hidden="true" slot="left"></i>
+					<p slot="center">我的收藏</p>
+					<img src="../../assets/wo-img/ic_portrait_training_right_on.png" slot="right" />
+				</mines>
+				<mines>
+					<i class="fa fa-file-text-o" aria-hidden="true" slot="left"></i>
+					<p slot="center">草稿箱</p>
+					<img src="../../assets/wo-img/ic_portrait_training_right_on.png" slot="right" />
+				</mines>
+				<mines>
+					<i class="fa fa-female" aria-hidden="true" slot="left"></i>
+					<p slot="center">身体测试</p>
+					<img src="../../assets/wo-img/ic_portrait_training_right_on.png" slot="right" />
+				</mines>
+				<mines>
+					<i class="fa fa-user-circle" aria-hidden="true" slot="left"></i>
+					<p slot="center">我的Keepland</p>
+					<img src="../../assets/wo-img/ic_portrait_training_right_on.png" slot="right" />
+				</mines>
+				<mines>
+					<i class="fa fa-suitcase" aria-hidden="true" slot="left"></i>
+					<p slot="center">我的钱包</p>
+					<img src="../../assets/wo-img/ic_portrait_training_right_on.png" slot="right" />
+				</mines>
+				<mines title="草稿箱">
+					<i class="fa fa-file-text-o" aria-hidden="true" slot="left"></i>
+					<p slot="center">我的订单</p>
+					<img src="../../assets/wo-img/ic_portrait_training_right_on.png" slot="right" />
+				</mines>
+				<mines title="身体测试">
+					<i class="fa fa-cart-arrow-down" aria-hidden="true" slot="left"></i>
+					<p slot="center">我的购物车</p>
+					<img src="../../assets/wo-img/ic_portrait_training_right_on.png" slot="right" />
+				</mines>
+				<mines title="我的Keepland">
+					<i class="fa fa-superpowers" aria-hidden="true" slot="left"></i>
+					<p slot="center">我的卡路里工厂</p>
+					<img src="../../assets/wo-img/ic_portrait_training_right_on.png" slot="right" />
+				</mines>
+				<mines title="身体测试">
+					<i class="fa fa-heart-o" aria-hidden="true" slot="left"></i>
+					<p slot="center">领取七夕大礼包</p>
+					<img src="../../assets/wo-img/ic_portrait_training_right_on.png" slot="right" />
+				</mines>
+				<mines title="我的Keepland">
+					<i class="fa fa-share-alt" aria-hidden="true" slot="left"></i>
+					<p slot="center">帮助中心</p>
+					<img src="../../assets/wo-img/ic_portrait_training_right_on.png" slot="right" />
+				</mines>
+			</div>
+			
 		</div>
 
 	</div>
@@ -218,10 +221,12 @@
 	
 	#wrapper {
 		width: 100%;
-		height: 1300/50rem;
-		background: gainsboro;
+		height: 1100/50rem;
+		background: #f5f5f5!important;
 		position: relative;
+		
 	}
+	
 	/*头部样式*/
 	
 	#header {
@@ -247,17 +252,9 @@
 	}
 	
 	.right img {
-		width: 30/50rem;
-		height: 30/50rem;
+		width: 27.5/50rem;
+		height: 27.5/50rem;
 		padding-left: 10/50rem;
-	}
-	/*内容开始*/
-	
-	#wrapper {
-		width: 100%;
-		height: 1300/50rem;
-		background: gainsboro;
-		position: relative;
 	}
 	
 	.top {
@@ -346,7 +343,7 @@
 		color: black;
 	}
 	
-	.top-2 strong {
+	.top-2 em {
 		color: darkgray;
 	}
 	
@@ -366,9 +363,9 @@
 		position: absolute;
 		top: 200/50rem;
 		/*	border: 1/50rem solid #000;*/
-		border-top: 1/50rem solid darkgray;
+		border-top: 1/50rem solid #f5f5f5;
 		width: 100%;
-		height: 120/50rem;
+		height: 105/50rem;
 		background: white;
 		z-index: 99;
 		color: black;
@@ -377,28 +374,29 @@
 	
 	.active1 ul {
 		margin-top: 20/50rem;
+		margin-left: -10px;
 	}
 	
 	.active1 li {
 		float: left;
-		padding-left: 30/50rem;
+		padding-left: 38/50rem;
 	}
 	
 	.active1 li i {
-		font-size: 25/50rem;
+		font-size: 22/50rem;
 	}
 	
 	.active1 p img {
 		position: absolute;
 		left: 20/50rem;
-		top: 90/50rem;
+		top: 70/50rem!important;
 		width: 340/50rem;
 		height: 50/50rem;
 	}
 	
 	.active2 {
 		position: absolute;
-		top: 360/50rem;
+		top: 337.5/50rem!important;
 		/*	border: 1/50rem solid #000;*/
 		width: 100%;
 		height: 130/50rem;
@@ -407,18 +405,23 @@
 	}
 	
 	.active2 img {
-		width: 20/50rem;
-		height: 25/50rem;
+		/*width: 30/50rem;
+		height: 25/50rem;*/
 	}
 	
 	.active2 p:nth-child(1) span {
 		font-size: 17/50rem;
-		padding-right: 220/50rem;
+		padding-right: 255/50rem;
 	}
 	
 	.active2 p:nth-child(1) img {
+		width: 30/50rem;
+		height: 25/50rem;
 		float: right;
-		padding-right: 10/50rem;
+		position: relative;
+		/*padding-right: 20/50rem;*/
+		left: -5px;
+		top:-20px
 	}
 	
 	.active2 p:nth-child(1) {
@@ -427,7 +430,7 @@
 	
 	.active2 p:nth-child(2) {
 		margin-top: 20/50rem;
-		margin-left: -130/50rem!important;
+		margin-left: -135/50rem!important;
 		font-size: 13/50rem;
 	}
 	
@@ -448,11 +451,12 @@
 	
 	.active2 p:nth-child(3) span {
 		padding-left: 110/50rem;
+		font-size: 20px;
 	}
 	
 	.active3 {
 		position: absolute;
-		top: 500/50rem;
+		top: 480/50rem!important;
 		/*border: 1/50rem solid #000;*/
 		width: 100%;
 		height: 130/50rem;
@@ -472,11 +476,13 @@
 	}
 	
 	.tt img {
-		width: 20/50rem;
+		width: 25/50rem;
 		height: 25/50rem;
 		float: right;
-		margin-right: 10/50rem;
-		padding-top: 10/50rem;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		
 	}
 	
 	.active3 p:nth-child(2) {
@@ -486,28 +492,15 @@
 	
 	.active3 p:nth-child(2) span {
 		padding-left: 40/50rem;
-		font-size: 25/50rem;
+		font-size: 22/50rem;
 		color: black;
-		font-weight: 600;
+		font-weight: 560;
 	}
 	
-	.active3 p:nth-child(2) strong {
+	.active3 p:nth-child(2) em {
 		font-size: 13/50rem;
 		padding-left: 5/50rem;
 		color: darkgray;
-	}
-	
-	.list {
-		/*	border: 1/50rem solid #000;*/
-		width: 100%;
-		height: 780/50rem;
-		position: absolute;
-		top: 635/50rem;
-	}
-	
-	.list img {
-		width: 30/50rem;
-		height: 30/50rem;
 	}
 	
 	.active1 p img {
@@ -556,7 +549,7 @@
 		padding-left: 40/50rem;
 	}
 	
-	.active2 p:nth-child(2) strong {
+	.active2 p:nth-child(2) em {
 		color: darkgray;
 		padding-left: 10/50rem;
 	}
@@ -580,19 +573,42 @@
 	}
 	
 	.ww img {
+		width: 25/50rem;
+		height: 25/50rem;
+	}
+	
+	.list {
+		/*	border: 1/50rem solid #000;*/
+		width: 100%;
+		height: 780/50rem;
+		position: absolute;
+		top: 615/50rem!important;
+	}
+	.wid{
+		width: 95%;
+		margin: 0 auto;
+
+	}
+	.list img {
 		width: 30/50rem;
 		height: 30/50rem;
 	}
 	
 	.list p {
 		position: absolute;
-		left: 48/50rem;
+		left: 35/50rem;
+		font-size: 15px;
 	}
 	
 	.list i {
-		font-size: 26px;
+		font-size: 23px;
 	}
-	
+	.list img{
+		width: 25/50rem;
+		height: 25/50rem;
+		position: absolute;
+		right: 10/50rem;
+	}
 	.bgc {
 		background-color: #fff;
 		width: 100%;

@@ -19,12 +19,12 @@
 				</p>
 				<p>
 					<em>知识渊博的图样图森破</em><br>
-					<strong>女&nbsp;|&nbsp;广东省，深圳市&nbsp;|&nbsp;2019.07.01加入</strong>
+					<span>女&nbsp;|&nbsp;广东省，深圳市&nbsp;|&nbsp;2019.07.01加入</span>
 				</p>
 				<p>
-					<span>0<br><strong>关注</strong></span>
-					<span>0<br><strong>粉丝</strong></span>
-					<span>0<br><strong>获赞</strong></span>
+					<span>0<br><em>关注</em></span>
+					<span>0<br><em>粉丝</em></span>
+					<span>0<br><em>获赞</em></span>
 				</p>
 			</div>
 			
@@ -172,7 +172,7 @@ body {
 	position: absolute;
 	left: 5px;
 }
-.active p:nth-child(2) strong{
+.active p:nth-child(2) span{
 	font-size: 15px;
 	color: darkgray;
 	
@@ -189,7 +189,7 @@ body {
 	padding-left: 110px;
 	text-align: center;
 }
-.active p:nth-child(3) strong{
+.active p:nth-child(3) em{
 	color: darkgray;
 	font-size: 13px;
 }
