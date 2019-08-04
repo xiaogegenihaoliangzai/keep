@@ -1,8 +1,8 @@
 <template>
     <yd-layout id="app">
       <router-view/>
-        <tabbar  slot="tabbar"  v-if="$route.path!='/'"></tabbar>
-       
+        <tabbar  slot="tabbar"  v-if="$route.path!='/'&&$route.path!='/secondchecknum'"></tabbar>
+
     </yd-layout>
 
 </template>

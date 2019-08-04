@@ -14,7 +14,7 @@
               	<div class="canjia">我参加的课程</div>
               	<div class="tianjia">参加课程后，可以在这里快速开始课程</div>
               	<div class="faxiang">
-              		<a href="#">发现课程</a>
+              		<a href="#" @click="goclasslist">发现课程</a>
               	</div>
               </div>
               <div class="temp2">
@@ -338,10 +338,14 @@
 
                 ]
       }
-    },  methods: {
+    }, 
+		 methods: {
     onChange(index) {
       Toast('当前 Swipe 索引：' + index);
-    }
+    },
+		goclasslist(){
+			this.$router.push('searchall')
+		}
   }
 	}
 </script>

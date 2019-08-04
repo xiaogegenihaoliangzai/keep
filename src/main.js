@@ -18,6 +18,7 @@ Vue.component(ListOther.name, ListOther);
 import {Layout} from 'vue-ydui/dist/lib.rem/layout';/* 使用px：import {Layout} from 'vue-ydui/dist/lib.px/layout'; */
 Vue.component(Layout.name, Layout);
 import Axios from "axios"
+import {store} from './store/store.js'
 import { Tabbar, TabItem } from 'mint-ui';
 import { DropdownMenu, DropdownItem } from 'vant';
 Vue.use(DropdownMenu).use(DropdownItem);
@@ -26,7 +27,19 @@ Vue.component(TabItem.name, TabItem);
 Vue.prototype.$axios=Axios;
 import Vant from 'vant';
 import 'vant/lib/index.css';
+
 Vue.use(Vant);
+
+ 
+import { PullRefresh } from 'vant';
+
+Vue.use(PullRefresh);
+
+
+
+Vue.use(Swipe).use(SwipeItem);
+
+>>>>>>> 5a9b2e3204b8fc83ef88fc3950fe26eb082752fc
 //回到顶部
 import {BackTop} from 'vue-ydui/dist/lib.rem/backtop';
 Vue.component(BackTop.name, BackTop);
@@ -46,6 +59,14 @@ import YDUI from 'vue-ydui'; /* 相当于import YDUI from 'vue-ydui/ydui.rem.js'
 Vue.use(YDUI);
 Vue.use(MintUI)
 
+<<<<<<< HEAD
+=======
+
+import { Lazyload } from 'mint-ui';
+
+Vue.use(Lazyload);
+
+>>>>>>> 5a9b2e3204b8fc83ef88fc3950fe26eb082752fc
 import { Swipe, SwipeItem } from 'vant';
 
 /* eslint-disable no-new */
@@ -53,5 +74,6 @@ new Vue({
   el: '#app',
   router,
   components: { App },
+  store,
   template: '<App/>'
 })

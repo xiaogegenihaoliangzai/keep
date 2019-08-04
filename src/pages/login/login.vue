@@ -8,15 +8,15 @@
 				<form action="" class="loginform">
 					<p><h4>手机号登录</h4></p>
 					<p><h5>快速找到好友，一站式记录你的运动</h5></p>
-					<p class="phone"><span>+86</span><input type="text" placeholder="请输入手机号码"/></p>
-					<p class="yzm">获取验证码</p>
+					<p class="phone"><span>+86</span><input type="text" v-model="loginphone" placeholder="请输入手机号码"/></p>
+					<p class="yzm" @click="community">获取验证码</p>
 					<p class="check">未注册手机验证后自动登录</p>
 				</form>
 			</div>
 			<div class="footbar">
 				<p>其他登录方式</p>
 				<div class="otherlogin">
-					<span @click="community"><i class="fa fa-weixin"></i></span>
+					<span><i class="fa fa-weixin"></i></span>
 					<span><i class="fa fa-qq"></i></span>
 					<span><i class="fa fa-weibo"></i></span>
 					<span><i>...</i></span>
@@ -30,9 +30,16 @@
 <script>
 import 'font-awesome/css/font-awesome.css'
 export default{
+  data(){
+    return {
+      loginphone:'',
+    }
+  },
 	methods:{
 		community(){
-			this.$router.push('community')
+     // this.$store.commit('setToken',this.loginphone)
+     localStorage.setItem('phonenum',this.loginphone);
+			this.$router.push('secondchecknum')
 		}
 	}
 }
@@ -46,7 +53,7 @@ export default{
 	#box{
 		position: relative;
 		color: white
-	} 
+	}
 	.passlogin{
 		position: fixed;
 		right: 20/50rem;
@@ -154,5 +161,5 @@ export default{
 			}
 		}
 	}
-	
+
 </style>

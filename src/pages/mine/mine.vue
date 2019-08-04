@@ -13,40 +13,40 @@
 			</ul>
 		</div>
 		<div id="wrapper">
-			<div class="top">
-				<ul class="top-1">
-					<li class="tu" @click="run3"><img src="../../assets/wo-img/travel-show_02.jpg"></li>
-					<li class="zi">
-						<p>知识渊博的图样图森破</p><br>
-						<p>
-							<span><img src="../../assets/wo-img/fd_icon_grade.9.png"></span>
-							<span>0徽章</span>
-						</p>
-						<em>KG.0</em>
-					</li>
-					<li class="logo"><img src="../../assets/wo-img/ic_portrait_training_right_on.png"></li>
-				</ul>
+				<div class="top">
+					<ul class="top-1">
+						<li class="tu" @click="run3"><img src="../../assets/wo-img/travel-show_02.jpg"></li>
+						<li class="zi">
+							<p>可爱大方的{{showmsg}}</p><br>
+							<p>
+								<span><img src="../../assets/wo-img/fd_icon_grade.9.png"></span>
+								<span>9徽章</span>
+							</p>
+							<em>KG.10</em>
+						</li>
+						<li class="logo"><img src="../../assets/wo-img/ic_portrait_training_right_on.png"></li>
+					</ul>
 
-				<ul class="top-2">
-					<li>
-						<span>22</span><br>
-						<em @click="run"> 关注</em>
-					</li>
-					<li>
-						<span>3</span><br>
-						<em>粉丝</em>
-					</li>
-					<li>
-						<span>5</span><br>
-						<em>动态</em>
-					</li>
-					<li>
-						<span>1000</span><br>
-						<em>卡路里币</em>
-					</li>
-				</ul>
-			</div>
-
+					<ul class="top-2">
+						<li>
+							<span>3</span><br>
+							<strong @click="run"> 关注</strong>
+						</li>
+						<li>
+							<span>15</span><br>
+							<strong>粉丝</strong>
+						</li>
+						<li>
+							<span>2</span><br>
+							<strong> 动态</strong>
+						</li>
+						<li>
+							<span>13</span><br>
+							<strong> 卡路里币</strong>
+						</li>
+					</ul>
+				</div>
+	
 			<div class="active1">
 				<ul>
 					<li @click="run2">
@@ -155,8 +155,13 @@
 	export default {
 		props: ['title'],
 		data() {
-			return {}
+			return {
+        showmsg:"你好游客"
+      }
 		},
+    mounted(){
+         this.showmsg=localStorage.getItem('phonenum',this.loginphone);
+    },
 		methods: {
 			run() {
 				this.$router.push("/guanzhu")
@@ -179,56 +184,13 @@
 		margin: 0;
 		padding: 0;
 	}
-	
 	body {
 		font-size: 12/50rem;
 		font-family: helvetica;
 	}
-	
 	.sizing {
 		box-sizing: border-box;
 	}
-	/*头部样式*/
-	
-	#header {
-		position: fixed;
-		width: 100%;
-		height: 50/50rem;
-		background: white;
-		line-height: 50/50rem;
-		z-index: 99;
-	}
-	
-	.left {
-		float: left;
-		font-size: 20/50rem;
-		color: black;
-		margin-left: 10/50rem;
-	}
-	
-	.right {
-		float: right;
-		margin-right: 10/50rem;
-		margin-top: 10/50rem;
-	}
-	
-	.right img {
-		width: 30/50rem;
-		height: 30/50rem;
-		padding-left: 10/50rem;
-	}
-	/*内容开始*/
-	
-	#wrapper {
-		width: 100%;
-		height: 1100/50rem;
-		background: #f5f5f5!important;
-		position: relative;
-		
-	}
-	
-	/*头部样式*/
-	
 	#header {
 		position: fixed;
 		width: 100%;
@@ -397,7 +359,6 @@
 	.active2 {
 		position: absolute;
 		top: 337.5/50rem!important;
-		/*	border: 1/50rem solid #000;*/
 		width: 100%;
 		height: 130/50rem;
 		background: white;
@@ -457,7 +418,6 @@
 	.active3 {
 		position: absolute;
 		top: 480/50rem!important;
-		/*border: 1/50rem solid #000;*/
 		width: 100%;
 		height: 130/50rem;
 		background: white;
@@ -578,7 +538,6 @@
 	}
 	
 	.list {
-		/*	border: 1/50rem solid #000;*/
 		width: 100%;
 		height: 780/50rem;
 		position: absolute;
@@ -616,3 +575,4 @@
 		overflow: hidden;
 	}
 </style>
+	
