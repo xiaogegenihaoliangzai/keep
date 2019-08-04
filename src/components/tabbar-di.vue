@@ -62,7 +62,8 @@
 	}
 	img{
 
-		width: 25/50rem;
+		width: 23/50rem;
+		margin-left: 2/50rem;
 		display: inline-flex;
 	}
 
