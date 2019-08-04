@@ -15,37 +15,37 @@
 					<ul class="top-1">
 						<li class="tu" @click="run3"><img src="../../assets/wo-img/travel-show_02.jpg"></li>
 						<li class="zi">
-							<p >知识渊博的图样图森破</p><br>
+							<p>可爱大方的{{showmsg}}</p><br>
 							<p>
 								<span><img src="../../assets/wo-img/fd_icon_grade.9.png"></span>
-								<span>0徽章</span>
+								<span>9徽章</span>
 							</p>
-							<em>KG.0</em>
+							<em>KG.10</em>
 						</li>
 						<li class="logo"><img src="../../assets/wo-img/ic_portrait_training_right_on.png"></li>
 					</ul>
-					
+
 					<ul class="top-2">
 						<li>
-							<span>0</span><br>	
+							<span>3</span><br>
 							<strong @click="run"> 关注</strong>
 						</li>
 						<li>
-							<span>0</span><br>
-							<strong>  粉丝</strong>
+							<span>15</span><br>
+							<strong>粉丝</strong>
 						</li>
 						<li>
-							<span>0</span><br>
+							<span>2</span><br>
 							<strong> 动态</strong>
 						</li>
 						<li>
-							<span>0</span><br>
+							<span>13</span><br>
 							<strong> 卡路里币</strong>
 						</li>
 					</ul>
 				</div>
-			
-			
+
+
 			<div class="active1">
 				<ul>
 					<li @click="run2">
@@ -61,7 +61,7 @@
 				<p><img src="../../assets/wo-img/253582193.jpg"></p>
 			</div>
 		</div>
-		
+
 		<div class="active2">
 			<p>
 				<span>我的运动数据</span>
@@ -151,8 +151,13 @@
 	export default {
 		props: ['title'],
 		data() {
-			return {}
+			return {
+        showmsg:"你好游客"
+      }
 		},
+    mounted(){
+         this.showmsg=localStorage.getItem('phonenum',this.loginphone);
+    },
 		methods: {
 			run(){
 				this.$router.push("/guanzhu")
@@ -176,17 +181,17 @@
 		margin: 0;
 		padding: 0;
 	}
-	
+
 	body {
 		font-size: 12/50rem;
 		font-family: helvetica;
 	}
-	
+
 	.sizing {
 		box-sizing: border-box;
 	}
-	
-	/*头部样式*/	
+
+	/*头部样式*/
 	#header {
 		position: fixed;
 		width: 100%;
@@ -195,27 +200,27 @@
 		line-height: 50/50rem;
 		z-index: 99;
 	}
-	
+
 	.left {
 		float: left;
 		font-size: 20/50rem;
 		color: black;
 		margin-left: 10/50rem;
 	}
-	
+
 	.right {
 		float: right;
 		margin-right: 10/50rem;
 		margin-top: 10/50rem;
 	}
-	
+
 	.right img {
 		width: 30/50rem;
 		height: 30/50rem;
 		padding-left: 10/50rem;
 	}
 	/*内容开始*/
-	
+
 	#wrapper {
 		width: 100%;
 		height: 1300/50rem;
@@ -261,8 +266,8 @@
 			/*border: 1/50rem solid #000;*/
 			margin-top: 50/50rem;
 			background: white;
-			
-			
+
+
 		}
 		.top-1 {
 			margin-top: 10/50rem;
@@ -271,7 +276,7 @@
 			float: left;
 			padding-left: 10/50rem;
 		}
-		
+
 		.tu{
 			width: 70px;
 			height: 60px;
@@ -302,9 +307,9 @@
 			left: 170/50rem;
 			line-height: 20/50rem;
 			font-size: 15px;
-			
+
 		}
-		
+
 		.zi img {
 			width: 80/50rem;
 			height: 30/50rem;
@@ -365,12 +370,12 @@
 			float: left;
 			padding-left: 30/50rem;
 		}
-		
+
 		.active1 li i {
 			font-size: 25/50rem;
 		}
-		
-		
+
+
 		.active1 p img {
 			position: absolute;
 			left: 20/50rem;

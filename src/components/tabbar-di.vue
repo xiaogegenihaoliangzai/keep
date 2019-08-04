@@ -19,7 +19,7 @@
 			<item title='我' mark='mine' :curr='curr' @change='getVal'>
 				<img src="../assets/public/icon_user_filled_normal.png" slot='normal'>
 				<img src="../assets/public/icon_user_filled_focus.png" slot='active'>
-			</item>						
+			</item>
 		</div>
 			</item>
     </yd-tabbar>
@@ -27,8 +27,8 @@
 
 <script>
 	import item from './item'
-	
-	
+
+
 		export default{
 		data(){
 			return {
@@ -58,7 +58,8 @@
  	.item{
 		flex: 1;
 		text-align: center;
-	} 
+    color:black
+	}
 	img{
 
 		width: 30/50rem;

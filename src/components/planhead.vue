@@ -8,9 +8,9 @@
 <script>
 	export default{
 		methods:{
-					 goplan(){
+		goplan(){
 						 this.$router.go(-1)
-					 }
+}
 		}
 	}
 </script>

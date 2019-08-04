@@ -18,6 +18,7 @@ Vue.component(ListOther.name, ListOther);
 import {Layout} from 'vue-ydui/dist/lib.rem/layout';/* 使用px：import {Layout} from 'vue-ydui/dist/lib.px/layout'; */
 Vue.component(Layout.name, Layout);
 import Axios from "axios"
+import {store} from './store/store.js'
 import { Tabbar, TabItem } from 'mint-ui';
 import { DropdownMenu, DropdownItem } from 'vant';
 Vue.use(DropdownMenu).use(DropdownItem);
@@ -58,5 +59,6 @@ new Vue({
   el: '#app',
   router,
   components: { App },
+  store,
   template: '<App/>'
 })

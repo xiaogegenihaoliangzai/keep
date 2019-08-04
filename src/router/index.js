@@ -12,6 +12,7 @@ import community from '../pages/community/community'
 import communitydeday from '../pages/community/communitydeday'
 import sports from '../pages/sports/sports'
 import login from '../pages/login/login'
+import secondchecknum from '../pages/login/secondchecknum'
 import person from '../pages/mine/person'
 
 import hot from '@/pages/community/secondrouter/hot'
@@ -32,6 +33,10 @@ export default new Router({
       path: '/',
       name: 'login',
       component: login
+    },{
+      path: '/secondchecknum',
+      name: 'secondchecknum',
+      component: secondchecknum
     },{
       path: '/search',
       name: 'search',
@@ -72,7 +77,7 @@ export default new Router({
       path: '/community',
       name: 'community',
       component: community,
-      children:[		 
+      children:[
 		  {path:"hot",component: hot},
 		  {path:"attention",component: attention},
 		  {path:"topic",component: topic},
