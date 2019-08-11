@@ -30,7 +30,8 @@ import 'vant/lib/index.css';
 
 Vue.use(Vant);
 
- 
+import { Popup } from 'vant';
+Vue.use(Popup);
 import { PullRefresh } from 'vant';
 
 Vue.use(PullRefresh);

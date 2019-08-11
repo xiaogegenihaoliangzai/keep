@@ -18,7 +18,6 @@
 	}
 	.headerWrap .title{
 	 line-height: 50/50rem;
-	 font-weight: 700;
 	 margin-right: 6rem;
 	 width: 1.4rem;
 	 font-weight: 600;
