@@ -85,4 +85,8 @@ body{
 
 .yd-scrollview:after{
 display:none;}
+
+.mint-cell-title{
+	margin-left: -4.8rem!important;
+}
 </style>

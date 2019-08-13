@@ -81,7 +81,8 @@ export default new Router({
     },{
       path: '/communitydeday',
       name: 'communitydeday',
-      component: communitydeday
+      component: communitydeday,
+      
     },
     {
       path: '/sports',

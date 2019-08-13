@@ -6,7 +6,7 @@
 				<li>
 					<p>{{name}}</p>
 				</li>
-				<li><span id="tic">关注</span></li>
+				<li  ><span id="tic">关注</span></li>
 			</ul>
 		</div>
 	
@@ -19,7 +19,10 @@
 				selected: []
 			}
 		},
-		props:["name","title"]
+		props:["name","title"],
+		methods:{
+			
+		}
 
 	}
 </script>
@@ -46,7 +49,9 @@ align-content: flex-start;
 
 
 .commu li:nth-of-type(2){
-	text-align: left;
+ margin-left: -0.5rem;
+ text-align: left;
+ width: 60%;
 	
 }
 .commu li:nth-of-type(3){

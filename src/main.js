@@ -50,6 +50,10 @@ Vue.component(InfiniteScroll.name, InfiniteScroll);
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 
+import { Cell } from 'mint-ui';
+
+Vue.component(Cell.name, Cell);
+
 Vue.component(FlexBoxItem.name, FlexBoxItem);
 Vue.config.productionTip = false
 
