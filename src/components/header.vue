@@ -13,14 +13,13 @@
 </script>
 
 <style scoped="scoped" lang="less">
-	.headerWrap{
-		position: relative;
+	.headerWrap{	
+		z-index: 99;
 	}
 	.headerWrap .title{
 	 line-height: 50/50rem;
-	 font-weight: 700;
 	 margin-right: 6rem;
-	 width: 1.4rem;
+	 width: 1.5rem;
 	 font-weight: 600;
 	 float: left;
 	 margin-left: 5/50rem;

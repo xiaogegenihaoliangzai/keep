@@ -1,8 +1,6 @@
 <template>
 	<div >
 		<section class="sec">
-			
-			
 			<div class="sec_sec">
 				<div class="box" v-for="(item,index) in arr2">
 					<a href="#">
@@ -30,45 +28,7 @@
 						</ul>
 					</a>
 				</div>
-			</div>
-		
-			
-
-			
-			
-			
-			
-	
-			
-		<!--	
-			<div class="sec_sec">
-				<div class="box" v-for="(item,index) in arr">
-					<a href="#" >
-						<img :src="item.photo">
-						<p>{{item.content}}</p>
-						<ul>
-							<li><img src="../../../assets/community/icon_comment_like.png" @click="run"></li>
-							<li>{{item.author.username}}</li>
-							<li><img src="../../../assets/community/icon_comment_like.png"></li>
-							<li>{{item.comments}}</li>
-						</ul>
-					</a>
-				</div>
-			</div>
-			<div class="sec_sec">
-				<div class="box" v-for="(item,index) in arr2">
-					<a href="#">
-						<img :src="item.photo">
-						<p>{{item.content}}</p>
-							<ul>
-							<li><img src="../../../assets/community/icon_comment_like.png"></li>
-							<li>{{item.author.username}}</li>
-							<li><img src="../../../assets/community/icon_comment_like.png"></li>
-							<li>{{item.comments}}</li>
-						</ul>
-					</a>
-				</div>
-			</div>-->
+			</div>	
 		</section>
 	</div>
 </template>

@@ -30,46 +30,79 @@ export default new Router({
     },{
       path: '/secondchecknum',
       name: 'secondchecknum',
+      meta:{
+        keepAlive:false
+      },
       component: secondchecknum
     },{
       path: '/search',
       name: 'search',
+      meta:{
+        keepAlive:true
+      },
       component: search,
     },{
       path: '/comban',
       name: 'comban',
+      meta:{
+        keepAlive:false
+      },
       component: comban,
     },{
       path: '/searchall',
       name: 'searchall',
+      meta:{
+        keepAlive:false
+      },
       component: searchall,
     },{
       path: '/mine',
       name: 'mine',
+      meta:{
+        keepAlive:true
+      },
       component: mine
     },{
 		  path: '/class2',
 		  name: 'class2',
+      meta:{
+        keepAlive:true
+      },
 		  component: class2
 		},{
 		  path: '/guanzhu',
 		  name: 'guanzhu',
+      meta:{
+        keepAlive:true
+      },
 		  component: guanzhu
 		},{
       path: '/plan',
       name: 'plan',
+      meta:{
+        keepAlive:true
+      },
       component: plan
     },{
       path: '/plan2',
       name: 'plan2',
+      meta:{
+        keepAlive:true
+      },
       component: plan2
     },{
       path: '/secondmsg',
       name: 'secondmsg',
+      meta:{
+        keepAlive:true
+      },
       component: secondmsg
     },{
       path: '/community',
       name: 'community',
+      meta:{
+        keepAlive:true
+      },
       component: community,
       children:[
 		  {path:"hot",component: hot},
@@ -81,17 +114,26 @@ export default new Router({
     },{
       path: '/communitydeday',
       name: 'communitydeday',
-      component: communitydeday
+      component: communitydeday,     
+      meta:{
+        keepAlive:true
+      }    
     },
     {
       path: '/sports',
       name: 'sports',
+      meta:{
+        keepAlive:true
+      },
       component: sports
     },
 	,
 	{
 	  path: '/person',
 	  name: 'person',
+    meta:{
+      keepAlive:true
+    },
 	  component: person
 	}
   ]
