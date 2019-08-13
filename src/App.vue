@@ -1,7 +1,7 @@
 <template>
     <yd-layout id="app">
       <router-view/>
-        <tabbar  slot="tabbar"  v-if="$route.path!='/'&&$route.path!='/secondchecknum'"></tabbar>
+        <tabbar  slot="tabbar"  v-if="$route.meta.keepAlive"></tabbar>
 
     </yd-layout>
 
@@ -34,9 +34,38 @@ export default {
   position: relative;
   overflow: block;
 }
+.van-dropdown-menu__title::after{
+  border-color:transparent transparent #A7ADB0 #A7ADB0;
+}
+.van-dropdown-item{
+  z-index: 9999999!important;
+}
+.van-overlay{
+  top: 50/50rem!important;
+}
+.van-ellipsis{
+  font-size: 14px!important;
+  color:#A7ADB0!important;
+}
+.van-dropdown-menu__item:nth-of-type(3){
+  margin-right: 20/50rem;
+}
 .yd-list-img img{
   position: absolute;
   top: 0;
+}
+.van-dropdown-menu__title--down{
+  color:#26C38C!important;
+}
+.van-dropdown-menu__title--down>div{
+  color:#26C38C!important;
+}
+.van-dropdown-menu__title--down::after{
+  border-color:transparent transparent #26C38C #26C38C;
+}
+.van-cell{
+  text-align: left!important;
+  text-indent: 15/50rem;
 }
 img{
     border:0;
