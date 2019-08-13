@@ -4,7 +4,7 @@
 		<div id="header">
 			<span class="left" @click="send2">
 				<img src="../../assets/wo-img/Snipaste_2019-07-04_18-39-18.png">
-				<strong>训练课程</strong>
+				<em>训练课程</em>
 			</span>
 			<span>私家课  <em>添加课程</em></span>
 			
@@ -19,8 +19,8 @@
 			</ul>
 			<ul class="two">
 				<li>
-					<span>7分钟新手体验课<em class="zi">还未进行过训练   292人正在训练</em></span>
-					<span>7分钟.k1</span>
+					<span>&nbsp7&nbsp分钟新手体验课<em class="zi">还未进行过训练 &nbsp14人正在训练</em></span>
+					<span>7分钟&nbsp;.&nbsp;k1</span>
 				</li>
 			</ul>
 
@@ -76,25 +76,29 @@
 		font-size: 20px;
 	}
 	
-	#header img {
-		width: 30/50rem;
-		height: 30/50rem;
+	.left img{
+		width: 28/50rem;
+		height: 23/50rem;
 	}
 	
-	.left strong {
+	.left em {
 		position: absolute;
 		top: 10/50rem;
-		left: 50/50rem;
+		left: 70/50rem;
+		font-size: 19px;	
 	}
 	
 	#header span:nth-child(2){
 		color: grey;
 		position: absolute;
-		right: 20px;		
+		right: 20px;
+		font-size: 19px;
+		
 	}
 	#header span:nth-child(2) em{
-		font-size: 15px;
+		font-size: 14px;
 		color: #3CB371;	
+		padding-left: 20px;	
 	}
 	
 	/*内容开始*/
@@ -112,10 +116,10 @@
 		display: flex;
 		justify-content: space-around;
 		width: 100%;
-		height: 50px;
+		height: 40px;
 		border-bottom: 1px solid gainsboro;
-		line-height: 50px;
-		font-size: 18px;
+		line-height: 40px;
+		font-size: 15px;
 	}
 	
 	.two {
@@ -127,22 +131,26 @@
 		position: relative;
 		border-bottom: 1px solid gainsboro;
 		width: 100%;
-		height: 90px;
+		height: 70px;
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		align-items: center;		
 	}
 	
 	.two li span:nth-child(1) {
 		position: absolute;
+		top:20px;
 		left: 10px;
-		font-size: 20px;
+		font-size: 17px;
+		color: black;
 	}
 	
 	.two li span:nth-child(2) {
-		color: gray;
+		color: black;
 		position: absolute;
 		right: 10px;
+		padding-bottom: 10px;
+		font-size: 10px;	
 	}
 	
 	.two img {
@@ -150,12 +158,15 @@
 		border-radius: 30px;
 	}
 	
-	.two .zi {
+	.zi {
 		width: 180px;
-		font-size: 10px;
+		font-size:8px;
 		position: absolute;
-		top: 30px;
+		/*top: 30px;*/
 		left: -5px;
+		bottom: -18px;
 		color: gainsboro;
+		font-size:8px!important;
+		font-weight: lighter;
 	}
 </style>

@@ -14,7 +14,7 @@
 			</ul>
 			<ul class="two">
 				<li>
-				  <span><img src="../../assets/sports/1.jpg"><em class="zi">丫丫</em></span>
+				  <span><img src="../../assets/sports/1.jpg"><em class="zi">丫丫夜莺</em></span>
 				  <span>已关注</span>
 				</li>
 			</ul>
@@ -70,23 +70,25 @@
 		font-size: 20/50rem;
 	}
 	
-	#header img {
-		width: 30/50rem;
-		height: 30/50rem;
+	.left img {
+		width: 28/50rem;
+		height: 25/50rem;
+		margin-left: 10/50rem;
 	}
 	
 	.left strong {
 		position: absolute;
 		top: 10/50rem;
 		left: 50/50rem;
+		font-size: 16/50rem;
+		font-family:"宋体";
+		color: white;
 	}
 	
 	.right i{
-		font-size: 26/50rem;
-	    margin-right: 20/50rem;	
+		font-size: 22/50rem;
+	    margin-right: 15/50rem;		    
 	}
-
-	
 	
 /*内容开始*/	
 	#wrapper {
@@ -102,10 +104,10 @@
 		display: flex;
 		justify-content: space-around;
 		width: 100%;
-		height: 50/50rem;
+		height: 40/50rem;
 		border-bottom: 1/50rem solid gainsboro;
-		line-height: 50/50rem;
-		font-size: 18/50rem;
+		line-height: 40/50rem;
+		font-size: 15/50rem;
 	}
 	
 	.two {
@@ -117,7 +119,7 @@
 		position: relative;
 		border-bottom: 1/50rem solid gainsboro;
 		width: 100%;
-		height: 70/50rem;
+		height: 60/50rem;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -126,21 +128,26 @@
 	.two li span:nth-child(1) {
 		position: absolute;
 		left: 10/50rem;
+		
 	}
 	
 	.two li span:nth-child(2) {
 		border: 1/50rem solid green;
-		width: 90/50rem;
-		height: 30/50rem;
-		line-height: 30/50rem;
+		width: 70/50rem;
+		height: 27/50rem;
+		line-height: 27/50rem;
 		border-radius: 30/50rem;
 		color: green;
 		position: absolute;
 		right: 10/50rem;
+		font-size: 8/50rem;
 	}
-	
+	.two em{
+		font-size: 16/50rem;
+		padding-left: 10/50rem;
+	}
 	.two img {
-		width: 50/50rem;
+		width: 45/50rem;
 		border-radius: 30/50rem;
 	}
 	

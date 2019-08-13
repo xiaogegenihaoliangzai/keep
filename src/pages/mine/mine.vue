@@ -30,19 +30,19 @@
 					<ul class="top-2">
 						<li>
 							<span>3</span><br>
-							<strong @click="run"> 关注</strong>
+							<em @click="run"> 关注</em>
 						</li>
 						<li>
 							<span>15</span><br>
-							<strong>粉丝</strong>
+							<em>粉丝</em>
 						</li>
 						<li>
 							<span>2</span><br>
-							<strong> 动态</strong>
+							<em> 动态</em>
 						</li>
 						<li>
 							<span>13</span><br>
-							<strong> 卡路里币</strong>
+							<em> 卡路里币</em>
 						</li>
 					</ul>
 				</div>
@@ -238,8 +238,8 @@
 	}
 	
 	.tu {
-		width: 70px;
-		height: 60px;
+		width: 75px;
+		height: 65px;
 		overflow: hidden;
 	}
 	
@@ -248,9 +248,16 @@
 		height: 60/50rem;
 		border-radius: 50%;
 	}
-	
+	.zi{
+		border: 1px solid white;
+		width: 250px;
+		height: 75px;
+		margin-left: 5px;	
+	}
 	.zi p:nth-child(1) {
 		font-size: 15/50rem;
+		position: absolute;
+		margin-left: 0;
 	}
 	
 	.zi p:nth-child(2) {
@@ -267,26 +274,27 @@
 		text-align: center;
 		color: white;
 		position: absolute;
-		top: 44/50rem;
-		left: 170/50rem;
+		top: 45/50rem;
+		left: 177/50rem;
 		line-height: 20/50rem;
-		font-size: 15px;
+		font-size: 10px;
 	}
 	
 	.zi img {
 		width: 80/50rem;
 		height: 30/50rem;
-		margin-left: -65/50rem;
-		margin-top: -30/50rem;
+		margin-left: -155/50rem;
+	    position: relative;
+	    top:8px;
 	}
 	
 	.zi span:nth-child(2) {
 		display: block;
 		position: absolute;
-		top: 45/50rem;
-		left: 116/50rem;
+		top: 46/50rem;
+		left: 122/50rem;
 		color: white;
-		font-size: 13/50rem;
+		font-size: 10/50rem;
 	}
 	
 	.logo img {
@@ -304,11 +312,6 @@
 		margin-left: -40/50rem;
 		color: black;
 	}
-	
-	.top-2 em {
-		color: darkgray;
-	}
-	
 	.top-2 li {
 		float: left;
 		padding-left: 60/50rem;
@@ -317,8 +320,13 @@
 	}
 	
 	.top-2 li span {
-		font-size: 18/50rem;
-		font-weight: 700/50rem;
+		font-size: 16/50rem;
+		font-weight: bolder;
+	}
+	.top-2 em {
+		color: darkgray;
+		font-size: 10/50rem;
+		font-weight:lighter;
 	}
 	
 	.active1 {
@@ -360,7 +368,7 @@
 		position: absolute;
 		top: 337.5/50rem!important;
 		width: 100%;
-		height: 130/50rem;
+		height: 115/50rem!important;
 		background: white;
 		color: black;
 	}
@@ -399,27 +407,28 @@
 		padding-left: 40/50rem;
 	}
 	
-	.active2 p:nth-child(2) strong {
+	.active2 p:nth-child(2) em {
 		color: darkgray;
 		padding-left: 10/50rem;
+		font-size: 10px;
 	}
 	
 	.active2 p:nth-child(3) {
-		margin-top: 20/50rem;
+		margin-top: 0/50rem!important;
 		font-size: 25/50rem;
 		margin-left: -270/50rem!important;
 	}
 	
 	.active2 p:nth-child(3) span {
 		padding-left: 110/50rem;
-		font-size: 20px;
+		font-size: 19px;
 	}
 	
 	.active3 {
 		position: absolute;
-		top: 480/50rem!important;
+		top: 465/50rem!important;
 		width: 100%;
-		height: 130/50rem;
+		height: 110/50rem!important;
 		background: white;
 	}
 	
@@ -431,7 +440,7 @@
 	
 	.ww {
 		margin-right: 220/50rem;
-		font-size: 17/50rem;
+		font-size: 16/50rem;
 		color: black;
 	}
 	
@@ -447,18 +456,18 @@
 	
 	.active3 p:nth-child(2) {
 		padding-top: 30/50rem;
-		margin-left: -130/50rem;
+		margin-left: -150/50rem;
 	}
 	
 	.active3 p:nth-child(2) span {
 		padding-left: 40/50rem;
-		font-size: 22/50rem;
+		font-size: 19/50rem;
 		color: black;
 		font-weight: 560;
 	}
 	
 	.active3 p:nth-child(2) em {
-		font-size: 13/50rem;
+		font-size: 10/50rem;
 		padding-left: 5/50rem;
 		color: darkgray;
 	}
@@ -486,7 +495,7 @@
 	}
 	
 	.active2 p:nth-child(1) span {
-		font-size: 17/50rem;
+		font-size: 16/50rem;
 		padding-left: 10/50rem;
 	}
 	
@@ -541,7 +550,7 @@
 		width: 100%;
 		height: 780/50rem;
 		position: absolute;
-		top: 615/50rem!important;
+		top: 580/50rem!important;
 	}
 	.wid{
 		width: 95%;
@@ -556,11 +565,11 @@
 	.list p {
 		position: absolute;
 		left: 35/50rem;
-		font-size: 15px;
+		font-size: 14px;
 	}
 	
 	.list i {
-		font-size: 23px;
+		font-size: 20px;
 	}
 	.list img{
 		width: 25/50rem;
