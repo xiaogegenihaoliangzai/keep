@@ -114,15 +114,10 @@ export default new Router({
     },{
       path: '/communitydeday',
       name: 'communitydeday',
-<<<<<<< HEAD
-      component: communitydeday,
-      
-=======
+      component: communitydeday,     
       meta:{
         keepAlive:true
-      },
-      component: communitydeday
->>>>>>> 1c6f12e35292287d1dd793457b5626e444bd6dd2
+      }    
     },
     {
       path: '/sports',
