@@ -341,7 +341,7 @@
     }, 
 		 methods: {
     onChange(index) {
-      Toast('当前 Swipe 索引：' + index);
+      console.log('当前 Swipe 索引：' + index);
     },
 		goclasslist(){
 			this.$router.push('searchall')

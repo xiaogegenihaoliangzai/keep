@@ -1,9 +1,8 @@
 <template>
   <div>
-				<planhead></planhead>
+		<planhead></planhead>
         <bodyheight></bodyheight>
-        <bodyweight></bodyweight>
-				 
+        <bodyweight></bodyweight>		 
 		<div class="aiplan">
 			<p class="next" @click="gosecond">下一步</p>
 		</div>		 
@@ -16,15 +15,24 @@
  import planhead from '../../components/planhead.vue'
 
  export default{
+	 data(){
+		 return{
+			 bodyheightmsg:"",
+			 bodyweightmsg:''
+		 }
+	 },
    components:{
      bodyheight,
      bodyweight,
-		 planhead
+	 planhead
    },
 	 methods:{
 		 gosecond(){
 			 this.$router.push('/secondmsg')
 		 }
+	 },
+	 mounted(){
+		 
 	 }
  }
 </script>

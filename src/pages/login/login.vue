@@ -8,7 +8,8 @@
 				<form action="" class="loginform">
 					<p><h4>手机号登录</h4></p>
 					<p><h5>快速找到好友，一站式记录你的运动</h5></p>
-					<p class="phone"><span>+86</span><input type="text" v-model="loginphone" placeholder="请输入手机号码"/></p>
+					<p class="phone"><span>+86</span><input type="text" v-model="loginphone" placeholder="请输入手机号码" 
+					@focus="checkphonenum"  @blur="hidedelete"/><i @click.self="deletephone" class="fa fa-close (alias) deletephone" v-show="showdeletephone"></i></p>
 					<p class="yzm" @click="community">获取验证码</p>
 					<p class="check">未注册手机验证后自动登录</p>
 				</form>
@@ -29,17 +30,45 @@
 
 <script>
 import 'font-awesome/css/font-awesome.css'
+import eventVue from '../../store/emptyvue.js'
+	import { MessageBox } from 'mint-ui';
 export default{
   data(){
     return {
       loginphone:'',
+	  showdeletephone:false,
     }
   },
 	methods:{
 		community(){
-     // this.$store.commit('setToken',this.loginphone)
-     localStorage.setItem('phonenum',this.loginphone);
-			this.$router.push('secondchecknum')
+     //this.$store.commit('setToken',this.loginphone)
+		var myreg=/^[1][3,4,5,7,8][0-9]{9}$/;
+
+         localStorage.setItem('phonenum',this.loginphone);
+			if(this.loginphone==""){
+				MessageBox.alert('请输入手机号').then(action => {
+					console.log(123)
+				});
+			}else if(!myreg.test(this.loginphone)){
+				MessageBox.alert('请输入正确的手机号').then(action => {
+					console.log(123)
+				});
+			}else{
+				this.$router.push('secondchecknum')
+			}
+		},
+		
+		
+		
+		checkphonenum(){
+			this.showdeletephone=true
+		},
+		deletephone(){
+			this.loginphone=''
+			this.showdeletephone=false
+		},
+		hidedelete(){
+			//this.showdeletephone=false
 		}
 	}
 }
@@ -65,6 +94,11 @@ export default{
 		width: 100%;
 		height: 100%;
 		background-color: rgba(0, 0, 0, 0.4)
+	}
+	.deletephone{
+		position: absolute;
+		top: 10/50rem;
+		right: 10/50rem;
 	}
 	.content{
 		width: 80%;
@@ -141,6 +175,9 @@ export default{
 		.otherlogin{
 			display: flex;
 			margin: 0 auto;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
 			span{
 				&:first-of-type{
 					margin-left: 60/50rem

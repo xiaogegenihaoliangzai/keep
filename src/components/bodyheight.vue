@@ -1,17 +1,25 @@
 <template>
    <div class="shengao">
      <p>身高</p>
-     <mt-picker :slots="slots" @change="onValuesChange"></mt-picker>
+     <mt-picker :slots="slots" @change="onValuesChange" res="pickker1"></mt-picker>
   </div>
 </template>
 <script>
   export default {
+		data(){
+			return{
+				bodyheightmsg:120,
+			}
+		},
   methods: {
     onValuesChange(picker, values) {
       if (values[0] > values[1]) {
         picker.setSlotValue(1, values[0]);
       }
-    }
+			this.bodyheightmsg=values.join('')
+			localStorage.setItem("sg",this.bodyheightmsg)
+    },
+		
   },
   data() {
     return {

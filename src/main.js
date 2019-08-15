@@ -20,15 +20,19 @@ Vue.component(Layout.name, Layout);
 import Axios from "axios"
 import {store} from './store/store.js'
 import { Tabbar, TabItem } from 'mint-ui';
+import { Popup } from 'mint-ui';
 import { DropdownMenu, DropdownItem } from 'vant';
+import { NumberKeyboard } from 'vant';
 Vue.use(DropdownMenu).use(DropdownItem);
 Vue.component(Tabbar.name, Tabbar);
 Vue.component(TabItem.name, TabItem);
+Vue.component(Popup.name, Popup);
 Vue.prototype.$axios=Axios;
 import Vant from 'vant';
 import 'vant/lib/index.css';
 
 Vue.use(Vant);
+Vue.use(NumberKeyboard);
 
  
 import { PullRefresh } from 'vant';

@@ -6,11 +6,20 @@
 </template>
 <script>
   export default {
+		data(){
+			return{
+				bodyweightmsg:50,
+			}
+		},
   methods: {
     onValuesChange(picker, values) {
       if (values[0] > values[1]) {
         picker.setSlotValue(1, values[0]);
       }
+			this.bodyweightmsg=values.join("");
+			//console.log(this.bodyweightmsg)
+			//emptyvue.$emit("sendweight",this.bodyweightmsg)
+			localStorage.setItem("tz",this.bodyweightmsg)
     }
   },
   data() {

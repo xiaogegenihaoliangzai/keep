@@ -84,8 +84,8 @@
 				<span class="tt"><img src="../../assets/wo-img/ic_portrait_training_right_on.png"></span>
 			</p>
 			<p>
-				<span>175.0<em>身高cm</em></span>
-				<span>70.0<em>体重kg</em></span>
+				<span>{{sg|fobodysg}}<em>身高cm</em></span>
+				<span>{{tz|fobodytz}}<em>体重kg</em></span>
 			</p>
 		</div>
 
@@ -156,13 +156,17 @@
 		props: ['title'],
 		data() {
 			return {
-        showmsg:"你好游客"
+					showmsg:"你好游客",
+					sg:'170',
+					tz:'70',
       }
 		},
     mounted(){
          this.showmsg=localStorage.getItem('phonenum',this.loginphone);
+		 this.sg=localStorage.getItem("sg")
+		 this.tz=localStorage.getItem("tz")
     },
-		methods: {
+	methods: {
 			run() {
 				this.$router.push("/guanzhu")
 			},
@@ -175,6 +179,14 @@
 		},
 		components: {
 			mines
+		},
+		filters:{
+			fobodysg(val){
+				return val.substr(0,3)+".0"
+			},
+			fobodytz(val){
+				return val.substr(0,2)+".0"
+			}
 		}
 	}
 </script>
