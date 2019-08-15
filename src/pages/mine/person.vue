@@ -18,13 +18,13 @@
 					<strong class="tu2"><img src="../../assets/wo-img/su_icon_personal_qr_code_purple.png"></strong>
 				</p>
 				<p>
-					<em>知识渊博的图样图森破</em><br>
+					<em>可爱大方的{{showmsg}}</em><br>
 					<span>女&nbsp;|&nbsp;广东省，深圳市&nbsp;|&nbsp;2019.07.01加入</span>
 				</p>
 				<p>
-					<span>0<br><em>关注</em></span>
-					<span>0<br><em>粉丝</em></span>
-					<span>0<br><em>获赞</em></span>
+					<span>5<br><em>关注</em></span>
+					<span>2<br><em>粉丝</em></span>
+					<span>2<br><em>获赞</em></span>
 				</p>
 			</div>
 			
@@ -33,6 +33,8 @@
 				<p>还没有发过动态哦</p>
 				<p>发动态</p>
 			</div>
+			
+			
       </div>
 
 </div>
@@ -58,140 +60,151 @@
 	margin: 0;
 	padding: 0;
 }
-
 body {
-	font-size: 12px;
+	font-size: 12/50rem;
 	font-family: helvetica;
 }
-
 .sizing {
 	box-sizing: border-box;
 }
-
 
 /*头部样式*/
 #header{
 	position: fixed;
 	width: 100%;
-	height: 50px;
+	height: 50/50rem;
 	background: rgb(96, 87, 104);
-	 opacity: 0.3;
-	line-height: 50px;
+	opacity: 0.3;
+	line-height: 50/50rem;
 	z-index: 99;
     float: left;
-    padding-top: 10px;
-   
+    padding-top: 10/50rem; 
 }
-#header img{
-	width: 30px;
-	height: 30px;
+#header .left img{
+	width: 28/50rem;
+	height: 25/50rem;
+	margin-left: -280/50rem;
 }
-#header .left{
-	margin-left: -280px;
-}
-#header .right{
+#header .right img{
+	width: 28/50rem;
+	height: 28/50rem;
 	float: right;
-	margin-right: 15px;	
+	margin-right: 15/50rem;	
+	margin-top: 7/50rem;
 }
-
 
 /*内容开始*/
 #wrapper{
 	width: 100%;
-	height: 800px;
+	height: 800/50rem;
 	background:white;
 	position: relative;	
 }
 .top{
 	position: relative;
-	border: 1px solid #000;
+	border: 1/50rem solid #000;
 	width: 100%;
-	height: 180px;
+	height: 160/50rem;
 	background: rgb(96, 87, 104);
 	opacity: 0.8;
 }
 .top img{
 	position: absolute;
-	width: 25px;
-	height: 25px;
-	top:145px;
-	left: 330px;
+	width: 22/50rem;
+	height: 22/50rem;
+	top:125/50rem;
+	left: 330/50rem;
 	z-index: 1000;
 }
 
-
 .active{
 	width: 100%;
-	height: 250px;
+	height: 200/50rem;
 	background:white;
-	position: relative;
+	position: relative;	
 }
 .tu1 img{
 	position: absolute;
-	top:-35px;
-	left: 15px;
-	border: 5px solid white;
-	width: 85px;
-	height: 85px;
+	top:-35/50rem;
+	left: 15/50rem;
+	border: 5/50rem solid white;
+	width: 80/50rem;
+	height: 80/50rem;
 	border-radius: 50%;
 }
 .tu2 img{
-	border: 1px solid darkgray;
-	width: 25px;
-	height: 25px;
+	border: 1/50rem solid darkgray;
+	width: 27/50rem;
+	height: 27/50rem;
 	border-radius: 50%;
 	float: right;
-	margin-top: 10px;
-	margin-right: 18px;
-	padding: 5px;
+	margin-top: 10/50rem;
+	margin-right: 18/50rem;
+	padding: 5/50rem;
 }
 .zi{
 	position: absolute;
-	left: 240px;
-	top:10px;
-	font-size: 15px;
-	border: 1px solid #000;
-	width: 80px;
-	height: 25px;
-	line-height: 15px;
+	left: 248/50rem;
+	top:10/50rem;
+	font-size: 13/50rem;
+	border: 1/50rem solid gainsboro;
+	width: 75/50rem;
+	height: 27/50rem;
+	line-height: 15/50rem;
 	text-align: center;
-	border-radius: 50px;
-	padding-top: 5px;
+	border-radius: 50/50rem;
+	padding-top: 5/50rem;
+	
 	
 }
 .active p:nth-child(2){
 	position: absolute;
-	top:80px;
-	left: 5px;
-	font-size: 20px;
+	top:60/50rem;
+	left: 5/50rem;
+	font-size: 18/50rem;
 	color: black;
-	padding-left: 5px;
-	line-height: 35px;
+	padding-left: 5/50rem;
+	line-height: 30/50rem;
+	
 }
 .active p:nth-child(2) em{
 	position: absolute;
-	left: 5px;
+	left: 5/50rem;
 }
 .active p:nth-child(2) span{
-	font-size: 15px;
+	font-size: 10/50rem;
 	color: darkgray;
 	
 }
 .active p:nth-child(3){
 	position: absolute;
-	top:170px;
-	font-size: 20px;
+	top:140/50rem;
 	color: black;
-	margin-left: -80px;
+	margin-left: -80/50rem;
+	
 }
 .active p:nth-child(3) span{
 	float: left;
-	padding-left: 110px;
+	padding-left: 110/50rem;
 	text-align: center;
+	font-size: 16/50rem;
 }
 .active p:nth-child(3) em{
 	color: darkgray;
-	font-size: 13px;
+	font-size: 10/50rem;
 }
+.bottom{
+	border-top: 1/50rem solid gainsboro;
+	width: 100%;
+	height: 500/50rem;
 
+}
+.bottom img{
+	margin-top: 20/50rem;
+	width: 250/50rem;
+	height: 200/50rem;
+}
+.bottom p{
+	font-size: 12/50rem;
+}
 </style>

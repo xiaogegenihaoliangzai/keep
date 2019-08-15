@@ -139,8 +139,9 @@
 			<a href="">查看更多</a>
 		</section>
 	<div id="footer">
-		<p>参加课程</p>
+		<p @click="startGo" type="primary">参加课程</p>
 	</div>
+	<van-popup v-model="show">内容</van-popup>
 </div>
 
 	</div>
@@ -149,8 +150,18 @@
 <script>
 import headersList from '../../components/header.vue'
 export default {
+	data(){
+		return{
+			show: false
+		}
+	},
 	components:{
 		headersList
+	},
+	methods:{
+		startGo(){
+			this.show = true;
+		}
 	}
 }
 </script>
