@@ -33,8 +33,8 @@ import 'vant/lib/index.css';
 
 Vue.use(Vant);
 Vue.use(NumberKeyboard);
-
-import { Popup } from 'vant';
+// 
+// import { Popup } from 'vant';
 Vue.use(Popup);
 import { PullRefresh } from 'vant';
 
