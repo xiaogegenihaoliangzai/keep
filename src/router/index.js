@@ -20,6 +20,7 @@ import diary from '@/pages/community/secondrouter/diary'
 import city from '@/pages/community/secondrouter/city'
 import comban from '@/pages/search/comban'
 import searchall from '@/pages/search/searchall'
+import timergop from '@/pages/search/timergop'
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -49,6 +50,13 @@ export default new Router({
       },
       component: comban,
     },{
+      path: '/timergop',
+      name: 'timergop',
+      meta:{
+        keepAlive:false
+      },
+      component: timergop,
+    },{
       path: '/searchall',
       name: 'searchall',
       meta:{
@@ -63,20 +71,20 @@ export default new Router({
       },
       component: mine
     },{
-		  path: '/class2',
-		  name: 'class2',
+      path: '/class2',
+      name: 'class2',
       meta:{
         keepAlive:true
       },
-		  component: class2
-		},{
-		  path: '/guanzhu',
-		  name: 'guanzhu',
+      component: class2
+    },{
+      path: '/guanzhu',
+      name: 'guanzhu',
       meta:{
         keepAlive:true
       },
-		  component: guanzhu
-		},{
+      component: guanzhu
+    },{
       path: '/plan',
       name: 'plan',
       meta:{
@@ -105,19 +113,19 @@ export default new Router({
       },
       component: community,
       children:[
-		  {path:"hot",component: hot},
-		  {path:"attention",component: attention},
-		  {path:"topic",component: topic},
-		  {path:"diary",component: diary},
-		  {path:"city",component: city},
-		  ]
+      {path:"hot",component: hot},
+      {path:"attention",component: attention},
+      {path:"topic",component: topic},
+      {path:"diary",component: diary},
+      {path:"city",component: city},
+      ]
     },{
       path: '/communitydeday',
       name: 'communitydeday',
-      component: communitydeday,     
       meta:{
         keepAlive:true
-      }    
+      },
+      component: communitydeday
     },
     {
       path: '/sports',
@@ -127,14 +135,14 @@ export default new Router({
       },
       component: sports
     },
-	,
-	{
-	  path: '/person',
-	  name: 'person',
+  ,
+  {
+    path: '/person',
+    name: 'person',
     meta:{
       keepAlive:true
     },
-	  component: person
-	}
+    component: person
+  }
   ]
 })
