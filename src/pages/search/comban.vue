@@ -141,7 +141,12 @@
 	<div id="footer">
 		<p @click="startGo" type="primary">参加课程</p>
 	</div>
-	<van-popup v-model="show">内容</van-popup>
+	<van-popup position="bottom" v-show="intime" :style="{ height: '100%' }" v-model="show">
+		<div class="datatime">
+			<p><img src="../../assets/scarch/naozhong.gif" alt="" /></p>
+			<p>加载中...</p>
+		</div>
+	</van-popup>
 </div>
 
 	</div>
@@ -152,7 +157,8 @@ import headersList from '../../components/header.vue'
 export default {
 	data(){
 		return{
-			show: false
+			show: false,
+			intime:false
 		}
 	},
 	components:{
@@ -161,12 +167,41 @@ export default {
 	methods:{
 		startGo(){
 			this.show = true;
+			setTimeout(function(){
+				this.intime=true
+			},1000,function(){
+				console.log(1)
+			})
+			setTimeout(()=>{
+				this.$router.push('timergop')
+			},2000)
 		}
 	}
 }
 </script>
 
 <style scoped lang="less">
+.datatime{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	img{
+		width: 50/50rem;
+		height: 50/50rem;
+	}
+	p{
+		position: absolute;
+		&:nth-of-type(2){
+			margin-top: 30/50rem;
+			color:#666;
+			font-size: 13px;
+			margin-left: 3/50rem;
+		}
+	}
+}
 .fonimg{
 	width: 30/50rem;
 	float: left;

@@ -91,19 +91,12 @@
 		  	</section>
 			<div class="bgc">
 
-			  	<section class="imglist">
 			  		<router-link to="/comban">
 			  			<img src="../../assets/scarch/list.png" alt="" />
 			  		</router-link>
-			  		<img src="../../assets/scarch/list2.png" alt="" />
-	</section>
-			  	<section class="imglist" v-model="items">
 			  		<router-link to="/comban" v-for="(item,index) in listie" :key="index">
-			  			<img  v-lazy.imglist="item.img" v-show="isShowList" />
+			  			<img v-lazy.imglist="item.img" v-show="isShowList" />
 			  		</router-link>
-
-
-			  	</section>
 		  </div>
   		</yd-tab-panel>
         <yd-tab-panel slot="list2" label="健身">333333</yd-tab-panel>
@@ -185,6 +178,10 @@ export default {
     	this.inimgShow=false;
     	this.inimg=require('../../assets/scarch/tc_ic_course_filter_unselected.png');
     },
+    routerlist(){
+    	this.$router.push("comban");
+    	console.log(1)
+    }
   }
 }
 
