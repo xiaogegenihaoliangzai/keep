@@ -48,7 +48,7 @@
 				this.$axios.get("../../static/data/talk.json")
 					.then(res => {
 						this.arr = res.data.data
-						console.log(res.data.data.entries)
+						//console.log(res.data.data.entries)
 					})
 
 			}

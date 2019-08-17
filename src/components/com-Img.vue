@@ -1,12 +1,12 @@
 <template>
 	<div class="saveimg">
 		<img :src="Imgsrc" />
+		<!--<img src="../assets/community/aa.jpg" />
 		<img :src="Imgsrc" />
-		<img src="../assets/community/017.jpg" />
 		<img src="../assets/community/016.jpg" />
-		<img src="../assets/community/016.jpg" />
-		<img src="../assets/community/016.jpg" />
+		<img src="../assets/community/bb.jpg" />
 		<img src="../assets/community/018.jpg" />
+		<img src="../assets/community/016.jpg" />-->
 	</div>
 </template>
 
@@ -31,9 +31,7 @@
 	
 	.saveimg img {
 		float: left;
-		height: 2.0rem;
-		line-height: 2.0rem;
-		
+		width: 100%;
 		margin: 0.01rem 0.01rem;
 	}
 </style>

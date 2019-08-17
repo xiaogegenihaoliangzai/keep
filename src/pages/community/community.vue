@@ -13,8 +13,8 @@
 					<mt-loadmore :top-method="loadTop" ref="loadmore">
 						<comcont></comcont>
 					</mt-loadmore>
-					
-				<!--	<downpull></downpull>-->
+
+					<!--	<downpull></downpull>-->
 				</yd-tab-panel>
 			</div>
 
@@ -96,9 +96,9 @@
 
 		methods: {
 			loadTop() {
-			   
+
 				this.$refs.loadmore.onTopLoaded();
-				
+
 			},
 			goMine() {
 				this.$router.push('/mine')
@@ -106,8 +106,8 @@
 			more() {
 				console.log(777)
 				this.falge = !this.falge;
-//				localStorage.removeItem('username');
-//				localStorage.removeItem('usericon');
+				//				localStorage.removeItem('username');
+				//				localStorage.removeItem('usericon');
 
 			}
 		}
