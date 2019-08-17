@@ -76,16 +76,16 @@
 				Name: window.localStorage.getItem('username'),
 				Icon: window.localStorage.getItem('usericon')
 			})
-			console.log(storages)
+			//console.log(storages)
 			for(var i in storages) {
 				var newarr = {}
 				var newobj = [];
 				newarr.data += storages[i]
 				newobj.push(newarr)
-				
+
 			}
 
-			//console.log(newobj)
+		
 		},
 
 		methods: {

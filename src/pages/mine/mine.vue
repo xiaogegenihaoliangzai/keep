@@ -13,40 +13,40 @@
 			</ul>
 		</div>
 		<div id="wrapper">
-				<div class="top">
-					<ul class="top-1">
-						<li class="tu" @click="run3"><img src="../../assets/wo-img/travel-show_02.jpg"></li>
-						<li class="zi">
-							<p>可爱大方的{{showmsg}}</p><br>
-							<p>
-								<span><img src="../../assets/wo-img/fd_icon_grade.9.png"></span>
-								<span>9徽章</span>
-							</p>
-							<em>KG.10</em>
-						</li>
-						<li class="logo"><img src="../../assets/wo-img/ic_portrait_training_right_on.png"></li>
-					</ul>
+			<div class="top">
+				<ul class="top-1">
+					<li class="tu" @click="run3"><img src="../../assets/wo-img/travel-show_02.jpg"></li>
+					<li class="zi">
+						<p>可爱大方的{{showmsg}}</p><br>
+						<p>
+							<span><img src="../../assets/wo-img/fd_icon_grade.9.png"></span>
+							<span>9徽章</span>
+						</p>
+						<em>KG.10</em>
+					</li>
+					<li class="logo"><img src="../../assets/wo-img/ic_portrait_training_right_on.png"></li>
+				</ul>
 
-					<ul class="top-2">
-						<li>
-							<span>3</span><br>
-							<em @click="run"> 关注</em>
-						</li>
-						<li>
-							<span>15</span><br>
-							<em>粉丝</em>
-						</li>
-						<li>
-							<span>2</span><br>
-							<em> 动态</em>
-						</li>
-						<li>
-							<span>13</span><br>
-							<em> 卡路里币</em>
-						</li>
-					</ul>
-				</div>
-	
+				<ul class="top-2">
+					<li>
+						<span>{{storages.length}}</span><br>
+						<em @click="run"> 关注</em>
+					</li>
+					<li>
+						<span>15</span><br>
+						<em>粉丝</em>
+					</li>
+					<li>
+						<span>2</span><br>
+						<em> 动态</em>
+					</li>
+					<li>
+						<span>13</span><br>
+						<em> 卡路里币</em>
+					</li>
+				</ul>
+			</div>
+
 			<div class="active1">
 				<ul>
 					<li @click="run2">
@@ -142,11 +142,11 @@
 					<img src="../../assets/wo-img/ic_portrait_training_right_on.png" slot="right" />
 				</mines>
 			</div>
-			
+
 		</div>
 
 	</div>
-	
+
 </template>
 
 <script>
@@ -156,17 +156,27 @@
 		props: ['title'],
 		data() {
 			return {
-					showmsg:"你好游客",
-					sg:'170',
-					tz:'70',
-      }
+				showmsg: "你好游客",
+				sg: '170',
+				tz: '70',
+				storages: [],
+			}
+
 		},
-    mounted(){
-         this.showmsg=localStorage.getItem('phonenum',this.loginphone);
-		 this.sg=localStorage.getItem("sg")
-		 this.tz=localStorage.getItem("tz")
-    },
-	methods: {
+		mounted() {
+			this.showmsg = localStorage.getItem('phonenum', this.loginphone);
+			this.sg = localStorage.getItem("sg")
+			this.tz = localStorage.getItem("tz")
+			this.username = localStorage.getItem('username');
+			var storages = [];
+			storages.push({
+				Name: window.localStorage.getItem('username'),
+				Icon: window.localStorage.getItem('usericon')
+			})
+			this.storages = storages
+            console.log(storages)
+		},
+		methods: {
 			run() {
 				this.$router.push("/guanzhu")
 			},
@@ -180,12 +190,12 @@
 		components: {
 			mines
 		},
-		filters:{
-			fobodysg(val){
-				return val.substr(0,3)+".0"
+		filters: {
+			fobodysg(val) {
+				return val.substr(0, 3) + ".0"
 			},
-			fobodytz(val){
-				return val.substr(0,2)+".0"
+			fobodytz(val) {
+				return val.substr(0, 2) + ".0"
 			}
 		}
 	}
@@ -196,13 +206,16 @@
 		margin: 0;
 		padding: 0;
 	}
+	
 	body {
 		font-size: 12/50rem;
 		font-family: helvetica;
 	}
+	
 	.sizing {
 		box-sizing: border-box;
 	}
+	
 	#header {
 		position: fixed;
 		width: 100%;
@@ -260,12 +273,14 @@
 		height: 60/50rem;
 		border-radius: 50%;
 	}
-	.zi{
+	
+	.zi {
 		border: 1px solid white;
 		width: 250px;
 		height: 75px;
-		margin-left: 5px;	
+		margin-left: 5px;
 	}
+	
 	.zi p:nth-child(1) {
 		font-size: 15/50rem;
 		position: absolute;
@@ -296,8 +311,8 @@
 		width: 80/50rem;
 		height: 30/50rem;
 		margin-left: -155/50rem;
-	    position: relative;
-	    top:8px;
+		position: relative;
+		top: 8px;
 	}
 	
 	.zi span:nth-child(2) {
@@ -324,6 +339,7 @@
 		margin-left: -40/50rem;
 		color: black;
 	}
+	
 	.top-2 li {
 		float: left;
 		padding-left: 60/50rem;
@@ -335,10 +351,11 @@
 		font-size: 16/50rem;
 		font-weight: bolder;
 	}
+	
 	.top-2 em {
 		color: darkgray;
 		font-size: 10/50rem;
-		font-weight:lighter;
+		font-weight: lighter;
 	}
 	
 	.active1 {
@@ -402,7 +419,7 @@
 		position: relative;
 		/*padding-right: 20/50rem;*/
 		left: -5px;
-		top:-20px
+		top: -20px
 	}
 	
 	.active2 p:nth-child(1) {
@@ -463,7 +480,6 @@
 		position: absolute;
 		right: 10px;
 		top: 10px;
-		
 	}
 	
 	.active3 p:nth-child(2) {
@@ -564,11 +580,12 @@
 		position: absolute;
 		top: 580/50rem!important;
 	}
-	.wid{
+	
+	.wid {
 		width: 95%;
 		margin: 0 auto;
-
 	}
+	
 	.list img {
 		width: 30/50rem;
 		height: 30/50rem;
@@ -583,12 +600,14 @@
 	.list i {
 		font-size: 20px;
 	}
-	.list img{
+	
+	.list img {
 		width: 25/50rem;
 		height: 25/50rem;
 		position: absolute;
 		right: 10/50rem;
 	}
+	
 	.bgc {
 		background-color: #fff;
 		width: 100%;
@@ -596,4 +615,3 @@
 		overflow: hidden;
 	}
 </style>
-	

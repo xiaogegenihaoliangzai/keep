@@ -12,36 +12,55 @@
 				<li>用户</li>
 				<li>话题</li>
 			</ul>
-			<ul class="two">
-				<li>
-				  <span><img src="../../assets/sports/1.jpg"><em class="zi">丫丫夜莺</em></span>
-				  <span>已关注</span>
-				</li>
-			</ul>
+			<commu :name="username">
+				<img class="imgsrc" :src="usericon" slot="imgsrc" />
+				<span id="tic" slot="text" >取消关注</span>
+			</commu>
 		</div>
 
 	</div>
 </template>
 
 <script>
+	import commu from '../../components/commu.vue'
 	export default {
 		data() {
-			return {}
+			return {
+				username: "",
+				usericon: ""
+			}
 		},
 		methods: {
-			send(){
+			send() {
 				this.$router.go(-1)
-				
+
 			},
+		},
+		mounted() {
+			this.username = localStorage.getItem('username');
+			this.usericon = localStorage.getItem('usericon');
+		},
+		components: {
+			commu
 		}
 	}
 </script>
-
 
 <style scoped lang="less">
 	* {
 		margin: 0;
 		padding: 0;
+	}
+	#tic{
+		margin-left: -0.5rem;
+	}
+	
+	.imgsrc {
+		border-radius: 50%;
+		width: 0.7rem;
+		height: 0.7rem;
+		text-align: center;
+		margin-top: 0.2rem;
 	}
 	
 	body {
@@ -52,7 +71,8 @@
 	.sizing {
 		box-sizing: border-box;
 	}
-/*头部样式*/	
+	/*头部样式*/
+	
 	#header {
 		position: fixed;
 		width: 100%;
@@ -81,16 +101,16 @@
 		top: 10/50rem;
 		left: 50/50rem;
 		font-size: 16/50rem;
-		font-family:"宋体";
+		font-family: "宋体";
 		color: white;
 	}
 	
-	.right i{
+	.right i {
 		font-size: 22/50rem;
-	    margin-right: 15/50rem;		    
+		margin-right: 15/50rem;
 	}
+	/*内容开始*/
 	
-/*内容开始*/	
 	#wrapper {
 		/*border: 1/50rem solid #000;*/
 		width: 100%;
@@ -128,7 +148,6 @@
 	.two li span:nth-child(1) {
 		position: absolute;
 		left: 10/50rem;
-		
 	}
 	
 	.two li span:nth-child(2) {
@@ -142,10 +161,12 @@
 		right: 10/50rem;
 		font-size: 8/50rem;
 	}
-	.two em{
+	
+	.two em {
 		font-size: 16/50rem;
 		padding-left: 10/50rem;
 	}
+	
 	.two img {
 		width: 45/50rem;
 		border-radius: 30/50rem;
