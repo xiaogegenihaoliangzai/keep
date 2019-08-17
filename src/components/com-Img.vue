@@ -31,8 +31,9 @@
 	
 	.saveimg img {
 		float: left;
-		width: 2.3rem;
-		height: 2rem;
+		height: 2.0rem;
+		line-height: 2.0rem;
+		
 		margin: 0.01rem 0.01rem;
 	}
 </style>

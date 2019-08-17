@@ -114,7 +114,7 @@
 		display: -webkit-box;
 		-webkit-line-clamp: 2;
 		-webkit-box-orient: vertical;
-		font-size: 0.25rem;
+		font-size: 0.24rem;
 		padding: 0 0.15rem;
 		color: black;
 		text-align: left;

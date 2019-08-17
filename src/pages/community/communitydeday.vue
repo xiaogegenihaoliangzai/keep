@@ -9,7 +9,8 @@
 		</div>
 		<!--个人详情-->
 		<commu :name="name">
-			<img @click="more()" class="imgsrc" :src="Img" slot="imgsrc" />
+			<img class="imgsrc" :src="Img" slot="imgsrc" />
+			<span id="tic" slot="text" @click="more()">关注</span>
 		</commu>
 		<!--个人信息宣言-->
 		<deday_con></deday_con>
@@ -71,7 +72,8 @@
 				Count: (() => {
 					/* $route.query获取shopid */
 					return this.$route.query.Count.toString()
-				})()
+				})(),
+				num:[]
 			}
 		},
 		components: {
@@ -86,6 +88,9 @@
 		},
 		methods: {
 			more() {
+				
+				//var obj=sessionStorage.setItem("key",JSON.stringify(this.name))
+				
 				localStorage.setItem('username', this.name);
 				localStorage.setItem('usericon', this.Img);
 			},
@@ -93,7 +98,7 @@
 			Goback() {
 				this.$router.push('/community')
 			},
-				goMine() {
+			goMine() {
 				this.$router.push('/mine')
 			}
 		}

@@ -16,11 +16,10 @@
 			</div>
 			<div slot="list1">
 				<yd-tab-panel label="关注" class="item_list">
-
-					<commu :name="name">
-						<img class="imgsrc" :src="Img" slot="imgsrc" />
+					<commu :name="username">
+						<img class="imgsrc" :src="usericon" slot="imgsrc" />
+						<span id="tic" slot="text" @click="more()">取消关注</span>
 					</commu>
-
 				</yd-tab-panel>
 			</div>
 			<div slot="list1">
@@ -61,14 +60,34 @@
 					/* $route.query获取shopid */
 					return this.$route.query.Img
 				})(),
-				username: ""
-
+				username: "",
+				usericon: "",
+				newarr: []
 			}
 
 		},
 		mounted() {
+
 			this.username = localStorage.getItem('username');
+			this.usericon = localStorage.getItem('usericon');
+
+			var storages = [];
+			storages.push({
+				Name: window.localStorage.getItem('username'),
+				Icon: window.localStorage.getItem('usericon')
+			})
+			console.log(storages)
+			for(var i in storages) {
+				var newarr = {}
+				var newobj = [];
+				newarr.data += storages[i]
+				newobj.push(newarr)
+				
+			}
+
+			//console.log(newobj)
 		},
+
 		methods: {
 			loadTop() {
 				this.$refs.loadmore.onTopLoaded();
@@ -83,6 +102,14 @@
 </script>
 
 <style scoped lang="less">
+	.imgsrc {
+		border-radius: 50%;
+		width: 0.7rem;
+		height: 0.7rem;
+		text-align: center;
+		margin-top: 0.2rem;
+	}
+	
 	.uu {
 		width: 100%;
 	}

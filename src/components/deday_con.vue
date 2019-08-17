@@ -21,13 +21,13 @@
 <style scoped lang="less">
 	.detay {
 		width: 80%;
-	padding: 0.1rem 0.1rem;
-	margin-left: 0.1rem;
+		padding: 0.1rem 0.1rem;
+		margin-left: 0.1rem;
 	}
 	
 	.detay p {
 		text-align: left;
-		
+		font-size: 0.27rem;
 		line-height: 0.4rem;
 	}
 	
