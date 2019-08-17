@@ -6,22 +6,27 @@
 			</headersList>
 		</div>
 		<Tabbar class="uu">
+
 			<div slot="list1">
 				<yd-tab-panel label="热门" class="item_list">
+					<!--下拉刷新-->
 					<mt-loadmore :top-method="loadTop" ref="loadmore">
-						<!--照片内容区-->
 						<comcont></comcont>
 					</mt-loadmore>
+					
+				<!--	<downpull></downpull>-->
 				</yd-tab-panel>
 			</div>
+
 			<div slot="list1">
 				<yd-tab-panel label="关注" class="item_list">
-					<commu :name="username">
+					<commu :name="username" v-show="falge">
 						<img class="imgsrc" :src="usericon" slot="imgsrc" />
 						<span id="tic" slot="text" @click="more()">取消关注</span>
 					</commu>
 				</yd-tab-panel>
 			</div>
+
 			<div slot="list1">
 				<yd-tab-panel label="话题" class="item_list"><img src="../../assets/community/d.jpeg" class="imgtt"></yd-tab-panel>
 			</div>
@@ -42,13 +47,15 @@
 	import backtop from '../../components/backtop.vue'
 	import comcont from '../../components/com-Cont.vue'
 	import commu from '../../components/commu.vue'
+	import downpull from '../../components/downpull.vue'
 	export default {
 		components: {
 			Tabbar,
 			headersList,
 			backtop,
 			comcont,
-			commu
+			commu,
+			downpull
 		},
 		data: function() {
 			return {
@@ -62,7 +69,8 @@
 				})(),
 				username: "",
 				usericon: "",
-				newarr: []
+				newarr: [],
+				falge: true
 			}
 
 		},
@@ -82,22 +90,27 @@
 				var newobj = [];
 				newarr.data += storages[i]
 				newobj.push(newarr)
-
 			}
 
-		
 		},
 
 		methods: {
 			loadTop() {
+			   
 				this.$refs.loadmore.onTopLoaded();
+				
 			},
 			goMine() {
 				this.$router.push('/mine')
+			},
+			more() {
+				console.log(777)
+				this.falge = !this.falge;
+//				localStorage.removeItem('username');
+//				localStorage.removeItem('usericon');
+
 			}
-
 		}
-
 	}
 </script>
 
@@ -108,6 +121,10 @@
 		height: 0.7rem;
 		text-align: center;
 		margin-top: 0.2rem;
+	}
+	
+	.show {
+		display: block;
 	}
 	
 	.uu {

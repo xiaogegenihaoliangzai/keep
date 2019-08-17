@@ -122,22 +122,32 @@
 	}
 	
 	.sec .sec_sec .box ul {
-		overflow: hidden;
-		display: flex;
-		align-content: space-around;
-		align-items: center;
-		padding: 0 0.1rem;
+	overflow: hidden;
+	line-height: .8rem;
+	position: relative;
+	padding: 0 0.15rem;
 	}
 	
 	.sec .sec_sec .box ul li {
-		line-height: 0.7rem;
+		float: left;
+		text-align: center;
 	}
 	
 	.sec .sec_sec .box ul li:nth-of-type(2) {
 		margin-left: 0.1rem;
+		width: 1.7rem;
+		text-align: left;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		
+	}
+	.sec .sec_sec .box ul li:nth-of-type(3) {
+		margin-left: 0.2rem;
 	}
 	
 	.sec .sec_sec .box ul img {
 		width: 0.4rem;
+		margin-top: 0.16rem;
 	}
 </style>

@@ -48,6 +48,14 @@ Vue.component(BackTop.name, BackTop);
 import {InfiniteScroll} from 'vue-ydui/dist/lib.rem/infinitescroll';
 Vue.component(InfiniteScroll.name, InfiniteScroll);
 
+import VueResource from 'vue-resource';
+Vue.use(VueResource);
+
+
+import {pullRefresh} from 'vue-ydui/dist/lib.rem/pullrefresh';
+import 'vue-ydui/dist/ydui.base.css';
+Vue.component(PullRefresh.name, PullRefresh);
+
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 

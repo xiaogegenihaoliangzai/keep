@@ -1,31 +1,44 @@
 <template>
-	<div class="mmain">
-		<van-pull-refresh v-model="isLoading" @refresh="onRefresh">
-			<slot name="downpull" height="1200px"></slot>
-		</van-pull-refresh>
-	</div>
+    <yd-pullrefresh :callback="loadList" ref="pullrefreshDemo">
+
+        <yd-list theme="4">
+    <comcont></comcont>
+        </yd-list>
+
+    </yd-pullrefresh>
 </template>
-<script>
-	export default {
-		data() {
-			return {
 
-				isLoading: false
-			}
-		},
+<script type="text/babel">
+	import comcont from '@/components/com-Cont.vue'
+    export default {
+        data() {
+            return {
+                page: 1,
+            }
+        },
+        methods: {
+            loadList() {
+            	console.log(999)
+                const url = 'http://list.ydui.org/getdata.php';
 
-		methods: {
-			onRefresh() {
-				setTimeout(() => {
+                this.$http.jsonp(url, {params: {type: 'pulldown', page: this.page}}).then((response) => {
 
-					this.toast('刷新成功');
-					this.isLoading = false;
+                    const _list = response.body;
 
-				}, 500);
-			}
+                    this.$dialog.toast({
+                        mes: _list.length > 0 ? '为您更新了' + _list.length + '条内容' : '已是最新内容'
+                    });
+
+                    this.$refs.pullrefreshDemo.$emit('ydui.pullrefresh.finishLoad');
+
+                    this.page++;
+                });
+            }
+        },
+        		components: {
+		
+			comcont
+			
 		}
-	}
+    }
 </script>
-<style scoped lang="less">
-
-</style>
