@@ -29,7 +29,7 @@
 
 				<ul class="top-2">
 					<li>
-						<span>{{storages.length}}</span><br>
+						<span>{{newarr.length}}</span><br>
 						<em @click="run"> 关注</em>
 					</li>
 					<li>
@@ -142,11 +142,8 @@
 					<img src="../../assets/wo-img/ic_portrait_training_right_on.png" slot="right" />
 				</mines>
 			</div>
-
 		</div>
-
 	</div>
-
 </template>
 
 <script>
@@ -159,22 +156,14 @@
 				showmsg: "你好游客",
 				sg: '170',
 				tz: '70',
-				storages: [],
+				newarr: [],
 			}
-
 		},
 		mounted() {
 			this.showmsg = localStorage.getItem('phonenum', this.loginphone);
 			this.sg = localStorage.getItem("sg")
 			this.tz = localStorage.getItem("tz")
-			this.username = localStorage.getItem('username');
-			var storages = [];
-			storages.push({
-				Name: window.localStorage.getItem('username'),
-				Icon: window.localStorage.getItem('usericon')
-			})
-			this.storages = storages
-            console.log(storages)
+
 		},
 		methods: {
 			run() {
@@ -186,6 +175,11 @@
 			run3() {
 				this.$router.push("/person")
 			},
+			loadComments() {
+				var list = JSON.parse(localStorage.getItem("cmts") || '[]')
+				this.newarr = list
+				//console.log(this.newarr)
+			}
 		},
 		components: {
 			mines
@@ -197,6 +191,9 @@
 			fobodytz(val) {
 				return val.substr(0, 2) + ".0"
 			}
+		},
+			created() {
+			this.loadComments()
 		}
 	}
 </script>

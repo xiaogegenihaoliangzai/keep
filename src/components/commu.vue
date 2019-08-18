@@ -9,7 +9,7 @@
 				<p>{{name}}</p>
 			</li>
 			<li>
-				<slot name="text"></slot>
+				<slot id="tic" name="text"></slot>
 			</li>
 		</ul>
 	</div>
@@ -70,5 +70,6 @@
 		width: 0.3rem;
 		border-radius: 0.3rem;
 		color: white;
+		font-size: 0.20rem;
 	}
 </style>

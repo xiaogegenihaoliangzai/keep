@@ -20,9 +20,9 @@
 
 			<div slot="list1">
 				<yd-tab-panel label="关注" class="item_list">
-					<commu :name="username" v-show="falge">
-						<img class="imgsrc" :src="usericon" slot="imgsrc" />
-						<span id="tic" slot="text" @click="more()">取消关注</span>
+					<commu :name="item.username"  :key="item.id" v-show="falge" v-for="(item,index) in newarr">
+						<img class="imgsrc" :src="item.usericon" slot="imgsrc" />
+						<span id="tic" slot="text" @click="more(index)">取消关注</span>
 					</commu>
 				</yd-tab-panel>
 			</div>
@@ -72,44 +72,26 @@
 				newarr: [],
 				falge: true
 			}
-
 		},
-		mounted() {
-
-			this.username = localStorage.getItem('username');
-			this.usericon = localStorage.getItem('usericon');
-
-			var storages = [];
-			storages.push({
-				Name: window.localStorage.getItem('username'),
-				Icon: window.localStorage.getItem('usericon')
-			})
-			//console.log(storages)
-			for(var i in storages) {
-				var newarr = {}
-				var newobj = [];
-				newarr.data += storages[i]
-				newobj.push(newarr)
-			}
-
-		},
-
 		methods: {
 			loadTop() {
-
 				this.$refs.loadmore.onTopLoaded();
-
 			},
 			goMine() {
 				this.$router.push('/mine')
 			},
-			more() {
-				console.log(777)
+			more(index) {
 				this.falge = !this.falge;
-				//				localStorage.removeItem('username');
-				//				localStorage.removeItem('usericon');
-
+				//localStorage.removeItem('cmts')[index];
+			},
+			loadComments() {
+				var list = JSON.parse(localStorage.getItem("cmts") || '[]')
+				this.newarr = list
+				//console.log(this.newarr)
 			}
+		},
+		created() {
+			this.loadComments()
 		}
 	}
 </script>
@@ -122,7 +104,9 @@
 		text-align: center;
 		margin-top: 0.2rem;
 	}
-	
+		#tic {
+		margin-left: -0.4rem;
+	}
 	.show {
 		display: block;
 	}

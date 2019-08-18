@@ -12,12 +12,11 @@
 				<li>用户</li>
 				<li>话题</li>
 			</ul>
-			<commu :name="username">
-				<img class="imgsrc" :src="usericon" slot="imgsrc" />
-				<span id="tic" slot="text" >取消关注</span>
+			<commu :name="item.username" :key="item.id" v-show="falge" v-for="(item,index) in newarr">
+				<img class="imgsrc" :src="item.usericon" slot="imgsrc" />
+				<span id="tic" slot="text" @click="more(index)">取消关注</span>
 			</commu>
 		</div>
-
 	</div>
 </template>
 
@@ -26,22 +25,28 @@
 	export default {
 		data() {
 			return {
-				username: "",
-				usericon: ""
+				newarr: [],
+				falge: true
 			}
 		},
 		methods: {
 			send() {
 				this.$router.go(-1)
-
 			},
-		},
-		mounted() {
-			this.username = localStorage.getItem('username');
-			this.usericon = localStorage.getItem('usericon');
+			loadComments() {
+				var list = JSON.parse(localStorage.getItem("cmts") || '[]')
+				this.newarr = list
+			},
+			more(index) {
+				this.falge = !this.falge;
+				//localStorage.removeItem('cmts')[index];
+			}
 		},
 		components: {
 			commu
+		},
+		created() {
+			this.loadComments()
 		}
 	}
 </script>
@@ -51,7 +56,8 @@
 		margin: 0;
 		padding: 0;
 	}
-	#tic{
+	
+	#tic {
 		margin-left: -0.5rem;
 	}
 	

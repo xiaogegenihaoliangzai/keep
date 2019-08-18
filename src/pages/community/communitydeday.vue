@@ -73,7 +73,7 @@
 					/* $route.query获取shopid */
 					return this.$route.query.Count.toString()
 				})(),
-				num:[]
+				num: []
 			}
 		},
 		components: {
@@ -88,11 +88,16 @@
 		},
 		methods: {
 			more() {
-				
-				//var obj=sessionStorage.setItem("key",JSON.stringify(this.name))
-				
-				localStorage.setItem('username', this.name);
-				localStorage.setItem('usericon', this.Img);
+
+				var comment = {
+					username: this.name,
+					usericon: this.Img
+				}
+
+				var list = JSON.parse(localStorage.getItem("cmts") || '[]')
+				list.unshift(comment)
+				localStorage.setItem('cmts', JSON.stringify(list))
+
 			},
 
 			Goback() {
