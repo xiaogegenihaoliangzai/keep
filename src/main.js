@@ -27,9 +27,12 @@ Vue.component(TabItem.name, TabItem);
 Vue.prototype.$axios=Axios;
 import Vant from 'vant';
 import 'vant/lib/index.css';
-
+import {Search} from 'vue-ydui/dist/lib.rem/search';
+/* 使用px：import {Search} from 'vue-ydui/dist/lib.px/search'; */
+Vue.component(Search.name, Search);
 Vue.use(Vant);
-
+import animated from 'animate.css' 
+Vue.use(animated)
 import { Popup } from 'vant';
 Vue.use(Popup);
 import { PullRefresh } from 'vant';
