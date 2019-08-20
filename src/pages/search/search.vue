@@ -156,9 +156,9 @@
 			<div class="serachsoso" v-show="!isSerachShow">
 				<div class="isSerachbarbo">
 					<img src="../../assets/scarch/icon_arrow_left_lined_dark.png" alt="" slot="leftImg" class="right" @click="serachBtn" v-on:click="isSerachShow=true" />
-					<yd-search v-model="value1" placeholder="大家都在搜 「这都算Keep」" :on-submit="submitHandler" class="rightserach"></yd-search>
+					<yd-search  placeholder="大家都在搜 「这都算Keep」"  v-model="inputs" :on-submit="submitHandler" class="rightserach"></yd-search>
 				</div>
-				<div class="bgccode">
+				<div class="bgccode" v-show="isInVal">
 					<section class="isListkostart list_as animated fadeInUp">
 						<div class="wid">
 							<yd-flexbox>
@@ -176,13 +176,26 @@
 						</div>
 					</section>
 				</div>
+				<div class="seValList" v-show="islodVer">
+					<li>
+						<yd-icon name="search" size="14px" class="seachIconfont"></yd-icon>
+						<p>点击搜索<span>{{inputs}}</span></p>
+					</li>
+					<ul class="VelinPutes">
+						<li>
+							<p>{{inputs}} <span>点击搜索相关课程</span></p>
+						</li>
+						<li>
+							<p>{{inputs}} <span>点击搜索相关商品</span></p>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
   </div>
 </template>
 
 <script>
-
 import Swiper from 'swiper';
 import headersList from '../../components/header.vue'
 import Tabbar from '../../components/Tabbar.vue'
@@ -197,7 +210,10 @@ export default {
 				{img:'https://static1.keepcdn.com/2019/07/23/1563872988035_750x340.jpg',title:'KEEP甜蜜养成',count:52800},
 			],
 			value1: '',
-			isSerachShow:true
+			isSerachShow:true,
+			inputs:'',
+			isInVal:true,
+			islodVer:false
 		}
 	},
 	props:['label'],
@@ -223,12 +239,28 @@ export default {
 			})
 		},
 		submitHandler(value) {
-            this.$dialog.toast({mes: `搜索：${value}`});
+            this.$dialog.toast({mes: `正在搜索：${value}...`});
+            console.log(value+'2323');
+            this.islodVer=false;
         },
         serachBtn(){
         	console.log(1)
         	this.isSerachShow=false;
         }
+	},
+	watch:{
+	    inputs(curVal, oldVal) {
+	        if(this.inputs.length>=1){
+	        	this.isInVal=false;
+	        	this.islodVer=true;
+	        	this.$axios.get('/api/?keyword='+this.inputs).then((res,req)=>{
+		        	console.log(res)
+		        })
+	        }else{
+	        	this.isInVal=true;
+	        }
+	        console.log(curVal+1)
+	    }
 	}
 }
 </script>
@@ -439,5 +471,44 @@ export default {
 }
 .search{
 	background-color: #fff;
+}
+.seValList{
+	overflow: hidden;
+	margin-top: 10/50rem;
+	box-shadow: 0 -5px 6px rgba(230,230,230,0.1);
+	.seachIconfont{
+		color:#B3B3B3;
+		float: left;
+		text-indent: 7/50rem;
+	}
+	p{
+		color:#999999;
+		font-size: 14/50rem;
+		text-align: left;
+		padding-left: 5/50rem;
+		text-indent: 3/50rem;
+		span{
+			color:#2A2A2A;
+			padding-left: 5/50rem;
+		}
+	}
+	.VelinPutes{
+		li{
+			p{
+				text-indent: 10/50rem;
+				color:#2A2A2A;
+				span{
+					float: right;
+					color:#999999;
+					padding-right: 10/50rem;
+				}
+			}
+		}
+	}
+	li{
+		height: 40/50rem;
+		line-height: 40/50rem;
+		border-bottom: 1px solid #F0F0F0;
+	}
 }
 </style>

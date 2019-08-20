@@ -39,7 +39,10 @@ import { PullRefresh } from 'vant';
 
 Vue.use(PullRefresh);
 
+import {Icons} from 'vue-ydui/dist/lib.rem/icons';
+/* 使用px：import {Icons} from 'vue-ydui/dist/lib.px/icons'; */
 
+Vue.component(Icons.name, Icons);
 
 Vue.use(Swipe).use(SwipeItem);
 

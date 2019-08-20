@@ -41,6 +41,10 @@ export default {
   font-family: '微软雅黑';
   color:#6F6F6F;
   text-indent: 5/50rem;
+  caret-color: #23C48C;
+}
+.yd-search-input>.cancel-text{
+  display: none!important;
 }
 .yd-search-input>.search-input{
   height: 35/50rem;
