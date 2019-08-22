@@ -46,6 +46,11 @@ Vue.component(Icons.name, Icons);
 
 Vue.use(Swipe).use(SwipeItem);
 
+import { Tab } from 'vux'
+
+Vue.component('tab', Tab)
+Vue.component('tab-item')
+
 
 //回到顶部
 import {BackTop} from 'vue-ydui/dist/lib.rem/backtop';
