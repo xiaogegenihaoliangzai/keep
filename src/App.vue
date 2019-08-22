@@ -26,6 +26,37 @@ export default {
 .van-dropdown-item--down, .van-dropdown-item{
   top:63px;
 }
+.yd-search{
+  display: block;
+  padding-right: 15/50rem;
+  padding-bottom: 3/50rem;
+}
+.yd-search-input:after, .yd-search-input:before{
+  display: none;
+}
+.yd-input>input{
+  background-color: #FAFAFA;
+  border-radius: 3/50rem;
+  border:none;
+  font-family: '微软雅黑';
+  color:#6F6F6F;
+  text-indent: 5/50rem;
+  caret-color: #23C48C;
+}
+.yd-search-input>.cancel-text{
+  display: none!important;
+}
+.yd-search-input>.search-input{
+  height: 35/50rem;
+}
+.yd-search-input{
+  position: static;
+  padding: 0;
+  background-color: #FAFAFA;
+}
+.yd-search-input>.search-input{
+  background-color: #FAFAFA;
+}
 .yd-list-img{
   margin: 0;
   top: 0;

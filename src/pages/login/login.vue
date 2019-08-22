@@ -32,18 +32,20 @@
 import 'font-awesome/css/font-awesome.css'
 import eventVue from '../../store/emptyvue.js'
 	import { MessageBox } from 'mint-ui';
+	import { Toast } from 'mint-ui';
 export default{
   data(){
     return {
       loginphone:'',
 	  showdeletephone:false,
+	  tempyzm:""
     }
   },
 	methods:{
 		community(){
      //this.$store.commit('setToken',this.loginphone)
 		var myreg=/^[1][3,4,5,7,8][0-9]{9}$/;
-
+		 Toast('发送成功');
          localStorage.setItem('phonenum',this.loginphone);
 			if(this.loginphone==""){
 				MessageBox.alert('请输入手机号').then(action => {
@@ -55,9 +57,32 @@ export default{
 				});
 			}else{
 				this.$router.push('secondchecknum')
+				this.txyzm()
 			}
 		},
-		
+		txyzm(){
+			var QcloudSms = require("qcloudsms_js");
+			var appid = 1400246462;  
+			var appkey = "0fdea44966c056df06dec704b93b701f";
+			//var phoneNumbers = [this.loginphone];
+			var templateId = 401831;  
+			var smsSign = "keep毕设验证";  
+			var qcloudsms = QcloudSms(appid, appkey);
+			var ssender = qcloudsms.SmsSingleSender();
+			this.tempyzm=Math.floor(Math.random()*10000);
+			localStorage.setItem('tempyzm',this.tempyzm);
+			console.log(this.tempyzm)
+			var params = [this.tempyzm,"2"];
+			ssender.sendWithParam(86, this.loginphone, templateId,params, smsSign, "", "", callback); 
+			function callback(err, res, resData) {
+			  if (err) {
+			     // console.log("err: ", err);
+			  } else {
+			     // console.log("request data: ", res.req);
+			     // console.log("response data: ", resData);
+			  }
+			}
+		},
 		
 		
 		checkphonenum(){

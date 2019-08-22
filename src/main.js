@@ -27,18 +27,29 @@ Vue.component(TabItem.name, TabItem);
 Vue.prototype.$axios=Axios;
 import Vant from 'vant';
 import 'vant/lib/index.css';
-
+import {Search} from 'vue-ydui/dist/lib.rem/search';
+/* 使用px：import {Search} from 'vue-ydui/dist/lib.px/search'; */
+Vue.component(Search.name, Search);
 Vue.use(Vant);
-
+import animated from 'animate.css' 
+Vue.use(animated)
 import { Popup } from 'vant';
 Vue.use(Popup);
 import { PullRefresh } from 'vant';
 
 Vue.use(PullRefresh);
 
+import {Icons} from 'vue-ydui/dist/lib.rem/icons';
+/* 使用px：import {Icons} from 'vue-ydui/dist/lib.px/icons'; */
 
+Vue.component(Icons.name, Icons);
 
 Vue.use(Swipe).use(SwipeItem);
+
+import { Tab } from 'vux'
+
+Vue.component('tab', Tab)
+Vue.component('tab-item')
 
 
 //回到顶部

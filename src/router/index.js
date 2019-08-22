@@ -21,6 +21,9 @@ import city from '@/pages/community/secondrouter/city'
 import comban from '@/pages/search/comban'
 import searchall from '@/pages/search/searchall'
 import timergop from '@/pages/search/timergop'
+import temp from '@/pages/search/temp'
+import timer from '@/pages/search/timer'
+import dataall from '@/pages/search/dataAll'
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -28,6 +31,27 @@ export default new Router({
       path: '/',
       name: 'login',
       component: login
+    },{
+      path: '/temp',
+      name: 'temp',
+      meta:{
+        keepAlive:false
+      },
+      component: temp
+    },{
+      path: '/dataall',
+      name: 'dataall',
+      meta:{
+        keepAlive:false
+      },
+      component: dataall
+    },{
+      path: '/timer',
+      name: 'timer',
+      meta:{
+        keepAlive:false
+      },
+      component: timer
     },{
       path: '/secondchecknum',
       name: 'secondchecknum',

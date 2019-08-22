@@ -11,7 +11,7 @@
 				<h1>腹肌撕裂者初级</h1>
 			</div>
 			<div class="bottom_arr">
-				<button>正在准备训练内容</button>
+				<button>正在准备训练内容/{{numcount}}</button>
 			</div>
 		</div>
 	</div>
@@ -22,11 +22,20 @@
 export default {
 	data(){
 		return{
-			
+			numcount:5
 		}
 	},
 	components:{
 		
+	},
+	mounted(){
+		let timer=setInterval(()=>{
+			this.numcount--;
+			if(this.numcount==0){
+				this.$router.push('timer')
+				clearInterval(timer)
+			}
+		},1000)
 	},
 	methods:{
 		resetbtn(){

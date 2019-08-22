@@ -1,151 +1,197 @@
 <template>
   <div class="search">
-  	<div class="divHeader">
-  		<headersList title="探索">
-  			<img src="../../assets/scarch/icon_search_lined_dark.png" alt="" slot="leftImg" class="right" />
-  		</headersList>
-  	</div>
-  	<Tabbar slot="bar">
-  		<div slot="list1">
-  			<yd-tab-panel name="" slot="list1" label="课程与挑战">
-  			<div class="bgc">
-  					<div class="banner">
-		              <div class="swiper-container">
-						    <div class="swiper-wrapper">
-						        <div class="swiper-slide"><img src="../../assets/scarch/banner01.png" alt="" /></div>
-						        <div class="swiper-slide"><img src="../../assets/scarch/banner02.png" alt="" /></div>
-						        <div class="swiper-slide"><img src="../../assets/scarch/banner03.png" alt="" /></div>
-						        <div class="swiper-slide"><img src="../../assets/scarch/banner04.png" alt="" /></div>
-						    </div>
-						    <div class="swiper-pagination"></div>
-					   </div>
-			        </div>
-		        <div class="listf">
-					<yd-flexbox>
-			            <yd-flexbox-item>
-			            	<router-link to="/searchall">
-			            		<img src="../../assets/scarch/su_training_entrance_all.png" alt="" />
-			            		<p>找课程</p>
-			            	</router-link>
-			            </yd-flexbox-item>
-			            
-			            <yd-flexbox-item>
-			            	<img src="../../assets/scarch/tc_icon_food_library.png" alt="" />
-			            	<p>动作库</p>
-			            </yd-flexbox-item>
-			            <yd-flexbox-item>
-			            	<img src="../../assets/scarch/tc_icon_food_classify.png" alt="" />
-			            	<p>活动挑战</p>
-			            </yd-flexbox-item>
-			            <yd-flexbox-item>
-			            	<img src="../../assets/scarch/su_training_entrance_mine.png" alt="" />
-			            	<p>私家课</p>
-			            </yd-flexbox-item>
-			          
-			        </yd-flexbox>
-				</div>
-				
-					<div class="videocontent">
-			<router-view></router-view>
-		</div>
-  			</div>
-
-				<section class="list_as">
-					<div class="wid">
+  	<div class="showserachlist" v-show="isSerachShow">
+  		<div class="divHeader">
+	  		<headersList title="探索">
+	  			<img src="../../assets/scarch/icon_search_lined_dark.png" alt="" slot="leftImg" class="right" @click="serachBtn" />
+	  		</headersList>
+	  	</div>
+	  	<Tabbar slot="bar">
+	  		<div slot="list1">
+	  			<yd-tab-panel name="" slot="list1" label="课程与挑战">
+	  			<div class="bgc">
+	  					<div class="banner">
+			              <div class="swiper-container">
+							    <div class="swiper-wrapper">
+							        <div class="swiper-slide"><img src="https://static1.keepcdn.com/2019/08/17/1565977734679_750x340.jpg" alt="" /></div>
+							        <div class="swiper-slide"><img src="https://static1.keepcdn.com/2019/08/16/11/1565924512389_750x340.jpg" alt="" /></div>
+							        <div class="swiper-slide"><img src="https://static1.keepcdn.com/2019/08/16/1565953711012_750x340.jpg" alt="" /></div>
+							        <div class="swiper-slide"><img src="https://static1.keepcdn.com/2019/08/16/1565941381608_750x340.jpg" alt="" /></div>
+							        <div class="swiper-slide"><img src="https://static1.keepcdn.com/2019/08/16/1565956477827_750x340.jpg" alt="" /></div>
+							    </div>
+							    <div class="swiper-pagination"></div>
+						   </div>
+				        </div>
+			        <div class="listf">
 						<yd-flexbox>
-				            <div class="lefts"><yd-flexbox-item>热门课程分类</yd-flexbox-item></div>
-				            <div><img src="../../assets/scarch/kt_kibra_setting_right_arrow.png" alt="" /></div>
+				            <yd-flexbox-item>
+				            	<router-link to="/searchall">
+				            		<img src="../../assets/scarch/su_training_entrance_all.png" alt="" />
+				            		<p>找课程</p>
+				            	</router-link>
+				            </yd-flexbox-item>
+				            
+				            <yd-flexbox-item>
+				            	<img src="../../assets/scarch/tc_icon_food_library.png" alt="" />
+				            	<p>动作库</p>
+				            </yd-flexbox-item>
+				            <yd-flexbox-item>
+				            	<img src="../../assets/scarch/tc_icon_food_classify.png" alt="" />
+				            	<p>活动挑战</p>
+				            </yd-flexbox-item>
+				            <yd-flexbox-item>
+				            	<img src="../../assets/scarch/su_training_entrance_mine.png" alt="" />
+				            	<p>私家课</p>
+				            </yd-flexbox-item>
+				          
 				        </yd-flexbox>
-			        </div>
-			        	<div class="menus">
-							<li><a href="">减脂</a></li>
-							<li><a href="">瑜伽</a></li>
-							<li><a href="">有氧操</a></li>
-							<li><a href="">学生专属</a></li>
-							<li><a href="">腹肌马甲线</a></li>
-							<li><a href="">无器械</a></li>
-							<li><a href="">为你推荐</a></li>
-						</div>
-				</section>
-
-				<section class="piall list_as">
-					<div class="wid">
-						<yd-flexbox>
-				            <div class="lefts"><yd-flexbox-item>全站热门活动</yd-flexbox-item></div>
-				            <div><img src="../../assets/scarch/kt_kibra_setting_right_arrow.png" alt="" /></div>
-				        </yd-flexbox>
-			        </div>
-
-					<div class="itemImg">
-						<yd-list theme="2">
-					        <yd-list-item v-for="(item,index) in list" :key="index">
-					            <img slot="img" :src="item.img">
-					            <span slot="title">{{item.title}}</span>
-					            <yd-list-other slot="other">
-					                <div class="plist">
-					                    <p>{{item.count}} 人已参加</p>
-					                </div>
-					            </yd-list-other>
-					        </yd-list-item>
-					    </yd-list>
 					</div>
-				</section>
+					
+						<div class="videocontent">
+				<router-view></router-view>
+			</div>
+	  			</div>
 
-				<section class="infocontent list_as">
-					<div class="wid">
-						<yd-flexbox>
-				            <div class="lefts"><yd-flexbox-item>趣味探索</yd-flexbox-item></div>
-				        </yd-flexbox>
-			        </div>
-
-			        <div class="content">
-			        	<div class="wid_all">
-			        		<yd-flexbox>
-					            <yd-flexbox-item class="iconbg">
-					            	<p>K星物语</p>
-					            	<span>探索神奇的秘密</span>
-					            </yd-flexbox-item>
-					            <yd-flexbox-item class="iconbg">
-					            	<p>每日一答</p>
-					            	<span>运动知识大挑战</span>
-					            </yd-flexbox-item>
-					            <yd-flexbox-item class="iconbg">
-					            	<p>燃脂真人跳</p>
-					            	<span>跳出好身材</span>
-					            </yd-flexbox-item>
+					<section class="list_as">
+						<div class="wid">
+							<yd-flexbox>
+					            <div class="lefts"><yd-flexbox-item>热门课程分类</yd-flexbox-item></div>
+					            <div><img src="../../assets/scarch/kt_kibra_setting_right_arrow.png" alt="" /></div>
 					        </yd-flexbox>
-			        	</div>
-			        </div>
-				</section>
+				        </div>
+				        	<div class="menus">
+								<li><a href=""><i class="iconfont iconhuo"></i>减脂</a></li>
+								<li><a href=""><i class="iconfont iconhuo"></i>瑜伽</a></li>
+								<li><a href="">有氧操</a></li><br/>
+								<li><a href=""><i class="iconfont iconhuo"></i>学生专属</a></li>
+								<li><a href="">腹肌马甲线</a></li>
+								<li><a href="">无器械</a></li>
+								<li><a href="">为你推荐</a></li>
+							</div>
+					</section>
 
-				<aside class="asideImg list_as">
-					<div class="wid">
-						<yd-flexbox>
-				            <div class="lefts"><yd-flexbox-item>课程专题</yd-flexbox-item></div>
-				        </yd-flexbox>
-			        </div>
-			        <div class="proline">
-						<img src="../../assets/scarch/img.png" alt="" />
-						<img src="../../assets/scarch/img2.png" alt="" />
-			        </div>
-				</aside>
-	        </yd-tab-panel>
-  		</div>
-  		<div slot="list1">
-  			<yd-tab-panel label="运动商城"></yd-tab-panel>
-  		</div>
-  		<div slot="list1">
-  			<yd-tab-panel label="健康轻食"></yd-tab-panel>
-  		</div>
-  		<div slot="list1">
-  			<yd-tab-panel label="硬件商店"></yd-tab-panel>
-  		</div>
-  		<div slot="list1">
-  			<yd-tab-panel label="Keepland"></yd-tab-panel>
-  		</div>
+					<section class="piall list_as">
+						<div class="wid">
+							<yd-flexbox>
+					            <div class="lefts"><yd-flexbox-item>全站热门活动</yd-flexbox-item></div>
+					            <div><img src="../../assets/scarch/kt_kibra_setting_right_arrow.png" alt="" /></div>
+					        </yd-flexbox>
+				        </div>
 
-  	</Tabbar>
-<button @click="btns">12</button>
+						<div class="itemImg">
+							<yd-list theme="2">
+						        <yd-list-item v-for="(item,index) in list" :key="index">
+						            <img slot="img" :src="item.img">
+						            <span slot="title">{{item.title}}</span>
+						            <yd-list-other slot="other">
+						                <div class="plist">
+						                    <p>{{item.count}} 人已参加</p>
+						                </div>
+						            </yd-list-other>
+						        </yd-list-item>
+						    </yd-list>
+						</div>
+					</section>
+
+					<section class="infocontent list_as">
+						<div class="wid">
+							<yd-flexbox>
+					            <div class="lefts"><yd-flexbox-item>趣味探索</yd-flexbox-item></div>
+					        </yd-flexbox>
+				        </div>
+
+				        <div class="content">
+				        	<div class="wid_all">
+				        		<yd-flexbox>
+						            <yd-flexbox-item class="iconbg">
+						            	<p>K星物语</p>
+						            	<span>探索神奇的秘密</span>
+						            </yd-flexbox-item>
+						            <yd-flexbox-item class="iconbg">
+						            	<p>每日一答</p>
+						            	<span>运动知识大挑战</span>
+						            </yd-flexbox-item>
+						            <yd-flexbox-item class="iconbg">
+						            	<p>燃脂真人跳</p>
+						            	<span>跳出好身材</span>
+						            </yd-flexbox-item>
+						        </yd-flexbox>
+				        	</div>
+				        </div>
+					</section>
+
+					<aside class="asideImg list_as">
+						<div class="wid">
+							<yd-flexbox>
+					            <div class="lefts"><yd-flexbox-item>课程专题</yd-flexbox-item></div>
+					        </yd-flexbox>
+				        </div>
+				        <div class="proline">
+							<img src="../../assets/scarch/img.png" alt="" />
+							<img src="../../assets/scarch/img2.png" alt="" />
+							<img src="../../assets/scarch/img3.png" alt="" />
+				        </div>
+					</aside>
+		        </yd-tab-panel>
+	  		</div>
+	  		<div slot="list1">
+	  			<yd-tab-panel label="运动商城"></yd-tab-panel>
+	  		</div>
+	  		<div slot="list1">
+	  			<yd-tab-panel label="健康轻食"></yd-tab-panel>
+	  		</div>
+	  		<div slot="list1">
+	  			<yd-tab-panel label="硬件商店"></yd-tab-panel>
+	  		</div>
+	  		<div slot="list1">
+	  			<yd-tab-panel label="Keepland"></yd-tab-panel>
+	  		</div>
+
+	  	</Tabbar>
+	<button @click="btns">12</button>
+  	</div>
+  	
+
+
+			<div class="serachsoso" v-show="!isSerachShow">
+				<div class="isSerachbarbo">
+					<img src="../../assets/scarch/icon_arrow_left_lined_dark.png" alt="" slot="leftImg" class="right" @click="serachBtn" v-on:click="isSerachShow=true" />
+					<yd-search  placeholder="大家都在搜 「这都算Keep」"  v-model="inputs" :on-submit="submitHandler" class="rightserach"></yd-search>
+				</div>
+				<div class="bgccode" v-show="isInVal">
+					<section class="isListkostart list_as animated fadeInUp">
+						<div class="wid">
+							<yd-flexbox>
+					            <div class="lefts"><yd-flexbox-item>热门搜索</yd-flexbox-item></div>
+					        </yd-flexbox>
+				        </div>
+						<div class="menus">
+							<li><a href=""><i class="iconfont iconhuo"></i>这都算Keep</a></li>
+							<li><a href=""><i class="iconfont iconhuo"></i>腹肌</a></li>
+							<li><a href=""><i class="iconfont iconhuo"></i>减脂</a></li>
+							<li><a href="">瘦腿</a></li>
+							<li><a href="">李现</a></li>
+							<li><a href="">拉伸</a></li>
+							<li><a href="">马甲线</a></li>
+						</div>
+					</section>
+				</div>
+				<div class="seValList" v-show="islodVer">
+					<li>
+						<yd-icon name="search" size="14px" class="seachIconfont"></yd-icon>
+						<p>点击搜索<span>{{inputs}}</span></p>
+					</li>
+					<ul class="VelinPutes">
+						<li>
+							<p>{{inputs}} <span>点击搜索相关课程</span></p>
+						</li>
+						<li>
+							<p>{{inputs}} <span>点击搜索相关商品</span></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
   </div>
 </template>
 
@@ -153,6 +199,7 @@
 import Swiper from 'swiper';
 import headersList from '../../components/header.vue'
 import Tabbar from '../../components/Tabbar.vue'
+import '../../assets/css/iconfont.css'
 export default {
 	data(){
 		return {
@@ -161,13 +208,19 @@ export default {
 				{img:'https://static1.keepcdn.com/2019/07/26/1564131241465_750x340.jpg',title:'暑假打怪|征服 10 个波比',count:40080},
 				{img:'https://static1.keepcdn.com/2019/07/29/1564397476355_750x340.jpg',title:'暑假带着Keep去旅行',count:24353},
 				{img:'https://static1.keepcdn.com/2019/07/23/1563872988035_750x340.jpg',title:'KEEP甜蜜养成',count:52800},
-			]
+			],
+			value1: '',
+			isSerachShow:true,
+			inputs:'',
+			isInVal:true,
+			islodVer:false
 		}
 	},
 	props:['label'],
 	components:{
 	  	Tabbar,
-	  	headersList
+	  	headersList,
+	  	
 	},
   	mounted(){
 	    new Swiper ('.swiper-container', {
@@ -184,7 +237,30 @@ export default {
 			this.$axios.get("../../../static/data/新建文本文档.json").then(res=>{
 				console.log(res.data)
 			})
-		}
+		},
+		submitHandler(value) {
+            this.$dialog.toast({mes: `正在搜索：${value}...`});
+            console.log(value+'2323');
+            this.islodVer=false;
+        },
+        serachBtn(){
+        	console.log(1)
+        	this.isSerachShow=false;
+        }
+	},
+	watch:{
+	    inputs(curVal, oldVal) {
+	        if(this.inputs.length>=1){
+	        	this.isInVal=false;
+	        	this.islodVer=true;
+	        	this.$axios.get('/api/?keyword='+this.inputs).then((res,req)=>{
+		        	console.log(res)
+		        })
+	        }else{
+	        	this.isInVal=true;
+	        }
+	        console.log(curVal+1)
+	    }
 	}
 }
 </script>
@@ -205,11 +281,41 @@ export default {
 		width: 100%;
 	}
 }
+.isSerachbarbo{
+	width: 100%;
+	height: 50/50rem;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img{
+		flex:1;
+		transform: scale(0.54);
+	}
+	.rightserach{
+		flex:6;
+		font-size: 14/50rem;
+	}
+}
+.bgccode{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	margin-top: 8/50rem;
+	background-color: #fff;
+	background: #fff;
+}
 .plist{
 	text-align: left!important;
 	display: inline-block;
 	width: 100%;
 	padding:2/50rem;
+}
+.iconhuo{
+	padding-right: 3/50rem;
+	color:#F95D6F;
 }
 .iconbg{
 	line-height: 40/50rem;
@@ -281,8 +387,7 @@ export default {
 .swiper-slide{
 	img{
 		width: 100%;
-
-		height: 110/50rem;
+		height: 120/50rem;
  	 	border-radius: 5/50rem;
 	}
 }
@@ -345,7 +450,7 @@ export default {
 	li{
 		float: left;
 		height: 20/50rem;
-		margin: 5/50rem 10/50rem 10/50rem 0;
+		margin: 5/50rem 20/50rem 10/50rem 0;
 		a{
 			text-align: center;
 			line-height: 20/50rem;
@@ -366,5 +471,44 @@ export default {
 }
 .search{
 	background-color: #fff;
+}
+.seValList{
+	overflow: hidden;
+	margin-top: 10/50rem;
+	box-shadow: 0 -5px 6px rgba(230,230,230,0.1);
+	.seachIconfont{
+		color:#B3B3B3;
+		float: left;
+		text-indent: 7/50rem;
+	}
+	p{
+		color:#999999;
+		font-size: 14/50rem;
+		text-align: left;
+		padding-left: 5/50rem;
+		text-indent: 3/50rem;
+		span{
+			color:#2A2A2A;
+			padding-left: 5/50rem;
+		}
+	}
+	.VelinPutes{
+		li{
+			p{
+				text-indent: 10/50rem;
+				color:#2A2A2A;
+				span{
+					float: right;
+					color:#999999;
+					padding-right: 10/50rem;
+				}
+			}
+		}
+	}
+	li{
+		height: 40/50rem;
+		line-height: 40/50rem;
+		border-bottom: 1px solid #F0F0F0;
+	}
 }
 </style>
