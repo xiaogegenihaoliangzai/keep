@@ -4,7 +4,7 @@
       <img src="../../assets/scarch/icon_arrow_left_lined.png" @click="goback">
     </div>
 		<div class="yzm">
-			<mt-popup v-model="popupVisible" class='tck' modal="true" position="top" style="width: 100%">您收到的验证码为：{{showyzm}}</mt-popup>
+			 <mt-popup v-model="popupVisible" class='tck' modal="true" position="top" style="width: 100%">请{{shownum}}查看手机</mt-popup>
 
 		</div>
     <div class="textlist">
@@ -33,7 +33,6 @@
 </template>
 
 <script>
-	import eventVue from '../../store/emptyvue.js'
 	import { MessageBox } from 'mint-ui';
   export default {
     data() {
@@ -92,14 +91,12 @@
 	onInput(value) {
 	   console.log(value);
 				 this.newlist=this.showyzm.toString()
-				//this.inputnum=newlist.split("")
 				console.log(this.newlist.split(",").toString());
 				var i=0
 				this.inputnum.push(value)
 				if(i<=this.inputnum.length){
 					i++
 				}
-				//console.log(this.inputnum.toString().split(",").toString())
 	 },
 	 onDelete() {
 	   console.log('删除');
@@ -108,7 +105,7 @@
 		 },
    mounted(){
      this.shownum=localStorage.getItem('phonenum',this.loginphone);
-		 this.showyzm=((Math.floor(Math.random()*10000)))
+     this.showyzm=localStorage.getItem('tempyzm',this.tempyzm);
 		 console.log(this.showyzm)
 		 this.popupVisible=true;
 		 this.getCode()
