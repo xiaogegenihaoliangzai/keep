@@ -10,32 +10,29 @@
 				<h1>开始第一次训练</h1>
 				<h1>腹肌撕裂者初级</h1>
 			</div>
-			<div class="bottom_arr">
+			<!-- <div class="bottom_arr">
 				<button>正在准备训练内容/{{numcount}}</button>
-			</div>
+
+			</div> -->
+			<sider></sider>
 		</div>
+		
 	</div>
 </template>
 
 <script>
-
+import  sider from '../../components/sider.vue'
 export default {
 	data(){
 		return{
-			numcount:5
+			
 		}
 	},
 	components:{
-		
+		sider
 	},
 	mounted(){
-		let timer=setInterval(()=>{
-			this.numcount--;
-			if(this.numcount==0){
-				this.$router.push('timer')
-				clearInterval(timer)
-			}
-		},1000)
+		
 	},
 	methods:{
 		resetbtn(){
