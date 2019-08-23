@@ -32,7 +32,7 @@ export default {
 		let timer=setInterval(()=>{
 			this.numcount--;
 			if(this.numcount==0){
-				this.$router.push('timer')
+				// this.$router.push('timer')
 				clearInterval(timer)
 			}
 		},1000)
