@@ -219,7 +219,8 @@ export default {
 	props:['label'],
 	components:{
 	  	Tabbar,
-	  	headersList,
+		  headersList
+		
 	  	
 	},
   	mounted(){
@@ -253,7 +254,7 @@ export default {
 	        if(this.inputs.length>=1){
 	        	this.isInVal=false;
 	        	this.islodVer=true;
-	        	this.$axios.get('/api/?keyword='+this.inputs).then((res,req)=>{
+	        	this.$axios.get('api/?keyword='+this.inputs).then((res,req)=>{
 		        	console.log(res)
 		        })
 	        }else{

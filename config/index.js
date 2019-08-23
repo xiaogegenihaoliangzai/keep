@@ -15,7 +15,7 @@ module.exports = {
             target: 'https://api.gotokeep.com/search/v3/global', //源地址 
             changeOrigin: true, //改变源 
             pathRewrite: { 
-              '^/api': '' //路径重写 
+              '^/api': '/' //路径重写 
               } 
         }
     },

@@ -7,6 +7,7 @@
 				<img src="../../assets/community/mo_store_title_back.png" slot="rightImg" class="right" @click="Goback" />
 			</headersList>
 		</div>
+		
 		<!--个人详情-->
 		<commu :name="name">
 			<img class="imgsrc" :src="Img" slot="imgsrc" />
@@ -14,7 +15,7 @@
 		</commu>
 		<!--个人信息宣言-->
 		<deday_con></deday_con>
-
+       
 		<div class="content">
 			<div class="content_sec">
 				<!--照片区-->
@@ -23,8 +24,9 @@
 				<comTime></comTime>
 			</div>
 		</div>
+		<mapp></mapp>
 		<div class="talk_sec">
-			<mt-cell :title="Count" value="加油"></mt-cell>
+			
 			<div class="talk_b">
 				<ul class="talk_b_sec">
 					<li><img src="../../assets/community/doge.png" /></li>
@@ -47,6 +49,7 @@
 		<comcont></comcont>
 		<!--回到顶部-->
 		<backtop></backtop>
+		
 	</div>
 </template>
 <script>
@@ -58,6 +61,8 @@
 	import comTalk from '../../components/com-Talk.vue'
 	import comTime from '../../components/com-Time.vue'
 	import comcont from '../../components/com-Cont.vue'
+	import mapp from '../../components/map.vue'
+		import { MessageBox } from 'mint-ui';
 	export default {
 		data: function() {
 			return {
@@ -84,7 +89,8 @@
 			comImg,
 			comTalk,
 			comTime,
-			comcont
+			comcont,
+			mapp
 		},
 		methods: {
 			more() {
@@ -95,9 +101,14 @@
 				}
 
 				var list = JSON.parse(localStorage.getItem("cmts") || '[]')
+				
 				list.unshift(comment)
+				
 				localStorage.setItem('cmts', JSON.stringify(list))
-
+					
+				var spans=document.querySelector("#tic")
+				spans.innerHTML="已关注"
+				//MessageBox.alert('验证码错误')
 			},
 
 			Goback() {
