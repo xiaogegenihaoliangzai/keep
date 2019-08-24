@@ -219,7 +219,8 @@ export default {
 	props:['label'],
 	components:{
 	  	Tabbar,
-	  	headersList,
+		  headersList
+		
 	  	
 	},
   	mounted(){

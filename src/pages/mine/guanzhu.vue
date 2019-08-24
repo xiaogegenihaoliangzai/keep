@@ -12,7 +12,7 @@
 				<li>用户</li>
 				<li>话题</li>
 			</ul>
-			<commu :name="item.username" :key="item.id" v-show="falge" v-for="(item,index) in newarr">
+			<commu :name="item.username" :key="item.id"  v-for="(item,index) in newarr">
 				<img class="imgsrc" :src="item.usericon" slot="imgsrc" />
 				<span id="tic" slot="text" @click="more(index)">取消关注</span>
 			</commu>
@@ -26,7 +26,7 @@
 		data() {
 			return {
 				newarr: [],
-				falge: true
+				
 			}
 		},
 		methods: {
@@ -38,8 +38,9 @@
 				this.newarr = list
 			},
 			more(index) {
-				this.falge = !this.falge;
-				//localStorage.removeItem('cmts')[index];
+//				console.log(index.path[3])
+//
+//				index.path[3].remove()
 			}
 		},
 		components: {

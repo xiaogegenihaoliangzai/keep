@@ -46,6 +46,11 @@ Vue.component(Icons.name, Icons);
 
 Vue.use(Swipe).use(SwipeItem);
 
+import { Tab } from 'vux'
+
+Vue.component('tab', Tab)
+Vue.component('tab-item')
+
 
 //回到顶部
 import {BackTop} from 'vue-ydui/dist/lib.rem/backtop';
@@ -75,6 +80,11 @@ Vue.use(YDUI);
 Vue.use(MintUI)
 
 
+import BaiduMap from 'vue-baidu-map'
+
+Vue.use(BaiduMap, {
+  ak: 'cVnjEIwuimz7IFRDphZbd49Z328kE2Ku'    //这个地方是官方提供的ak密钥
+})
 
 
 import { Lazyload } from 'mint-ui';
@@ -83,6 +93,13 @@ Vue.use(Lazyload);
 
 
 import { Swipe, SwipeItem } from 'vant';
+
+
+
+
+
+
+
 
 /* eslint-disable no-new */
 new Vue({

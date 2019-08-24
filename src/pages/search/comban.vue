@@ -139,14 +139,8 @@
 			<a href="">查看更多</a>
 		</section>
 	<div id="footer">
-		<p @click="startGo" type="primary">参加课程</p>
+		<p @click="startGo"  type="primary">{{titlenum}}</p>
 	</div>
-	<van-popup position="bottom" v-show="intime" :style="{ height: '100%' }" v-model="show">
-		<div class="datatime">
-			<p><img src="../../assets/scarch/naozhong.gif" alt="" /></p>
-			<p>加载中...</p>
-		</div>
-	</van-popup>
 </div>
 
 	</div>
@@ -158,14 +152,20 @@ export default {
 	data(){
 		return{
 			show: false,
-			intime:false
+			intime:false,
+			titlenum:'参加课程',
+			num:0
 		}
 	},
 	components:{
 		headersList
 	},
+	mounted(){
+		
+	},
 	methods:{
 		startGo(){
+			this.num++
 			this.show = true;
 			setTimeout(function(){
 				this.intime=true
@@ -175,6 +175,7 @@ export default {
 			setTimeout(()=>{
 				this.$router.push('timergop')
 			},2000)
+			this.titlenum='正在参加第'+this.num+'次训练'
 		}
 	}
 }
@@ -551,14 +552,17 @@ export default {
 	padding-top: 25/50rem;
 }
 #footer {
-	width: 75%;
-	border-radius: 40/50rem;
+	width: 100%;
 	color:#fff;
-	margin-bottom: 10/50rem;
 	height: 50/50rem;
 	color:#fff;
 	font-size: 16/50rem;
 	line-height: 50/50rem;
 	background: #00CE6F;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+	position: fixed;
+
 }
 </style>
