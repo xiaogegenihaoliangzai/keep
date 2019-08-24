@@ -10,7 +10,13 @@
           <div class="swiper-wrapper swiper-no-swiping">
             
             <div class="swiper-slide">
-              <video src="http://static1.keepcdn.com/chaos/0816/A047C059_s.mp4" autoplay="autoplay"></video>
+              <video src="http://static1.keepcdn.com/chaos/0816/A047C059_s.mp4" loop="loop" preload="preload" autoplay="autoplay"></video>
+            </div>
+            <div class="swiper-slide">
+              <video src="http://static1.keepcdn.com/chaos/0816/A047C059_s.mp4" loop="loop" preload="preload" autoplay="autoplay"></video>
+            </div>
+            <div class="swiper-slide">
+              <video src="http://static1.keepcdn.com/chaos/0816/A047C059_s.mp4" loop="loop" preload="preload" autoplay="autoplay"></video>
             </div>
           </div>
         </div>
@@ -68,19 +74,24 @@
       <div class="nums">
         <h1>{{num}}</h1>
       </div>
+      <li v-for="item in arr">
+      	<audio :src="item.src" v-model="startnewMp"></audio>
+      </li>
+      
     </footer>
   </div>
 </template>
 
-<script>import Swiper from "swiper";
+<script>
+import Swiper from "swiper";
 import headersList from "../../components/header.vue";
 export default {
 	data() {
 			return {
-				arr: [
-					"../../../static/mp3/N001.mp3",
-					"../../../static/mp3/N002.mp3",
-					"../../../static/mp3/N003.mp3"
+				arr:[
+					{'src':'../../../static/mp3/N003.mp3'},
+					{'src':'../../../static/mp3/N002.mp3'},
+					{'src':'../../../static/mp3/N001.mp3'}
 				],
 				startTop: true,
 				counts: 0,
@@ -91,7 +102,10 @@ export default {
 				numbersList:false,
 				ulTop:0,
 				progreess: 0,
-				add:1
+				add:1,
+				numStop:0,
+				time:0,
+				startnewMp:null
 			};
 		},
 		components: {
@@ -100,13 +114,17 @@ export default {
 		},
 		mounted() {
 			var list
-			function sum(x){
+			function sum(){
 				list=new Swiper(".swiper-container", {
 					loop: true,
-					autoplay:x
+					autoplay: {
+					   delay: 40,
+					   reverseDirection: false,
+					   stopOnLastSlide: true
+					}
 				});
-			}sum(false)
-			 
+			}sum()
+			list.autoplay.stop();
 			let timer = setInterval(res => {
 				this.counts++;
 			}, 1000);
@@ -142,12 +160,18 @@ export default {
 				},4000)
 			}utime()
 				function numbgClor(){
+					__then.numStop+=1;
+
 					var nuList=setInterval((res)=>{
- 
+
+ 						if(__then.progreess===0){
+							list.autoplay.stop();
+						}
 					__then.progreess++
-					if(__then.progreess===93){
-						sum(true)
+					if(__then.progreess===99){
+						list.autoplay.start();
 					}
+					
 					if(__then.progreess===100){
 						clearInterval(nuList)
 						__then.add++
@@ -157,28 +181,29 @@ export default {
 						__then.nice = count
 						__then.number=0
 						
-						console.log(__then.number)
+						// console.log(__then.number+'zhe')
 						utime()
 						__then.progreess=0
-
-						__then.$router.push('dataAll')
-
-
+						if(__then.numStop===3){
+							list.autoplay.stop();
+							clearInterval(nuList)
+							__then.$router.push('dataAll')
 						}
+						numbgClor();
+						// list.autoplay.start();
+						
+						// __then.$router.push('dataAll')
+						
+
+					}
+						
 						
 					},__then.nice*40*1)
-					__then.progreess=0
-				}
-				if(this.progreess==98){
-					this.progreess=0
-					
-				}if(this.progreess==0){
-					numbgClor();
-				}
+					console.log(__then.numStop)
 
-			
-				
-			
+					
+				}
+				numbgClor()
 		},
 		methods: {
 			btnstop() {
@@ -187,7 +212,7 @@ export default {
 			sanklist() {
 				this.startTop = true;
 			},
-			serachBtn() {}
+			serachBtn() {},
 		},
 		filters: {
 			run(val) {
@@ -203,6 +228,7 @@ export default {
 				}
 			}
 		}
+		
 };</script>
 
 <style scoped lang="less">
