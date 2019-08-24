@@ -6,6 +6,7 @@ import class2 from '../pages/mine/class2'
 import guanzhu from '../pages/mine/guanzhu'
 import person from '../pages/mine/person'
 import shuju from '../pages/mine/shuju'
+import biye from '../pages/mine/biye'
 import plan from '../pages/plan/plan.vue'
 import plan2 from '../pages/plan/plan2.vue'
 import secondmsg from '../pages/plan/secondmsg.vue'
@@ -177,6 +178,14 @@ export default new Router({
       keepAlive:false
     },
     component: shuju
-  }
+  },
+	{
+	  path: '/biye',
+	  name: 'biye',
+	  meta:{
+	    keepAlive:false
+	  },
+	  component: biye
+	},
   ]
 })

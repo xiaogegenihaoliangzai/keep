@@ -38,7 +38,7 @@
 			
 			<div class="nice" v-show="show" @click="tiao()">
 				<span>扫一扫，有惊喜</span>
-				<img src="../../assets/wo-img/shiping2.png" /> 
+				<img src="../../assets/wo-img/1566673040.png" /> 
 			</div>
       </div>
 
@@ -61,7 +61,9 @@
 				this.show=!this.show
 			},
 			tiao(){
-				 window.location.href = "https://www.chuanying520.com/share/F1aN.html";
+				 //window.location.href = "";
+				 window.open('https://res.chuanying520.com/vid/201908/4l9nRSVB9HwQ1Sw.mp4','_blank')
+				  //window.open('http://localhost:8080/#/biye','_blank')
 			},
 		}
 	}
