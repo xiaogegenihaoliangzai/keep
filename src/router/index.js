@@ -4,6 +4,8 @@ import search from '../pages/search/search'
 import mine from '../pages/mine/mine'
 import class2 from '../pages/mine/class2'
 import guanzhu from '../pages/mine/guanzhu'
+import person from '../pages/mine/person'
+import shuju from '../pages/mine/shuju'
 import plan from '../pages/plan/plan.vue'
 import plan2 from '../pages/plan/plan2.vue'
 import secondmsg from '../pages/plan/secondmsg.vue'
@@ -12,7 +14,7 @@ import communitydeday from '../pages/community/communitydeday'
 import sports from '../pages/sports/sports'
 import login from '../pages/login/login'
 import secondchecknum from '../pages/login/secondchecknum'
-import person from '../pages/mine/person'
+
 import hot from '@/pages/community/secondrouter/hot'
 import attention from '@/pages/community/secondrouter/attention'
 import topic from '@/pages/community/secondrouter/topic'
@@ -74,14 +76,14 @@ export default new Router({
       path: '/class2',
       name: 'class2',
       meta:{
-        keepAlive:true
+        keepAlive:false
       },
       component: class2
     },{
       path: '/guanzhu',
       name: 'guanzhu',
       meta:{
-        keepAlive:true
+        keepAlive:false
       },
       component: guanzhu
     },{
@@ -140,9 +142,17 @@ export default new Router({
     path: '/person',
     name: 'person',
     meta:{
-      keepAlive:true
+      keepAlive:false
     },
     component: person
+  },
+  {
+    path: '/shuju',
+    name: 'shuju',
+    meta:{
+      keepAlive:false
+    },
+    component: shuju
   }
   ]
 })

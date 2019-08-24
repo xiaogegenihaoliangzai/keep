@@ -12,13 +12,15 @@
 				<img src="../../assets/wo-img/icon_entry_camera.png">
 			</div>
 			<div class="active">
-				<p>
+				<p >
 					<i class="tu1"><img src="../../assets/wo-img/travel-show_02.jpg"></i>
 					<span class="zi">修改资料</span>
-					<strong class="tu2"><img src="../../assets/wo-img/su_icon_personal_qr_code_purple.png"></strong>
+					<strong class="tu2" @click="change()"><img src="../../assets/wo-img/su_icon_personal_qr_code_purple.png"></strong>
+					
 				</p>
+				
 				<p>
-					<em>可爱大方的{{showmsg}}</em><br>
+					<em>可爱大方的</em><br>
 					<span>女&nbsp;|&nbsp;广东省，深圳市&nbsp;|&nbsp;2019.07.01加入</span>
 				</p>
 				<p>
@@ -34,7 +36,10 @@
 				<p>发动态</p>
 			</div>
 			
-			
+			<div class="nice" v-show="show" @click="tiao()">
+				<span>扫一扫，有惊喜</span>
+				<img src="../../assets/wo-img/shiping2.png" /> 
+			</div>
       </div>
 
 </div>
@@ -43,12 +48,20 @@
 <script>
 	export default {
 		data() {
-			return {}
+			return {
+				show:false
+			}
 		},
 		methods: {
 			send2(){
 				console.log(11112)
 				this.$router.push("/mine")
+			},
+			change(){
+				this.show=!this.show
+			},
+			tiao(){
+				 window.location.href = "https://www.chuanying520.com/share/F1aN.html";
 			},
 		}
 	}
@@ -56,6 +69,27 @@
 
 
 <style scoped lang="less">
+.nice{
+	border: 1px solid black;
+	width: 145px;
+	height: 145px;
+	position: fixed;
+	top: 45%;
+	left: 70%;
+	transform: translate(-50%,-50%);
+	background: white;
+}
+.nice img{
+	width: 100px;
+	margin-top: 15px;
+}
+.nice span{
+	font-size: 15px;
+	color:gray;
+	margin-left: -25px;
+}
+
+
 	* {
 	margin: 0;
 	padding: 0;
@@ -81,16 +115,16 @@ body {
     padding-top: 10/50rem; 
 }
 #header .left img{
-	width: 28/50rem;
+	width: 37/50rem;
 	height: 25/50rem;
 	margin-left: -280/50rem;
 }
 #header .right img{
-	width: 28/50rem;
-	height: 28/50rem;
+	width: 30/50rem;
+	height: 30/50rem;
 	float: right;
 	margin-right: 15/50rem;	
-	margin-top: 7/50rem;
+	margin-top: 3/50rem;
 }
 
 /*内容开始*/

@@ -63,7 +63,7 @@
 			</div>
 		</div>
 
-		<div class="active2">
+		<div class="active2"  @click="send3">
 			<p>
 				<span>我的运动数据</span>
 				<img src="../../assets/wo-img/ic_portrait_training_right_on.png">
@@ -175,6 +175,10 @@
 			run3() {
 				this.$router.push("/person")
 			},
+			send3(){
+				console.log(11112)
+				this.$router.push("/shuju")
+			},
 			loadComments() {
 				var list = JSON.parse(localStorage.getItem("cmts") || '[]')
 				this.newarr = list
@@ -236,7 +240,7 @@
 	}
 	
 	.right img {
-		width: 27.5/50rem;
+		width: 35/50rem;
 		height: 27.5/50rem;
 		padding-left: 10/50rem;
 	}
