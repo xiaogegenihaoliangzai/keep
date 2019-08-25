@@ -38,7 +38,12 @@ export default{
     return {
       loginphone:'',
 	  showdeletephone:false,
-	  tempyzm:""
+	  tempyzm:"",
+	  appid:1400246462,
+	  appkey:"0fdea44966c056df06dec704b93b701f",
+	  templateId:401831,
+	  smsSign:""
+	  
     }
   },
 	methods:{
@@ -62,18 +67,13 @@ export default{
 		},
 		txyzm(){
 			var QcloudSms = require("qcloudsms_js");
-			var appid = 1400246462;  
-			var appkey = "0fdea44966c056df06dec704b93b701f";
-			//var phoneNumbers = [this.loginphone];
-			var templateId = 401831;  
-			var smsSign = "keep毕设验证";  
-			var qcloudsms = QcloudSms(appid, appkey);
+			var qcloudsms = QcloudSms(this.appid, this.appkey);
 			var ssender = qcloudsms.SmsSingleSender();
 			this.tempyzm=Math.floor(Math.random()*10000);
 			localStorage.setItem('tempyzm',this.tempyzm);
 			console.log(this.tempyzm)
 			var params = [this.tempyzm,"2"];
-			ssender.sendWithParam(86, this.loginphone, templateId,params, smsSign, "", "", callback); 
+			ssender.sendWithParam(86, this.loginphone, this.templateId,params, this.smsSign, "", "", callback); 
 			function callback(err, res, resData) {
 			  if (err) {
 			     // console.log("err: ", err);
