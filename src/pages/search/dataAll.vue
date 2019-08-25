@@ -5,7 +5,7 @@
 		</div>
 		<div class="asideTitle">
 			<span>恭喜你</span>
-			<p>累计完成3次训练</p>
+			<p>累计完成1次训练</p>
 		</div>
 		<div class="footerimg">
 			<img src="../../assets/scarch/2019-08-22_170932.png" alt="" />

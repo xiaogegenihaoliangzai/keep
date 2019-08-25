@@ -33,7 +33,7 @@
 	        <div class="centerfooter" @click="btnstop">
 	          <img src="../../assets/scarch/stop.png" alt />
 	        </div>
-	        <div class="rightfooter">
+	        <div class="rightfooter" @click="muiscPlay">
 	          <img src="../../assets/scarch/kt_kibra_setting_right_arrow.png" alt />
 	        </div>
 	      
@@ -213,6 +213,10 @@ export default {
 				this.startTop = true;
 			},
 			serachBtn() {},
+			muiscPlay(){
+		    	this.gamemuiscs1 = new Audio("../../../static/mp3/Eg_13_next_motion (1).mp3");
+		    	this.gamemuiscs1.play();
+		   	},
 		},
 		filters: {
 			run(val) {
