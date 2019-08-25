@@ -62,7 +62,7 @@
 			},
 			tiao(){
 				 //window.location.href = "";
-				 window.open('https://res.chuanying520.com/vid/201908/4l9nRSVB9HwQ1Sw.mp4','_blank')
+				 window.open('https://www.chuanying520.com/share/F1aN')
 				  //window.open('http://localhost:8080/#/biye','_blank')
 			},
 		}

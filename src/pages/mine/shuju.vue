@@ -20,20 +20,20 @@
 					</span>
 				</p>
 				<p class="list3">
-					<strong>0<span>分钟</span></strong>
+					<strong>50<span>分钟</span></strong>
 				</p>
 				<ul class="list4">
 					<li>
 						<span>消耗（千卡）</span><br>
-						<strong>0</strong>
+						<strong>1250</strong>
 					</li>
 					<li>
 						<span>累计（天）</span><br>
-						<strong>0</strong>
+						<strong>15</strong>
 					</li>
 					<li>
 						<span>连续（天）</span><br>
-						<strong>0</strong>
+						<strong>3</strong>
 					</li>
 				</ul>
 			</div>
@@ -102,11 +102,11 @@
 						<ul slot="ww" class="ww">
 							<li slot="left" class="left">
 								<span>总时长</span><br>
-								<strong>0<em>分钟</em></strong>
+								<strong>50<em>分钟</em></strong>
 							</li>
 							<li slot="right" class="right">
 								<span>总消耗</span><br>
-								<strong>0<em>千卡</em></strong>
+								<strong>1250<em>千卡</em></strong>
 							</li>
 						</ul>
 					</mines>
@@ -121,11 +121,11 @@
 						<ul slot="ww" class="ww">
 							<li slot="left" class="left">
 								<span>总距离</span><br>
-								<strong>0<em>公里</em></strong>
+								<strong>58.5<em>公里</em></strong>
 							</li>
 							<li slot="right" class="right">
 								<span>最远距离</span><br>
-								<strong>0<em>公里</em></strong>
+								<strong>9<em>公里</em></strong>
 							</li>
 						</ul>
 					</mines>
@@ -140,11 +140,11 @@
 						<ul slot="ww" class="ww">
 							<li slot="left" class="left">
 								<span>总时长</span><br>
-								<strong>0<em>分钟</em></strong>
+								<strong>70<em>分钟</em></strong>
 							</li>
 							<li slot="right" class="right">
 								<span>总次数</span><br>
-								<strong>0<em>次</em></strong>
+								<strong>2<em>次</em></strong>
 							</li>
 						</ul>
 					</mines>
@@ -159,11 +159,11 @@
 						<ul slot="ww" class="ww">
 							<li slot="left" class="left">
 								<span>总距离</span><br>
-								<strong>0<em>公里</em></strong>
+								<strong>80<em>公里</em></strong>
 							</li>
 							<li slot="right" class="right">
 								<span>最远距离</span><br>
-								<strong>0<em>公里</em></strong>
+								<strong>10<em>公里</em></strong>
 							</li>
 						</ul>
 					</mines>
@@ -178,11 +178,11 @@
 						<ul slot="ww" class="ww">
 							<li slot="left" class="left">
 								<span>总距离</span><br>
-								<strong>0<em>公里</em></strong>
+								<strong>90<em>公里</em></strong>
 							</li>
 							<li slot="right" class="right">
 								<span>最远距离</span><br>
-								<strong>0<em>公里</em></strong>
+								<strong>20<em>公里</em></strong>
 							</li>
 						</ul>
 					</mines>
@@ -298,6 +298,7 @@
 		width: 30px;
 		margin-top: 5px;
 		margin-right: 10px;
+		padding-right: 5px;
 	}
 	
 	.list2 span:nth-child(1) {
@@ -306,6 +307,7 @@
 		top: 15px;
 		font-size: 15px;
 		color: white;
+		padding-left: 5px;
 	}
 	
 	.list2 span:nth-child(2) {
@@ -314,12 +316,14 @@
 		top: 15px;
 		font-size: 15px;
 		color: green;
+		padding-right: 5px;
 	}
 	
 	.list2 em {
 		position: absolute;
 		right: -45px;
 		top: 6px;
+		padding-right: 5px;
 	}
 	
 	.list3 {
@@ -335,6 +339,7 @@
 		position: absolute;
 		left: 5px;
 		top: 15px;
+		padding-left: 5px;
 	}
 	
 	.list3 span {
@@ -351,12 +356,14 @@
 		display: flex;
 		justify-content: space-between;
 		font-size: 12px;
+		padding-left: 10px;
+		padding-right: 15px;
 	}
 	
 	.list4 strong {
 		font-size: 20px;
 		color: white;
-		margin-left: -55px;
+		margin-left: -20px;
 	}
 	/**/
 	
@@ -533,7 +540,7 @@
 	}
 	
 	.left strong {
-		font-size: 25px;
+		font-size: 18px;
 	}
 	
 	.left em {
@@ -545,7 +552,7 @@
 	}
 	
 	.right strong {
-		font-size: 25px;
+		font-size: 18px;
 	}
 	
 	.right em {
