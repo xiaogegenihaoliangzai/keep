@@ -17,18 +17,19 @@ import login from '../pages/login/login'
 import secondchecknum from '../pages/login/secondchecknum'
 
 import hot from '@/pages/community/secondrouter/hot'
-import attention from '@/pages/community/secondrouter/attention'
-import topic from '@/pages/community/secondrouter/topic'
-import diary from '@/pages/community/secondrouter/diary'
-import city from '@/pages/community/secondrouter/city'
+
 import comban from '@/pages/search/comban'
 import searchall from '@/pages/search/searchall'
 import timergop from '@/pages/search/timergop'
 import temp from '@/pages/search/temp'
 import timer from '@/pages/search/timer'
 import dataall from '@/pages/search/dataAll'
+
 Vue.use(Router)
+
+
 export default new Router({
+	
   routes: [
     {
       path: '/',
@@ -141,10 +142,7 @@ export default new Router({
       component: community,
       children:[
       {path:"hot",component: hot},
-      {path:"attention",component: attention},
-      {path:"topic",component: topic},
-      {path:"diary",component: diary},
-      {path:"city",component: city},
+  
       ]
     },{
       path: '/communitydeday',

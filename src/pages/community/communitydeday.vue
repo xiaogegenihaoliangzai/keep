@@ -62,7 +62,7 @@
 	import comTime from '../../components/com-Time.vue'
 	import comcont from '../../components/com-Cont.vue'
 	import mapp from '../../components/map.vue'
-		import { MessageBox } from 'mint-ui';
+	import { MessageBox } from 'mint-ui';
 	export default {
 		data: function() {
 			return {
@@ -94,12 +94,10 @@
 		},
 		methods: {
 			more() {
-
 				var comment = {
 					username: this.name,
 					usericon: this.Img
 				}
-
 				var list = JSON.parse(localStorage.getItem("cmts") || '[]')
 				
 				list.unshift(comment)
@@ -117,6 +115,11 @@
 			goMine() {
 				this.$router.push('/mine')
 			}
+		},
+		mounted () {
+			this.$router.afterEach((to, from, next) => {
+				window.scrollTo(0, 0)
+			})
 		}
 	}
 </script>

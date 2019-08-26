@@ -577,7 +577,7 @@
 	
 	.list {
 		width: 100%;
-		height: 780/50rem;
+		margin-bottom: 20/50rem;
 		position: absolute;
 		top: 580/50rem!important;
 	}
@@ -600,6 +600,8 @@
 	
 	.list i {
 		font-size: 20px;
+		padding-left: 10/50rem;
+		padding-right: 5/50rem;
 	}
 	
 	.list img {

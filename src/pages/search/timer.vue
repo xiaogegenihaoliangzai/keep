@@ -22,7 +22,7 @@
         </div>
         <section class="tite">
          <p><span v-show="numbersList">{{number}}/</span>{{nice}}</p>
-          <p><strong>{{add}}/8</strong><strong>90°</strong><span>平板支撑</span></p>
+          <p><strong>{{add}}/8</strong><strong>90°</strong><span>俄罗斯转体</span></p>
         </section>
       </div>
       <section class="footerss">
@@ -161,7 +161,6 @@ export default {
 			}utime()
 				function numbgClor(){
 					__then.numStop+=1;
-
 					var nuList=setInterval((res)=>{
 
  						if(__then.progreess===0){
@@ -180,7 +179,6 @@ export default {
 						var count = random(1, 10)
 						__then.nice = count
 						__then.number=0
-						
 						// console.log(__then.number+'zhe')
 						utime()
 						__then.progreess=0
@@ -193,15 +191,12 @@ export default {
 						// list.autoplay.start();
 						
 						// __then.$router.push('dataAll')
-						
-
 					}
 						
 						
 					},__then.nice*40*1)
 					console.log(__then.numStop)
 
-					
 				}
 				numbgClor()
 		},

@@ -19,7 +19,8 @@
 					return this.$route.query.Imgsrc
 				})()
 			}
-		}
+		},
+		
 	}
 </script>
 

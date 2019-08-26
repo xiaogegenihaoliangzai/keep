@@ -1,6 +1,6 @@
 <template>
 
-	<yd-backtop><img src="@/assets/community/1.jpg" class="topimg"></yd-backtop>
+	<yd-backtop><img src="@/assets/community/6957440cd4253fc.jpg" class="topimg"></yd-backtop>
 
 </template>
 

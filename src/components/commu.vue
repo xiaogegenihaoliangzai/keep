@@ -1,7 +1,6 @@
 <template>
-
 	<div class="commu">
-		<ul>
+		 <ul>
 			<li>
 				<slot  name="imgsrc"></slot>
 			</li>
@@ -11,7 +10,7 @@
 			<li>
 				<slot id="tic" name="text"></slot>
 			</li>
-		</ul>
+		</ul> 
 	</div>
 
 </template>
@@ -24,9 +23,7 @@
 			}
 		},
 		props: ["name", "title"],
-		methods: {
-
-		}
+		
 
 	}
 </script>

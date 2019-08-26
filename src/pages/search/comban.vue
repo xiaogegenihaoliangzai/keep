@@ -61,7 +61,7 @@
 					</p>
 				</li>
 				<li>
-					<p><strong>16</strong>人在训练</p>
+					<p><strong id="a16">16</strong>人在训练</p>
 					<span class="slide_fonti">855648次已完成</span>
 					<div class="findIcon">
 						<img src="../../assets/scarch/live_like_emoji_2.png" alt="" />
@@ -160,9 +160,7 @@ export default {
 	components:{
 		headersList
 	},
-	mounted(){
-		
-	},
+	
 	methods:{
 		startGo(){
 			this.num++

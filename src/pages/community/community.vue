@@ -30,14 +30,14 @@
 
       <div slot="list1">
         <yd-tab-panel label="关注" class="item_list">
-          <commu
+         <!-- <commu
             :name="item.username"
             :key="item.id"
             v-model="flexg"
             v-for="(item,index) in newarr"
           >
             <img class="imgsrc" :src="item.usericon" slot="imgsrc" />
-            <span id="tic" slot="text" @click="more">取消关注</span>
+            <span id="tic" slot="text" @click="more">取消关注</span> -->
           </commu>
         </yd-tab-panel>
       </div>
